@@ -6,8 +6,17 @@ If you want to be involved in maintaining code or adding new features, please em
 
 Code
 ^^^^
- - <REDACTED FOR ANONYMITY>
+ - Thijs van Ede
 
 Academic Contributors
 ^^^^^^^^^^^^^^^^^^^^^
- - <REDACTED FOR ANONYMITY>
+ - Thijs van Ede
+ - Hojjat Aghakhani
+ - Noah Spahn
+ - Riccardo Bortolameotti
+ - Marco Cova
+ - Andrea Continella
+ - Maarten van Steen
+ - Andreas Peter
+ - Christopher Kruegel
+ - Giovanni Vigna

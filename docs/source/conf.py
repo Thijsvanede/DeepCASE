@@ -18,8 +18,8 @@ sys.path.insert(0, os.path.abspath('../../deepcase'))
 # -- Project information -----------------------------------------------------
 
 project = 'DeepCASE'
-copyright = '2021, <REDACTED FOR ANONYMITY>'
-author = '<REDACTED FOR ANONYMITY>'
+copyright = '2021, Thijs van Ede'
+author = 'Thijs van Ede'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'

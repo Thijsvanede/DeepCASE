@@ -19,7 +19,7 @@ You can clone the code from GitHub:
 
 .. code::
 
-   git clone git@github.com:<REDACTED_FOR_ANONYMITY>/deepcase.git
+   git clone git@github.com:Thijsvanede/deepcase.git
 
 Next, you can install the latest version using pip:
 
@@ -27,7 +27,7 @@ Next, you can install the latest version using pip:
 
   pip install -e <path/to/DeepCASE/directory/containing/setup.py>
 
-.. _source code: https://github.com/<REDACTED_FOR_ANONYMITY>/DeepCASE
+.. _source code: https://github.com/Thijsvanede/DeepCASE
 
 Dependencies
 ------------
