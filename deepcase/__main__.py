@@ -13,8 +13,6 @@ from deepcase.context_builder   import ContextBuilder
 from deepcase.interpreter       import Interpreter
 from deepcase.interpreter.utils import lookup_table
 from deepcase.preprocessing_old import PreprocessLoader, SimpleLoader, NONE
-from deepcase.utils             import multiprediction_report
-from deepcase.utils             import box, header, confusion_report
 
 if __name__ == "__main__":
 
@@ -344,7 +342,6 @@ if __name__ == "__main__":
     # )
     #
     # print("\nPrediction:")
-    # multiprediction_report(y_test.cpu(), y_pred.cpu(), decoding, y_train.cpu(), min_train=1)
     #
     # if torch.cuda.is_available():
     #     del y_pred, confidence
@@ -354,7 +351,6 @@ if __name__ == "__main__":
     # y_pred, confidence, attention = deepcase.interpreter.explain(X_test, y_test)
     # y_pred = y_pred.unsqueeze(1).unsqueeze(2)
     # print("\n\nExplainable:")
-    # multiprediction_report(y_test.cpu(), y_pred.cpu(), decodings.get('threat_name'), y_train.cpu(), min_train=1)
     #
     #
     # if torch.cuda.is_available():
@@ -428,7 +424,7 @@ if __name__ == "__main__":
     #                             Manual Mode                              #
     ########################################################################
     print("\n\n")
-    box("Manual Mode")
+    print("Manual Mode")
 
     # Calculate statistics - datapoints
     datapoints  = len(deepcase.interpreter.clusters)
@@ -444,14 +440,14 @@ if __name__ == "__main__":
     cluster_counts = np.asarray(list(clusters.values()))
 
     # Print results
-    header("Statistics - Datapoints")
+    print("Statistics - Datapoints")
     print("Datapoints            : {:{width}}".format(datapoints, width=width))
     print("Clustered             : {:{width}}/{:{width}} = {:6.2f}%".format(clustered  , datapoints, 100*clustered  /datapoints, width=width))
     print("Anomalies             : {:{width}}/{:{width}} = {:6.2f}%".format(anomalies  , datapoints, 100*anomalies  /datapoints, width=width))
     print("Anomalies < confidence: {:{width}}/{:{width}} = {:6.2f}%".format(anomalies_c, datapoints, 100*anomalies_c/datapoints, width=width))
     print()
 
-    header("Statistics - Clusters")
+    print("Statistics - Clusters")
     print("Labels              : {}".format(len(deepcase.interpreter.tree)))
     print("Clusters            : {}".format(len(clusters)))
     print("Cluster size avarage: {:.4f}".format(cluster_counts.mean()))
@@ -464,7 +460,7 @@ if __name__ == "__main__":
     #                           Performance                            #
     ####################################################################
 
-    header("Performance")
+    print("Performance")
     mask = y_pred_train >= 0
     print(classification_report(
         y_true        = y_true_train[mask],
@@ -475,19 +471,11 @@ if __name__ == "__main__":
         zero_division = 0,
     ))
 
-    header("Confusion matrix")
-    print(confusion_report(
-        y_true        = y_true_train[mask],
-        y_pred        = y_pred_train[mask],
-        labels        = [0, 1, 2, 3, 4],
-        target_names  = ['INFO', 'LOW', 'MEDIUM', 'HIGH', 'ATTACK'],
-    ))
-
     ####################################################################
     #                         Cluster metrics                          #
     ####################################################################
 
-    header("Cluster metrics")
+    print("Cluster metrics")
     scores   = deepcase.interpreter.scores
     clusters = deepcase.interpreter.clusters[deepcase.interpreter.clusters != -1]
     scores_c = np.zeros(scores.shape[0])
@@ -553,10 +541,10 @@ if __name__ == "__main__":
     ########################################################################
     #                            Automatic Mode                            #
     ########################################################################
-    box("Automatic Mode")
+    print("Automatic Mode")
     print()
 
-    header("Statistics - Workload Reduction")
+    print("Statistics - Workload Reduction")
     datapoints = y_pred_test.shape[0]
     automated  = (y_pred_test >= 0).sum()
     anomalous  = (y_pred_test <  0).sum()
@@ -572,21 +560,12 @@ if __name__ == "__main__":
     print("Anomalous > epsilon   : {:{width}}/{:{width}} = {:6.2f}%".format(anomalies_eps, datapoints, 100*anomalies_eps/datapoints, width=width))
     print()
 
-    header("Statistics - Anomalies")
+    print("Statistics - Anomalies")
     y_true_anomalous = y_true_test[y_pred_test < 0]
     y_pred_anomalous = y_pred_test[y_pred_test < 0]
 
-    print(confusion_report(
-        y_true = y_true_anomalous,
-        y_pred = y_pred_anomalous,
-        labels = [-3, -2, -1, 0, 1, 2, 3, 4],
-        target_names  = ['CONF', 'TRAIN', 'EPS',
-                         'INFO', 'LOW', 'MEDIUM', 'HIGH', 'ATTACK'],
-        skip_x = ['INFO', 'LOW', 'MEDIUM', 'HIGH', 'ATTACK'],
-        skip_y = ['CONF', 'TRAIN', 'EPS'],
-    ))
 
-    header("Performance")
+    print("Performance")
     mask = y_pred_test >= 0
     print(classification_report(
         y_true        = y_true_test[mask],
@@ -595,12 +574,4 @@ if __name__ == "__main__":
         labels        = [0, 1, 2, 3, 4],
         target_names  = ['INFO', 'LOW', 'MEDIUM', 'HIGH', 'ATTACK'],
         zero_division = 0,
-    ))
-
-    header("Confusion matrix")
-    print(confusion_report(
-        y_true        = y_true_test[mask],
-        y_pred        = y_pred_test[mask],
-        labels        = [0, 1, 2, 3, 4],
-        target_names  = ['INFO', 'LOW', 'MEDIUM', 'HIGH', 'ATTACK'],
     ))
