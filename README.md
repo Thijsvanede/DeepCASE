@@ -1,6 +1,6 @@
 # DeepCASE
 This repository contains the code for DeepCASE by the authors of the IEEE S&P DeepCASE [1] paper [[PDF]](https://vm-thijs.ewi.utwente.nl/static/homepage/papers/deepcase.pdf).
-Please [cite](#References) DeepCASE when using it in academic publications.
+Please [cite](#References) DeepCASE when using it in academic publications. The `main` branch provides DeepCASE as an out of the box tool. For the original experiments from the paper, please checkout the `sp` branch.
 
 ## Introduction
 DeepCASE introduces a semi-supervised approach for the contextual analysis of security events. This approach automatically finds correlations in sequences of security events and clusters these correlated sequences. The clusters of correlated sequences are then shown to security operators who can set policies for each sequence. Such policies can ignore sequences of unimportant events, pass sequences to a human operator for further inspection, or (in the future) automatically trigger response mechanisms. The main contribution of this work is to reduce the number of manual inspection security operators have to perform on the vast amounts of security events that they receive.
