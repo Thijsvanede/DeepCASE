@@ -1,0 +1,1876 @@
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-20 02:15:29 to 2019-12-27 02:15:11
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 451846
+Automated             : 439681/451846 =  97.31%
+Anomalous             :  12165/451846 =   2.69%
+Anomalous confidence  :  10696/451846 =   2.37%
+Anomalous not in train:    452/451846 =   0.10%
+Anomalous > epsilon   :   1017/451846 =   0.23%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   881	   163	  9087
+   LOW	    32	   184	  1229
+MEDIUM	    51	    30	   351
+  HIGH	    21	    13	    15
+ATTACK	    32	    62	    14
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.9118    0.9539    332163
+         LOW     0.8975    0.9998    0.9459     96203
+      MEDIUM     0.4678    0.1588    0.2371      7997
+        HIGH     0.0311    0.9895    0.0602       759
+      ATTACK     0.9326    0.9996    0.9649      2559
+
+    accuracy                         0.9180    439681
+   macro avg     0.6658    0.8119    0.6324    439681
+weighted avg     0.9658    0.9180    0.9376    439681
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	302882	 10984	  1426	 16859	    12
+   LOW	     2	 96182	    18	     0	     1
+MEDIUM	     1	     0	  1270	  6561	   165
+  HIGH	     0	     0	     1	   751	     7
+ATTACK	     0	     1	     0	     0	  2558
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-20 02:15:29 to 2019-12-27 02:15:11
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 451846
+Automated             : 439681/451846 =  97.31%
+Anomalous             :  12165/451846 =   2.69%
+Anomalous confidence  :  10696/451846 =   2.37%
+Anomalous not in train:    452/451846 =   0.10%
+Anomalous > epsilon   :   1017/451846 =   0.23%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   881	   163	  9087
+   LOW	    32	   184	  1229
+MEDIUM	    51	    30	   351
+  HIGH	    21	    13	    15
+ATTACK	    32	    62	    14
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.9118    0.9539    332163
+         LOW     0.8975    0.9998    0.9459     96203
+      MEDIUM     0.4678    0.1588    0.2371      7997
+        HIGH     0.0311    0.9895    0.0602       759
+      ATTACK     0.9326    0.9996    0.9649      2559
+
+    accuracy                         0.9180    439681
+   macro avg     0.6658    0.8119    0.6324    439681
+weighted avg     0.9658    0.9180    0.9376    439681
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	302882	 10984	  1426	 16859	    12
+   LOW	     2	 96182	    18	     0	     1
+MEDIUM	     1	     0	  1270	  6561	   165
+  HIGH	     0	     0	     1	   751	     7
+ATTACK	     0	     1	     0	     0	  2558
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-20 02:15:29 to 2019-12-27 02:15:11
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 451846
+Automated             : 440912/451846 =  97.58%
+Anomalous             :  10934/451846 =   2.42%
+Anomalous confidence  :  10800/451846 =   2.39%
+Anomalous not in train:    134/451846 =   0.03%
+Anomalous > epsilon   :      0/451846 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	    76	  9113
+   LOW	     0	    29	  1274
+MEDIUM	     0	    24	   353
+  HIGH	     0	     2	    21
+ATTACK	     0	     3	    39
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.9118    0.9539    333105
+         LOW     0.8976    0.9998    0.9459     96345
+      MEDIUM     0.4641    0.1638    0.2422      8052
+        HIGH     0.0321    0.9898    0.0622       785
+      ATTACK     0.9341    0.9996    0.9658      2625
+
+    accuracy                         0.9181    440912
+   macro avg     0.6656    0.8130    0.6340    440912
+weighted avg     0.9657    0.9181    0.9376    440912
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	303740	 10990	  1504	 16859	    12
+   LOW	     2	 96324	    18	     0	     1
+MEDIUM	     1	     0	  1319	  6567	   165
+  HIGH	     0	     0	     1	   777	     7
+ATTACK	     0	     1	     0	     0	  2624
+
+Predicting interpreter 1: 928 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-27 02:15:32 to 2020-01-03 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Datapoints            : 233865
+Automated             : 223657/233865 =  95.64%
+Anomalous             :  10208/233865 =   4.36%
+Anomalous confidence  :   9280/233865 =   3.97%
+Anomalous not in train:    213/233865 =   0.09%
+Anomalous > epsilon   :    715/233865 =   0.31%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   537	    76	  8066
+   LOW	    61	    76	   844
+MEDIUM	   110	    18	   354
+  HIGH	     7	     7	     7
+ATTACK	     0	    36	     9
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.8474    0.9174    173517
+         LOW     0.8302    0.9991    0.9068     38826
+      MEDIUM     0.4232    0.1051    0.1684      9783
+        HIGH     0.0125    1.0000    0.0247       327
+      ATTACK     0.9233    1.0000    0.9601      1204
+
+    accuracy                         0.8423    223657
+   macro avg     0.6378    0.7903    0.5955    223657
+weighted avg     0.9434    0.8423    0.8817    223657
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	147037	  7935	  1372	 17166	     7
+   LOW	     2	 38791	    29	     0	     4
+MEDIUM	     2	     0	  1028	  8664	    89
+  HIGH	     0	     0	     0	   327	     0
+ATTACK	     0	     0	     0	     0	  1204
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-27 02:15:32 to 2020-01-03 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 233865
+Automated             : 223951/233865 =  95.76%
+Anomalous             :   9914/233865 =   4.24%
+Anomalous confidence  :   9331/233865 =   3.99%
+Anomalous not in train:     84/233865 =   0.04%
+Anomalous > epsilon   :    499/233865 =   0.21%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   389	    30	  8073
+   LOW	    28	    33	   878
+MEDIUM	    82	    16	   355
+  HIGH	     0	     4	     9
+ATTACK	     0	     1	    16
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9999    0.8473    0.9173    173704
+         LOW     0.8303    0.9989    0.9068     38868
+      MEDIUM     0.4215    0.1067    0.1703      9812
+        HIGH     0.0128    1.0000    0.0253       335
+      ATTACK     0.9249    1.0000    0.9610      1232
+
+    accuracy                         0.8423    223951
+   macro avg     0.6379    0.7906    0.5961    223951
+weighted avg     0.9432    0.8423    0.8817    223951
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	147186	  7937	  1408	 17166	     7
+   LOW	     9	 38826	    29	     0	     4
+MEDIUM	    10	     0	  1047	  8666	    89
+  HIGH	     0	     0	     0	   335	     0
+ATTACK	     0	     0	     0	     0	  1232
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-27 02:15:32 to 2020-01-03 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 233865
+Automated             : 224462/233865 =  95.98%
+Anomalous             :   9403/233865 =   4.02%
+Anomalous confidence  :   9336/233865 =   3.99%
+Anomalous not in train:     67/233865 =   0.03%
+Anomalous > epsilon   :      0/233865 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	    24	  8073
+   LOW	     0	    29	   878
+MEDIUM	     0	    10	   359
+  HIGH	     0	     3	    10
+ATTACK	     0	     1	    16
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9999    0.8476    0.9175    174099
+         LOW     0.8304    0.9989    0.9069     38900
+      MEDIUM     0.4394    0.1143    0.1814      9896
+        HIGH     0.0128    1.0000    0.0253       335
+      ATTACK     0.9249    1.0000    0.9610      1232
+
+    accuracy                         0.8426    224462
+   macro avg     0.6415    0.7922    0.5984    224462
+weighted avg     0.9439    0.8426    0.8821    224462
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	147573	  7939	  1414	 17166	     7
+   LOW	     9	 38858	    29	     0	     4
+MEDIUM	    10	     0	  1131	  8666	    89
+  HIGH	     0	     0	     0	   335	     0
+ATTACK	     0	     0	     0	     0	  1232
+
+Predicting interpreter 1: 2587 samples
+Predicting interpreter 2: 1762 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-03 02:15:34 to 2020-01-10 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 544044
+Automated             : 526072/544044 =  96.70%
+Anomalous             :  17972/544044 =   3.30%
+Anomalous confidence  :  15385/544044 =   2.83%
+Anomalous not in train:    820/544044 =   0.15%
+Anomalous > epsilon   :   1767/544044 =   0.32%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  1466	   391	 13378
+   LOW	    70	   302	  1612
+MEDIUM	   197	    62	   340
+  HIGH	     8	    47	    26
+ATTACK	    26	    18	    29
+
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9996    0.8957    0.9448    412979
+         LOW     0.7903    0.9978    0.8821     92359
+      MEDIUM     0.6876    0.2071    0.3184     16396
+        HIGH     0.0307    0.9979    0.0596       948
+      ATTACK     0.9290    0.9994    0.9629      3390
+
+    accuracy                         0.8930    526072
+   macro avg     0.6874    0.8196    0.6335    526072
+weighted avg     0.9510    0.8930    0.9128    526072
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	369918	 24447	  1489	 17088	    37
+   LOW	   141	 92160	    54	     0	     4
+MEDIUM	     1	     0	  3396	 12783	   216
+  HIGH	     0	     0	     0	   946	     2
+ATTACK	     0	     0	     0	     2	  3388
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-03 02:15:34 to 2020-01-10 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 544044
+Automated             : 526879/544044 =  96.84%
+Anomalous             :  17165/544044 =   3.16%
+Anomalous confidence  :  15552/544044 =   2.86%
+Anomalous not in train:    533/544044 =   0.10%
+Anomalous > epsilon   :   1080/544044 =   0.20%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   917	   286	 13448
+   LOW	    33	   121	  1695
+MEDIUM	   130	    56	   350
+  HIGH	     0	    47	    28
+ATTACK	     0	    23	    31
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9996    0.8958    0.9448    413563
+         LOW     0.7906    0.9978    0.8822     92494
+      MEDIUM     0.6859    0.2094    0.3208     16459
+        HIGH     0.0308    0.9958    0.0598       954
+      ATTACK     0.9289    0.9971    0.9618      3409
+
+    accuracy                         0.8931    526879
+   macro avg     0.6872    0.8192    0.6339    526879
+weighted avg     0.9509    0.8931    0.9129    526879
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	370464	 24450	  1523	 17088	    38
+   LOW	   144	 92292	    54	     0	     4
+MEDIUM	    14	     0	  3446	 12783	   216
+  HIGH	     0	     1	     1	   950	     2
+ATTACK	     0	     0	     0	    10	  3399
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-03 02:15:34 to 2020-01-10 02:15:26
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 544044
+Automated             : 528254/544044 =  97.10%
+Anomalous             :  15790/544044 =   2.90%
+Anomalous confidence  :  15589/544044 =   2.87%
+Anomalous not in train:    201/544044 =   0.04%
+Anomalous > epsilon   :      0/544044 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	    34	 13474
+   LOW	     0	    87	  1704
+MEDIUM	     0	    32	   352
+  HIGH	     0	    43	    28
+ATTACK	     0	     5	    31
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9996    0.8960    0.9450    414706
+         LOW     0.7906    0.9978    0.8822     92552
+      MEDIUM     0.6921    0.2166    0.3299     16611
+        HIGH     0.0309    0.9958    0.0600       958
+      ATTACK     0.9293    0.9971    0.9620      3427
+
+    accuracy                         0.8933    528254
+   macro avg     0.6885    0.8207    0.6358    528254
+weighted avg     0.9511    0.8933    0.9131    528254
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	371572	 24462	  1546	 17088	    38
+   LOW	   144	 92350	    54	     0	     4
+MEDIUM	    14	     0	  3598	 12783	   216
+  HIGH	     0	     1	     1	   954	     2
+ATTACK	     0	     0	     0	    10	  3417
+
+Predicting interpreter 1: 7608 samples
+Predicting interpreter 2: 6440 samples
+Predicting interpreter 3: 6154 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-10 02:15:30 to 2020-01-17 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 600671
+Automated             : 569878/600671 =  94.87%
+Anomalous             :  30793/600671 =   5.13%
+Anomalous confidence  :  23185/600671 =   3.86%
+Anomalous not in train:   2634/600671 =   0.44%
+Anomalous > epsilon   :   4974/600671 =   0.83%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  4380	   973	 20047
+   LOW	   276	   795	  2649
+MEDIUM	   248	   408	   456
+  HIGH	    35	   435	     9
+ATTACK	    35	    23	    24
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9997    0.9308    0.9640    457623
+         LOW     0.7854    0.9830    0.8732     87184
+      MEDIUM     0.7478    0.1148    0.1991     21246
+        HIGH     0.0285    0.9914    0.0553       811
+      ATTACK     0.9493    0.9997    0.9738      3014
+
+    accuracy                         0.9088    569878
+   macro avg     0.7021    0.8039    0.6131    569878
+weighted avg     0.9559    0.9088    0.9204    569878
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	425954	 23411	   669	  7581	     8
+   LOW	   115	 85700	   152	  1199	    18
+MEDIUM	    10	     0	  2440	 18666	   130
+  HIGH	     0	     0	     2	   804	     5
+ATTACK	     0	     1	     0	     0	  3013
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-10 02:15:30 to 2020-01-17 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 600671
+Automated             : 571396/600671 =  95.13%
+Anomalous             :  29275/600671 =   4.87%
+Anomalous confidence  :  23454/600671 =   3.90%
+Anomalous not in train:   2348/600671 =   0.39%
+Anomalous > epsilon   :   3473/600671 =   0.58%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  3015	  1131	 20133
+   LOW	   194	   518	  2785
+MEDIUM	   197	   274	   495
+  HIGH	    35	   405	    14
+ATTACK	    32	    20	    27
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9996    0.9309    0.9640    458744
+         LOW     0.7856    0.9827    0.8732     87407
+      MEDIUM     0.7519    0.1194    0.2061     21392
+        HIGH     0.0285    0.9617    0.0553       836
+      ATTACK     0.9493    0.9990    0.9735      3017
+
+    accuracy                         0.9089    571396
+   macro avg     0.7030    0.7988    0.6144    571396
+weighted avg     0.9559    0.9089    0.9205    571396
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	427058	 23420	   677	  7581	     8
+   LOW	   137	 85896	   157	  1199	    18
+MEDIUM	    33	     0	  2555	 18674	   130
+  HIGH	     0	    18	     9	   804	     5
+ATTACK	     0	     1	     0	     2	  3014
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-10 02:15:30 to 2020-01-17 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 600671
+Automated             : 576563/600671 =  95.99%
+Anomalous             :  24108/600671 =   4.01%
+Anomalous confidence  :  23918/600671 =   3.98%
+Anomalous not in train:    190/600671 =   0.03%
+Anomalous > epsilon   :      0/600671 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	    51	 20184
+   LOW	     0	    63	  3083
+MEDIUM	     0	    61	   499
+  HIGH	     0	     2	   120
+ATTACK	     0	    13	    32
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9996    0.9302    0.9636    462788
+         LOW     0.7843    0.9826    0.8723     87758
+      MEDIUM     0.7543    0.1320    0.2247     21798
+        HIGH     0.0390    0.9675    0.0750      1168
+      ATTACK     0.9498    0.9990    0.9738      3051
+
+    accuracy                         0.9084    576563
+   macro avg     0.7054    0.8022    0.6219    576563
+weighted avg     0.9553    0.9084    0.9200    576563
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	430469	 23698	   758	  7855	     8
+   LOW	   137	 86227	   164	  1212	    18
+MEDIUM	    33	     0	  2877	 18758	   130
+  HIGH	     0	    18	    15	  1130	     5
+ATTACK	     0	     1	     0	     2	  3048
+
+Predicting interpreter 1: 56405 samples
+Predicting interpreter 2: 52231 samples
+Predicting interpreter 3: 51906 samples
+Predicting interpreter 4: 51710 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-17 02:15:29 to 2020-01-24 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 741476
+Automated             : 658193/741476 =  88.77%
+Anomalous             :  83283/741476 =  11.23%
+Anomalous confidence  :  26878/741476 =   3.62%
+Anomalous not in train:  18812/741476 =   2.54%
+Anomalous > epsilon   :  37593/741476 =   5.07%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 35928	 12950	 24797
+   LOW	   138	  1512	  1675
+MEDIUM	   184	   914	   234
+  HIGH	  1234	  3311	   134
+ATTACK	   109	   125	    38
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9999    0.9636    0.9814    545767
+         LOW     0.8449    0.9979    0.9151     93951
+      MEDIUM     0.7663    0.0983    0.1743     13274
+        HIGH     0.1224    0.9851    0.2177      2010
+      ATTACK     0.9431    0.9981    0.9699      3191
+
+    accuracy                         0.9513    658193
+   macro avg     0.7353    0.8086    0.6517    658193
+weighted avg     0.9701    0.9513    0.9533    658193
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	525921	 17202	   264	  2374	     6
+   LOW	    55	 93751	   105	    15	    25
+MEDIUM	     0	     1	  1305	 11808	   160
+  HIGH	     0	     0	    29	  1980	     1
+ATTACK	     0	     2	     0	     4	  3185
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-17 02:15:29 to 2020-01-24 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 741476
+Automated             : 687581/741476 =  92.73%
+Anomalous             :  53895/741476 =   7.27%
+Anomalous confidence  :  30703/741476 =   4.14%
+Anomalous not in train:   8335/741476 =   1.12%
+Anomalous > epsilon   :  14857/741476 =   2.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 13832	  7680	 26847
+   LOW	    98	   546	  2292
+MEDIUM	   137	    85	   321
+  HIGH	   747	    15	  1103
+ATTACK	    43	     9	   140
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9990    0.9479    0.9728    571083
+         LOW     0.8161    0.9977    0.8978     94340
+      MEDIUM     0.2884    0.1349    0.1838     14063
+        HIGH     0.2090    0.8814    0.3379      4824
+      ATTACK     0.9440    0.9948    0.9687      3271
+
+    accuracy                         0.9379    687581
+   macro avg     0.6513    0.7914    0.6722    687581
+weighted avg     0.9536    0.9379    0.9419    687581
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	541356	 21198	  4442	  4081	     6
+   LOW	    60	 94125	   109	    21	    25
+MEDIUM	    20	     1	  1897	 11984	   161
+  HIGH	   440	     1	   130	  4252	     1
+ATTACK	     0	    11	     0	     6	  3254
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-17 02:15:29 to 2020-01-24 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 741476
+Automated             : 705805/741476 =  95.19%
+Anomalous             :  35671/741476 =   4.81%
+Anomalous confidence  :  34615/741476 =   4.67%
+Anomalous not in train:   1056/741476 =   0.14%
+Anomalous > epsilon   :      0/741476 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	   669	 30746
+   LOW	     0	   306	  2293
+MEDIUM	     0	    57	   333
+  HIGH	     0	    15	  1103
+ATTACK	     0	     9	   140
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9988    0.9457    0.9715    588027
+         LOW     0.8129    0.9962    0.8953     94677
+      MEDIUM     0.2980    0.1422    0.1925     14216
+        HIGH     0.2208    0.8787    0.3529      5571
+      ATTACK     0.8095    0.9949    0.8926      3314
+
+    accuracy                         0.9360    705805
+   macro avg     0.6280    0.7915    0.6610    705805
+weighted avg     0.9527    0.9360    0.9404    705805
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	556100	 21692	  4521	  5249	   465
+   LOW	   199	 94319	   110	    24	    25
+MEDIUM	    20	     1	  2021	 11993	   181
+  HIGH	   440	     1	   130	  4895	   105
+ATTACK	     0	    11	     0	     6	  3297
+
+Predicting interpreter 1: 72943 samples
+Predicting interpreter 2: 54764 samples
+Predicting interpreter 3: 54639 samples
+Predicting interpreter 4: 54449 samples
+Predicting interpreter 5: 24697 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-24 02:15:28 to 2020-01-31 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 798006
+Automated             : 701829/798006 =  87.95%
+Anomalous             :  96177/798006 =  12.05%
+Anomalous confidence  :  23234/798006 =   2.91%
+Anomalous not in train:  32671/798006 =   4.09%
+Anomalous > epsilon   :  40272/798006 =   5.05%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 38513	 27071	 20746
+   LOW	   192	  3073	  2032
+MEDIUM	   514	   435	   301
+  HIGH	   973	  2010	   117
+ATTACK	    80	    82	    38
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.9735    0.9866    592060
+         LOW     0.8732    0.9985    0.9316     90317
+      MEDIUM     0.8132    0.0895    0.1613     13614
+        HIGH     0.1075    0.9772    0.1937      1799
+      ATTACK     0.9026    0.9589    0.9299      4039
+
+    accuracy                         0.9595    701829
+   macro avg     0.7393    0.7995    0.6406    701829
+weighted avg     0.9772    0.9595    0.9611    701829
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	576392	 13091	   187	  2387	     3
+   LOW	    14	 90178	    54	     9	    62
+MEDIUM	     2	     7	  1219	 12038	   348
+  HIGH	     0	     0	    36	  1758	     5
+ATTACK	     0	     1	     3	   162	  3873
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-24 02:15:28 to 2020-01-31 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Datapoints            : 798006
+Automated             : 758429/798006 =  95.04%
+Anomalous             :  39577/798006 =   4.96%
+Anomalous confidence  :  33687/798006 =   4.22%
+Anomalous not in train:   1973/798006 =   0.25%
+Anomalous > epsilon   :   3917/798006 =   0.49%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  3493	   649	 30109
+   LOW	    98	  1223	  2389
+MEDIUM	   165	    76	   382
+  HIGH	   147	     3	   721
+ATTACK	    14	    22	    86
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9972    0.9528    0.9745    644139
+         LOW     0.8365    0.9856    0.9049     91904
+      MEDIUM     0.1588    0.1020    0.1242     14241
+        HIGH     0.1657    0.8545    0.2776      4028
+      ATTACK     0.8255    0.9585    0.8870      4117
+
+    accuracy                         0.9403    758429
+   macro avg     0.5968    0.7707    0.6337    758429
+weighted avg     0.9566    0.9403    0.9459    758429
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	613729	 17686	  7577	  4836	   311
+   LOW	  1199	 90578	    54	    10	    63
+MEDIUM	    91	    12	  1452	 12317	   369
+  HIGH	   435	     3	    57	  3442	    91
+ATTACK	     0	     3	     3	   165	  3946
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-24 02:15:28 to 2020-01-31 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 798006
+Automated             : 762423/798006 =  95.54%
+Anomalous             :  35583/798006 =   4.46%
+Anomalous confidence  :  33691/798006 =   4.22%
+Anomalous not in train:   1892/798006 =   0.24%
+Anomalous > epsilon   :      0/798006 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	   584	 30111
+   LOW	     0	  1216	  2389
+MEDIUM	     0	    76	   382
+  HIGH	     0	     3	   721
+ATTACK	     0	    13	    88
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9972    0.9528    0.9745    647695
+         LOW     0.8363    0.9856    0.9048     92009
+      MEDIUM     0.1708    0.1100    0.1338     14406
+        HIGH     0.1703    0.8596    0.2843      4175
+      ATTACK     0.8261    0.9587    0.8875      4138
+
+    accuracy                         0.9403    762423
+   macro avg     0.6002    0.7733    0.6370    762423
+weighted avg     0.9567    0.9403    0.9460    762423
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	617124	 17729	  7577	  4953	   312
+   LOW	  1199	 90680	    54	    13	    63
+MEDIUM	    91	    12	  1584	 12350	   369
+  HIGH	   435	     3	    57	  3589	    91
+ATTACK	     0	     3	     3	   165	  3967
+
+Predicting interpreter 1: 76390 samples
+Predicting interpreter 2: 55559 samples
+Predicting interpreter 3: 55388 samples
+Predicting interpreter 4: 55141 samples
+Predicting interpreter 5: 24015 samples
+Predicting interpreter 6: 5817 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-31 02:15:29 to 2020-02-07 02:15:21
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 555267
+Automated             : 456049/555267 =  82.13%
+Anomalous             :  99218/555267 =  17.87%
+Anomalous confidence  :  22828/555267 =   4.11%
+Anomalous not in train:  38126/555267 =   6.87%
+Anomalous > epsilon   :  38264/555267 =   6.89%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 36882	 31753	 20696
+   LOW	   200	  3689	  1834
+MEDIUM	   481	   230	   192
+  HIGH	   665	  2419	    83
+ATTACK	    36	    35	    23
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.9516    0.9752    387289
+         LOW     0.7586    0.9972    0.8617     51798
+      MEDIUM     0.8592    0.1605    0.2705     13224
+        HIGH     0.0867    0.9748    0.1593      1272
+      ATTACK     0.9086    0.9761    0.9412      2466
+
+    accuracy                         0.9340    456049
+   macro avg     0.7226    0.8120    0.6416    456049
+weighted avg     0.9654    0.9340    0.9394    456049
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	368530	 16436	   215	  2100	     8
+   LOW	     4	 51652	   104	     9	    29
+MEDIUM	    10	     0	  2123	 10889	   202
+  HIGH	     0	     0	    29	  1240	     3
+ATTACK	     0	     0	     0	    59	  2407
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-31 02:15:29 to 2020-02-07 02:15:21
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 555267
+Automated             : 518211/555267 =  93.33%
+Anomalous             :  37056/555267 =   6.67%
+Anomalous confidence  :  32050/555267 =   5.77%
+Anomalous not in train:   2154/555267 =   0.39%
+Anomalous > epsilon   :   2852/555267 =   0.51%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  2561	   684	 28811
+   LOW	    69	  1428	  2186
+MEDIUM	   126	    29	   241
+  HIGH	    93	     6	   773
+ATTACK	     3	     7	    39
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9955    0.9221    0.9574    444564
+         LOW     0.7152    0.9710    0.8237     53838
+      MEDIUM     0.2070    0.1737    0.1889     13731
+        HIGH     0.1616    0.8483    0.2715      3567
+      ATTACK     0.7937    0.9761    0.8755      2511
+
+    accuracy                         0.9071    518211
+   macro avg     0.5746    0.7782    0.6234    518211
+weighted avg     0.9388    0.9071    0.9180    518211
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	409923	 20811	  8934	  4564	   332
+   LOW	  1407	 52275	   107	    19	    30
+MEDIUM	    64	     6	  2385	 11059	   217
+  HIGH	   387	     3	    93	  3026	    58
+ATTACK	     0	     1	     0	    59	  2451
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-31 02:15:29 to 2020-02-07 02:15:21
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 555267
+Automated             : 521083/555267 =  93.84%
+Anomalous             :  34184/555267 =   6.16%
+Anomalous confidence  :  32055/555267 =   5.77%
+Anomalous not in train:   2129/555267 =   0.38%
+Anomalous > epsilon   :      0/555267 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	   676	 28811
+   LOW	     0	  1421	  2186
+MEDIUM	     0	    19	   246
+  HIGH	     0	     6	   773
+ATTACK	     0	     7	    39
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9955    0.9221    0.9574    447133
+         LOW     0.7149    0.9709    0.8235     53914
+      MEDIUM     0.2143    0.1797    0.1955     13862
+        HIGH     0.1643    0.8522    0.2755      3660
+      ATTACK     0.7921    0.9761    0.8746      2514
+
+    accuracy                         0.9072    521083
+   macro avg     0.5762    0.7802    0.6253    521083
+weighted avg     0.9389    0.9072    0.9181    521083
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	412303	 20861	  8934	  4703	   332
+   LOW	  1407	 52347	   107	    23	    30
+MEDIUM	    64	     6	  2491	 11077	   224
+  HIGH	   387	     3	    93	  3119	    58
+ATTACK	     0	     1	     0	    59	  2454
+
+Predicting interpreter 1: 70345 samples
+Predicting interpreter 2: 45652 samples
+Predicting interpreter 3: 45429 samples
+Predicting interpreter 4: 45261 samples
+Predicting interpreter 5: 15486 samples
+Predicting interpreter 6: 5681 samples
+Predicting interpreter 7: 5014 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-07 02:15:32 to 2020-02-14 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 251205
+Automated             : 162422/251205 =  64.66%
+Anomalous             :  88783/251205 =  35.34%
+Anomalous confidence  :  18438/251205 =   7.34%
+Anomalous not in train:  33739/251205 =  13.43%
+Anomalous > epsilon   :  36606/251205 =  14.57%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 34902	 29451	 15944
+   LOW	   954	  1453	  2311
+MEDIUM	   478	   388	   103
+  HIGH	   179	  2127	    28
+ATTACK	    93	   320	    52
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9947    0.9030    0.9466    140843
+         LOW     0.4248    0.9182    0.5808      9239
+      MEDIUM     0.6850    0.0473    0.0885     11082
+        HIGH     0.0280    0.9863    0.0545       366
+      ATTACK     0.9323    0.9877    0.9592       892
+
+    accuracy                         0.8461    162422
+   macro avg     0.6130    0.7685    0.5259    162422
+weighted avg     0.9387    0.8461    0.8653    162422
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	127178	 11487	   180	  1998	     0
+   LOW	   650	  8483	    56	    31	    19
+MEDIUM	    17	     0	   524	 10496	    45
+  HIGH	     0	     0	     5	   361	     0
+ATTACK	     6	     1	     0	     4	   881
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-07 02:15:32 to 2020-02-14 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 251205
+Automated             : 220873/251205 =  87.93%
+Anomalous             :  30332/251205 =  12.07%
+Anomalous confidence  :  25629/251205 =  10.20%
+Anomalous not in train:   2116/251205 =   0.84%
+Anomalous > epsilon   :   2587/251205 =   1.03%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  2250	   669	 22023
+   LOW	   186	  1105	  2578
+MEDIUM	    66	    29	   266
+  HIGH	    34	     3	   700
+ATTACK	    51	   310	    62
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9902    0.8521    0.9160    196198
+         LOW     0.3566    0.8570    0.5037     10088
+      MEDIUM     0.0893    0.0769    0.0827     11690
+        HIGH     0.1012    0.8482    0.1808      1963
+      ATTACK     0.6893    0.9550    0.8007       934
+
+    accuracy                         0.8117    220873
+   macro avg     0.4453    0.7178    0.4968    220873
+weighted avg     0.9044    0.8117    0.8460    220873
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	167174	 15589	  9066	  4055	   314
+   LOW	  1322	  8645	    59	    42	    20
+MEDIUM	    65	     1	   899	 10675	    50
+  HIGH	   245	     0	    35	  1665	    18
+ATTACK	    18	     6	     4	    14	   892
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-07 02:15:32 to 2020-02-14 02:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 251205
+Automated             : 223855/251205 =  89.11%
+Anomalous             :  27350/251205 =  10.89%
+Anomalous confidence  :  25652/251205 =  10.21%
+Anomalous not in train:   1698/251205 =   0.68%
+Anomalous > epsilon   :      0/251205 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	   631	 22023
+   LOW	     0	  1039	  2587
+MEDIUM	     0	    13	   270
+  HIGH	     0	     2	   700
+ATTACK	     0	    13	    72
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9903    0.8529    0.9165    198486
+         LOW     0.3620    0.8599    0.5095     10331
+      MEDIUM     0.0954    0.0822    0.0883     11768
+        HIGH     0.1024    0.8509    0.1828      1998
+      ATTACK     0.7537    0.9670    0.8471      1272
+
+    accuracy                         0.8133    223855
+   macro avg     0.4608    0.7226    0.5088    223855
+weighted avg     0.9050    0.8133    0.8472    223855
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	169287	 15651	  9072	  4162	   314
+   LOW	  1324	  8884	    59	    44	    20
+MEDIUM	    65	     1	   967	 10685	    50
+  HIGH	   245	     0	    35	  1700	    18
+ATTACK	    18	     6	     4	    14	  1230
+
+Predicting interpreter 1: 72750 samples
+Predicting interpreter 2: 65645 samples
+Predicting interpreter 3: 64796 samples
+Predicting interpreter 4: 62677 samples
+Predicting interpreter 5: 31336 samples
+Predicting interpreter 6: 10901 samples
+Predicting interpreter 7: 9968 samples
+Predicting interpreter 8: 9612 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-14 02:15:35 to 2020-02-21 02:15:20
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 616284
+Automated             : 524196/616284 =  85.06%
+Anomalous             :  92088/616284 =  14.94%
+Anomalous confidence  :  19338/616284 =   3.14%
+Anomalous not in train:  30231/616284 =   4.91%
+Anomalous > epsilon   :  42519/616284 =   6.90%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 35739	 21683	 16438
+   LOW	   817	  5329	  2678
+MEDIUM	  5670	  1219	   142
+  HIGH	   221	  1486	    32
+ATTACK	    72	   514	    48
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9991    0.9615    0.9799    411523
+         LOW     0.8847    0.9949    0.9365    103613
+      MEDIUM     0.6655    0.0799    0.1427      7222
+        HIGH     0.0826    0.9865    0.1524       815
+      ATTACK     0.8972    0.9042    0.9007      1023
+
+    accuracy                         0.9559    524196
+   macro avg     0.7058    0.7854    0.6225    524196
+weighted avg     0.9703    0.9559    0.9584    524196
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	395684	 13439	   174	  2221	     5
+   LOW	   348	103084	   108	    53	    20
+MEDIUM	     7	     1	   577	  6559	    78
+  HIGH	     0	     0	     8	   804	     3
+ATTACK	     0	     1	     0	    97	   925
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-14 02:15:35 to 2020-02-21 02:15:20
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 616284
+Automated             : 581323/616284 =  94.33%
+Anomalous             :  34961/616284 =   5.67%
+Anomalous confidence  :  27736/616284 =   4.50%
+Anomalous not in train:   3581/616284 =   0.58%
+Anomalous > epsilon   :   3644/616284 =   0.59%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  3122	  1921	 22882
+   LOW	   270	  1562	  3191
+MEDIUM	   173	    44	  1009
+  HIGH	    64	    18	   594
+ATTACK	    15	    36	    60
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9910    0.9323    0.9608    457458
+         LOW     0.8541    0.9635    0.9055    107414
+      MEDIUM     0.4036    0.4646    0.4319     13027
+        HIGH     0.1329    0.9100    0.2319      1878
+      ATTACK     0.7521    0.9301    0.8317      1546
+
+    accuracy                         0.9275    581323
+   macro avg     0.6267    0.8401    0.6723    581323
+weighted avg     0.9491    0.9275    0.9360    581323
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	426490	 17681	  8802	  4139	   346
+   LOW	  3703	103496	   108	    83	    24
+MEDIUM	    48	     2	  6052	  6835	    90
+  HIGH	   128	     0	    27	  1709	    14
+ATTACK	     0	     3	     7	    98	  1438
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-14 02:15:35 to 2020-02-21 02:15:20
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 616284
+Automated             : 586050/616284 =  95.09%
+Anomalous             :  30234/616284 =   4.91%
+Anomalous confidence  :  27736/616284 =   4.50%
+Anomalous not in train:   2498/616284 =   0.41%
+Anomalous > epsilon   :      0/616284 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	   847	 22882
+   LOW	     0	  1555	  3191
+MEDIUM	     0	    44	  1009
+  HIGH	     0	    16	   594
+ATTACK	     0	    36	    60
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9911    0.9326    0.9610    461654
+         LOW     0.8540    0.9635    0.9055    107691
+      MEDIUM     0.4103    0.4714    0.4387     13200
+        HIGH     0.1363    0.9131    0.2371      1944
+      ATTACK     0.7540    0.9308    0.8331      1561
+
+    accuracy                         0.9278    586050
+   macro avg     0.6291    0.8423    0.6751    586050
+weighted avg     0.9493    0.9278    0.9363    586050
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	430545	 17735	  8802	  4226	   346
+   LOW	  3705	103764	   108	    90	    24
+MEDIUM	    48	     2	  6222	  6838	    90
+  HIGH	   128	     0	    27	  1775	    14
+ATTACK	     0	     3	     7	    98	  1453
+
+Predicting interpreter 1: 100733 samples
+Predicting interpreter 2: 97575 samples
+Predicting interpreter 3: 97132 samples
+Predicting interpreter 4: 95086 samples
+Predicting interpreter 5: 61133 samples
+Predicting interpreter 6: 33552 samples
+Predicting interpreter 7: 32495 samples
+Predicting interpreter 8: 31929 samples
+Predicting interpreter 9: 22705 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-21 02:15:30 to 2020-02-28 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 874302
+Automated             : 738162/874302 =  84.43%
+Anomalous             : 136140/874302 =  15.57%
+Anomalous confidence  :  35407/874302 =   4.05%
+Anomalous not in train:  37648/874302 =   4.31%
+Anomalous > epsilon   :  63085/874302 =   7.22%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 59086	 22254	 30466
+   LOW	  2614	  5790	  4371
+MEDIUM	  1058	   494	   476
+  HIGH	   264	  6063	    35
+ATTACK	    63	  3047	    59
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9983    0.9688    0.9833    605978
+         LOW     0.9010    0.9907    0.9437    118048
+      MEDIUM     0.6944    0.1031    0.1795     11398
+        HIGH     0.0745    0.9883    0.1386      1287
+      ATTACK     0.9108    0.9779    0.9432      1451
+
+    accuracy                         0.9590    738162
+   macro avg     0.7158    0.8058    0.6377    738162
+weighted avg     0.9763    0.9590    0.9630    738162
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	587053	 12848	   425	  5619	    33
+   LOW	   952	116945	    82	    39	    30
+MEDIUM	    27	     1	  1175	 10124	    71
+  HIGH	     0	     0	    10	  1272	     5
+ATTACK	    14	     1	     0	    17	  1419
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-21 02:15:30 to 2020-02-28 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 874302
+Automated             : 813910/874302 =  93.09%
+Anomalous             :  60392/874302 =   6.91%
+Anomalous confidence  :  46727/874302 =   5.34%
+Anomalous not in train:   6438/874302 =   0.74%
+Anomalous > epsilon   :   7227/874302 =   0.83%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  6455	  3768	 38426
+   LOW	   467	  2514	  4973
+MEDIUM	   109	    87	   610
+  HIGH	    78	    17	  2076
+ATTACK	   118	    52	   642
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9888    0.9516    0.9698    669135
+         LOW     0.8774    0.9616    0.9176    122869
+      MEDIUM     0.3168    0.1664    0.2182     12620
+        HIGH     0.1894    0.8987    0.3129      5478
+      ATTACK     0.6143    0.4270    0.5038      3808
+
+    accuracy                         0.9381    813910
+   macro avg     0.5973    0.6810    0.5845    813910
+weighted avg     0.9544    0.9381    0.9437    813910
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	636756	 16497	  4354	 10655	   873
+   LOW	  4554	118145	    85	    52	    33
+MEDIUM	    77	     2	  2100	 10341	   100
+  HIGH	   450	     0	    90	  4923	    15
+ATTACK	  2160	     5	     0	    17	  1626
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-21 02:15:30 to 2020-02-28 02:15:27
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 874302
+Automated             : 821185/874302 =  93.92%
+Anomalous             :  53117/874302 =   6.08%
+Anomalous confidence  :  46872/874302 =   5.36%
+Anomalous not in train:   6245/874302 =   0.71%
+Anomalous > epsilon   :      0/874302 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	  3619	 38566
+   LOW	     0	  2493	  4975
+MEDIUM	     0	    85	   611
+  HIGH	     0	    12	  2077
+ATTACK	     0	    36	   643
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9888    0.9504    0.9693    675599
+         LOW     0.8748    0.9616    0.9161    123355
+      MEDIUM     0.3249    0.1715    0.2245     12730
+        HIGH     0.1876    0.9002    0.3105      5560
+      ATTACK     0.6178    0.4463    0.5183      3941
+
+    accuracy                         0.9373    821185
+   macro avg     0.5988    0.6860    0.5877    821185
+weighted avg     0.9542    0.9373    0.9431    821185
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	642101	 16971	  4362	 11237	   928
+   LOW	  4556	118615	    85	    59	    40
+MEDIUM	    77	     2	  2183	 10363	   105
+  HIGH	   450	     0	    90	  5005	    15
+ATTACK	  2160	     5	     0	    17	  1759
+
+Predicting interpreter 1: 71722 samples
+Predicting interpreter 2: 68840 samples
+Predicting interpreter 3: 68268 samples
+Predicting interpreter 4: 67881 samples
+Predicting interpreter 5: 34999 samples
+Predicting interpreter 6: 11670 samples
+Predicting interpreter 7: 10669 samples
+Predicting interpreter 8: 10185 samples
+Predicting interpreter 9: 9652 samples
+Predicting interpreter 10: 9218 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-28 02:15:33 to 2020-03-06 02:15:24
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 623699
+Automated             : 528885/623699 =  84.80%
+Anomalous             :  94814/623699 =  15.20%
+Anomalous confidence  :  23092/623699 =   3.70%
+Anomalous not in train:  25152/623699 =   4.03%
+Anomalous > epsilon   :  46570/623699 =   7.47%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 44352	 14094	 19223
+   LOW	  1487	  6948	  3319
+MEDIUM	   582	   502	   447
+  HIGH	   126	  3536	    40
+ATTACK	    23	    72	    63
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9961    0.9552    0.9752    452632
+         LOW     0.7993    0.9712    0.8769     62832
+      MEDIUM     0.6847    0.0746    0.1345     11181
+        HIGH     0.0513    0.9890    0.0975       816
+      ATTACK     0.8973    0.9754    0.9347      1424
+
+    accuracy                         0.9386    528885
+   macro avg     0.6857    0.7931    0.6038    528885
+weighted avg     0.9644    0.9386    0.9443    528885
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	432347	 15314	   289	  4646	    36
+   LOW	  1651	 61020	    88	    50	    23
+MEDIUM	    14	     9	   834	 10226	    98
+  HIGH	     0	     0	     7	   807	     2
+ATTACK	    28	     1	     0	     6	  1389
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-28 02:15:33 to 2020-03-06 02:15:24
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 623699
+Automated             : 583880/623699 =  93.62%
+Anomalous             :  39819/623699 =   6.38%
+Anomalous confidence  :  31655/623699 =   5.08%
+Anomalous not in train:   4167/623699 =   0.67%
+Anomalous > epsilon   :   3997/623699 =   0.64%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  3624	  1669	 25527
+   LOW	   230	  2403	  4306
+MEDIUM	    90	    42	   579
+  HIGH	    48	     6	  1163
+ATTACK	     5	    47	    80
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9867    0.9257    0.9552    499481
+         LOW     0.7569    0.9099    0.8264     67647
+      MEDIUM     0.1105    0.1049    0.1077     12001
+        HIGH     0.1450    0.9103    0.2502      3301
+      ATTACK     0.7603    0.9690    0.8520      1450
+
+    accuracy                         0.9070    583880
+   macro avg     0.5519    0.7640    0.5983    583880
+weighted avg     0.9367    0.9070    0.9186    583880
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	462355	 19754	  9987	  7082	   303
+   LOW	  5905	 61555	    88	    74	    25
+MEDIUM	    74	     9	  1259	 10551	   108
+  HIGH	   235	     0	    54	  3005	     7
+ATTACK	    31	     7	     1	     6	  1405
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-28 02:15:33 to 2020-03-06 02:15:24
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Datapoints            : 623699
+Automated             : 587901/623699 =  94.26%
+Anomalous             :  35798/623699 =   5.74%
+Anomalous confidence  :  31661/623699 =   5.08%
+Anomalous not in train:   4137/623699 =   0.66%
+Anomalous > epsilon   :      0/623699 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	  1656	 25533
+   LOW	     0	  2389	  4306
+MEDIUM	     0	    41	   579
+  HIGH	     0	     4	  1163
+ATTACK	     0	    47	    80
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9868    0.9249    0.9548    503112
+         LOW     0.7543    0.9102    0.8250     67891
+      MEDIUM     0.1157    0.1102    0.1129     12092
+        HIGH     0.1453    0.9117    0.2506      3351
+      ATTACK     0.7597    0.9691    0.8517      1455
+
+    accuracy                         0.9065    587901
+   macro avg     0.5524    0.7652    0.5990    587901
+weighted avg     0.9366    0.9065    0.9183    587901
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	465349	 20108	 10034	  7318	   303
+   LOW	  5905	 61792	    88	    80	    26
+MEDIUM	    74	     9	  1332	 10567	   110
+  HIGH	   235	     0	    54	  3055	     7
+ATTACK	    31	     7	     1	     6	  1410
+
+Predicting interpreter 1: 52411 samples
+Predicting interpreter 2: 51092 samples
+Predicting interpreter 3: 50704 samples
+Predicting interpreter 4: 50329 samples
+Predicting interpreter 5: 17704 samples
+Predicting interpreter 6: 6643 samples
+Predicting interpreter 7: 5934 samples
+Predicting interpreter 8: 5604 samples
+Predicting interpreter 9: 5364 samples
+Predicting interpreter 10: 4997 samples
+Predicting interpreter 11: 3881 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-06 02:15:31 to 2020-03-13 02:15:43
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 205861
+Automated             : 131131/205861 =  63.70%
+Anomalous             :  74730/205861 =  36.30%
+Anomalous confidence  :  22319/205861 =  10.84%
+Anomalous not in train:  10402/205861 =   5.05%
+Anomalous > epsilon   :  42009/205861 =  20.41%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 40611	  5740	 20353
+   LOW	  1208	   549	  1669
+MEDIUM	   180	   303	   260
+  HIGH	     1	  3803	     3
+ATTACK	     9	     7	    34
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9823    0.8363    0.9035    121397
+         LOW     0.2404    0.7154    0.3599      6663
+      MEDIUM     0.6615    0.1707    0.2714      3023
+        HIGH     0.0020    1.0000    0.0039        14
+      ATTACK     0.1562    0.2941    0.2041        34
+
+    accuracy                         0.8147    131131
+   macro avg     0.4085    0.6033    0.3485    131131
+weighted avg     0.9369    0.8147    0.8610    131131
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	101524	 15051	   233	  4589	     0
+   LOW	  1805	  4767	    31	    20	    40
+MEDIUM	     0	     6	   516	  2487	    14
+  HIGH	     0	     0	     0	    14	     0
+ATTACK	    21	     3	     0	     0	    10
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-06 02:15:31 to 2020-03-13 02:15:43
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 205861
+Automated             : 176657/205861 =  85.81%
+Anomalous             :  29204/205861 =  14.19%
+Anomalous confidence  :  26215/205861 =  12.73%
+Anomalous not in train:    430/205861 =   0.21%
+Anomalous > epsilon   :   2559/205861 =   1.24%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  2374	    82	 22961
+   LOW	   158	   329	  1831
+MEDIUM	    26	     1	   331
+  HIGH	     0	    13	  1056
+ATTACK	     1	     5	    36
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9762    0.7708    0.8615    162684
+         LOW     0.2062    0.6401    0.3120      7771
+      MEDIUM     0.0568    0.1869    0.0871      3408
+        HIGH     0.1910    0.8706    0.3132      2752
+      ATTACK     0.0414    0.3095    0.0730        42
+
+    accuracy                         0.7553    176657
+   macro avg     0.2943    0.5556    0.3294    176657
+weighted avg     0.9122    0.7553    0.8136    176657
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	125402	 19133	 10514	  7394	   241
+   LOW	  2686	  4974	    32	    39	    40
+MEDIUM	    27	     6	   637	  2718	    20
+  HIGH	   318	     0	    38	  2396	     0
+ATTACK	    24	     5	     0	     0	    13
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-06 02:15:31 to 2020-03-13 02:15:43
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 205861
+Automated             : 179232/205861 =  87.06%
+Anomalous             :  26629/205861 =  12.94%
+Anomalous confidence  :  26215/205861 =  12.73%
+Anomalous not in train:    414/205861 =   0.20%
+Anomalous > epsilon   :      0/205861 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	    75	 22961
+   LOW	     0	   321	  1831
+MEDIUM	     0	     1	   331
+  HIGH	     0	    13	  1056
+ATTACK	     0	     4	    36
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9766    0.7737    0.8634    165065
+         LOW     0.2110    0.6476    0.3183      7937
+      MEDIUM     0.0589    0.1931    0.0903      3434
+        HIGH     0.1910    0.8706    0.3132      2752
+      ATTACK     0.0475    0.3409    0.0833        44
+
+    accuracy                         0.7584    179232
+   macro avg     0.2970    0.5652    0.3337    179232
+weighted avg     0.9129    0.7584    0.8158    179232
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	127708	 19208	 10514	  7394	   241
+   LOW	  2686	  5140	    32	    39	    40
+MEDIUM	    27	     6	   663	  2718	    20
+  HIGH	   318	     0	    38	  2396	     0
+ATTACK	    24	     5	     0	     0	    15
+
+Predicting interpreter 1: 10062 samples
+Predicting interpreter 2: 9955 samples
+Predicting interpreter 3: 9899 samples
+Predicting interpreter 4: 9842 samples
+Predicting interpreter 5: 4033 samples
+Predicting interpreter 6: 3045 samples
+Predicting interpreter 7: 2958 samples
+Predicting interpreter 8: 2913 samples
+Predicting interpreter 9: 2841 samples
+Predicting interpreter 10: 2813 samples
+Predicting interpreter 11: 2718 samples
+Predicting interpreter 12: 2528 samples
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                        Original                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-13 02:15:47 to 2020-03-18 04:44:14
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 49538
+Automated             : 34199/49538 =  69.04%
+Anomalous             : 15339/49538 =  30.96%
+Anomalous confidence  :  5277/49538 =  10.65%
+Anomalous not in train:  2981/49538 =   6.02%
+Anomalous > epsilon   :  7081/49538 =  14.29%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	  6894	  2502	  4851
+   LOW	   136	    52	   257
+MEDIUM	    12	    63	    88
+  HIGH	     0	   354	     0
+ATTACK	    39	    10	    81
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9954    0.7779    0.8733     33464
+         LOW     0.0604    0.7564    0.1119       583
+      MEDIUM     0.6136    0.9783    0.7542       138
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.4000    0.4286    0.4138        14
+
+    accuracy                         0.7782     34199
+   macro avg     0.4139    0.5882    0.4306     34199
+weighted avg     0.9777    0.7782    0.8596     34199
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	 26030	  6856	    80	   498	     0
+   LOW	   119	   441	     2	    13	     8
+MEDIUM	     0	     0	   135	     2	     1
+  HIGH	     0	     0	     0	     0	     0
+ATTACK	     2	     3	     3	     0	     6
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Updated - After                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-13 02:15:47 to 2020-03-18 04:44:14
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 49538
+Automated             : 41360/49538 =  83.49%
+Anomalous             :  8178/49538 =  16.51%
+Anomalous confidence  :  5717/49538 =  11.54%
+Anomalous not in train:  1641/49538 =   3.31%
+Anomalous > epsilon   :   820/49538 =   1.66%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	   751	  1603	  5150
+   LOW	    28	    27	   283
+MEDIUM	     2	     2	   104
+  HIGH	     0	     0	    98
+ATTACK	    39	     9	    82
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9921    0.7436    0.8501     40207
+         LOW     0.0575    0.6667    0.1059       690
+      MEDIUM     0.0639    0.6995    0.1170       193
+        HIGH     0.2137    0.9023    0.3455       256
+      ATTACK     0.1765    0.4286    0.2500        14
+
+    accuracy                         0.7430     41360
+   macro avg     0.3007    0.6881    0.3337     41360
+weighted avg     0.9671    0.7430    0.8309     41360
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	 29898	  7532	  1974	   785	    18
+   LOW	   204	   460	     2	    16	     8
+MEDIUM	     7	     0	   135	    49	     2
+  HIGH	    25	     0	     0	   231	     0
+ATTACK	     2	     3	     3	     0	     6
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    Updated - Before                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-03-13 02:15:47 to 2020-03-18 04:44:14
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 49538
+Automated             : 42211/49538 =  85.21%
+Anomalous             :  7327/49538 =  14.79%
+Anomalous confidence  :  5730/49538 =  11.57%
+Anomalous not in train:  1597/49538 =   3.22%
+Anomalous > epsilon   :     0/49538 =   0.00%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	     0	  1582	  5150
+   LOW	     0	     5	   296
+MEDIUM	     0	     1	   104
+  HIGH	     0	     0	    98
+ATTACK	     0	     9	    82
+
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9923    0.7476    0.8527     40979
+         LOW     0.0619    0.6836    0.1135       727
+      MEDIUM     0.0641    0.7041    0.1175       196
+        HIGH     0.2137    0.9023    0.3455       256
+      ATTACK     0.6164    0.8491    0.7143        53
+
+    accuracy                         0.7473     42211
+   macro avg     0.3897    0.7773    0.4287     42211
+weighted avg     0.9668    0.7473    0.8333     42211
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+  INFO	 30635	  7532	  2009	   785	    18
+   LOW	   204	   497	     2	    16	     8
+MEDIUM	     7	     0	   138	    49	     2
+  HIGH	    25	     0	     0	   231	     0
+ATTACK	     2	     3	     3	     0	    45

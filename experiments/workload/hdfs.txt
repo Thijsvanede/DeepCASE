@@ -1,0 +1,127 @@
+Classification report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+       False     1.0000    1.0000    1.0000   4666429
+
+    accuracy                         1.0000   4666429
+   macro avg     1.0000    1.0000    1.0000   4666429
+weighted avg     1.0000    1.0000    1.0000   4666429
+
+Confusion matrix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+True  positive (malicious detected as malicious):       0
+True  negative (benign    detected as benign   ): 4666429
+False positive (benign    detected as malicious):       0
+False negative (malicious detected as benign   ):       0
+
+Anomaly metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Anomalies total           :   38759/4705188 =   0.8238%
+Anomalies confidence      :   19156/4705188 =   0.4071%
+Anomalies not in training :    5638/4705188 =   0.1198%
+Anomalies > epsilon       :   13965/4705188 =   0.2968%
+
+Anomalies malicious total          :     0/38759 =   0.0000%
+Anomalies malicious confidence     :     0/38759 =   0.0000%
+Anomalies malicious not in training:     0/38759 =   0.0000%
+Anomalies malicious > epsilon      :     0/38759 =   0.0000%
+
+Workload reduction - Training
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total     datapoints: 41720
+Clustered datapoints: 40540/41720 =  97.1716%
+Anomalous datapoints:  1180/41720 =   2.8284%
+
+Total clusters      : 341
+Cluster size avarage: 118.8856
+Cluster size std    : 300.1661
+Cluster size min    : 5
+Cluster size max    : 2273
+
+Known labels: 11
+
+
+
+
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                 Manual Mode (Training)                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Workload Reduction
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total     datapoints: 41720
+Clustered datapoints: 40540/41720 =  97.1716%
+Anomalous datapoints:  1180/41720 =   2.8284%
+
+Total clusters      : 341
+Cluster size avarage: 118.8856
+Cluster size std    : 300.1661
+Cluster size min    : 5
+Cluster size max    : 2273
+
+Known labels: 11
+
+Classification report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+       False     1.0000    1.0000    1.0000     41539
+
+    accuracy                         1.0000     41539
+   macro avg     1.0000    1.0000    1.0000     41539
+weighted avg     1.0000    1.0000    1.0000     41539
+
+Confusion matrix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+True  positive (malicious detected as malicious):     0
+True  negative (benign    detected as benign   ): 41539
+False positive (benign    detected as malicious):     0
+False negative (malicious detected as benign   ):     0
+
+Cluster metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Homogeneity all          : 1.0000
+Homogeneity not anomalous: 1.0000
+
+Benign    clusters: 341
+Malicious clusters: 0
+Mixed     clusters: 0
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Automatic Mode (Testing)                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Classification report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+       False     0.9763    1.0000    0.9880   4666429
+        True     0.0000    0.0000    0.0000    113330
+
+    accuracy                         0.9763   4779759
+   macro avg     0.4881    0.5000    0.4940   4779759
+weighted avg     0.9531    0.9763    0.9646   4779759
+
+Confusion matrix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+True  positive (malicious detected as malicious):       0
+True  negative (benign    detected as benign   ): 4666429
+False positive (benign    detected as malicious):       0
+False negative (malicious detected as benign   ):  113330
+
+Anomaly metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Anomalies total           :   77481/4857240 =   1.5952%
+Anomalies confidence      :   23767/4857240 =   0.4893%
+Anomalies not in training :   20735/4857240 =   0.4269%
+Anomalies > epsilon       :   32979/4857240 =   0.6790%
+
+Anomalies malicious total          : 38722/77481 =  49.9761%
+Anomalies malicious confidence     :  4611/77481 =   5.9511%
+Anomalies malicious not in training: 15097/77481 =  19.4848%
+Anomalies malicious > epsilon      : 19014/77481 =  24.5402%

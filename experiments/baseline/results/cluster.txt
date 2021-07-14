@@ -1,0 +1,82 @@
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 34046 samples
+Clustering took 8.3743 seconds
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 162549 samples
+Clustering took 222.1306 seconds
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     0.9968    0.0595    0.1123   4273711
+         LOW     0.3908    0.9744    0.5579    284501
+      MEDIUM     0.0327    0.8974    0.0630     14672
+        HIGH     0.0283    0.9781    0.0550      2599
+      ATTACK     0.0029    0.9952    0.0058      9125
+
+    accuracy                         0.1213   4584608
+   macro avg     0.2903    0.7809    0.1588   4584608
+weighted avg     0.9536    0.1213    0.1396   4584608
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1280708	 254304	 432011	 389602	  86406	3111388
+    LOW	   4299	    400	 277229	    394	    478	   6000
+ MEDIUM	  26813	    377	    104	  13167	    435	    589
+   HIGH	    193	      2	      3	      2	   2542	     50
+ ATTACK	    689	     33	      8	      2	      1	   9081
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1280708	 254304	 432011	 389602	  86406	3111388
+    LOW	   4299	    400	 277229	    394	    478	   6000
+ MEDIUM	  26813	    377	    104	  13167	    435	    589
+   HIGH	    193	      2	      3	      2	   2542	     50
+ ATTACK	    689	     33	      8	      2	      1	   9081
+
+------------------------------------------------------------
+Unable to predict 1312702/5897310 = 22.26%
+Number of clusters: 4856
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     0.9931    0.9909    0.9920   4273711
+         LOW     0.8781    0.9395    0.9078    284501
+      MEDIUM     0.6115    0.1794    0.2774     14672
+        HIGH     0.9817    0.9711    0.9764      2599
+      ATTACK     0.9724    0.9600    0.9661      9125
+
+    accuracy                         0.9850   4584608
+   macro avg     0.8874    0.8082    0.8239   4584608
+weighted avg     0.9847    0.9850    0.9844   4584608
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1280708	4234755	  37092	   1663	     33	    168
+    LOW	   4299	  17120	 267298	      6	      1	     76
+ MEDIUM	  26813	  12011	     15	   2632	     13	      1
+   HIGH	    193	     70	      0	      1	   2524	      4
+ ATTACK	    689	    363	      0	      2	      0	   8760
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1280708	4234755	  37092	   1663	     33	    168
+    LOW	   4299	  17120	 267298	      6	      1	     76
+ MEDIUM	  26813	  12011	     15	   2632	     13	      1
+   HIGH	    193	     70	      0	      1	   2524	      4
+ ATTACK	    689	    363	      0	      2	      0	   8760
+
+------------------------------------------------------------
+Unable to predict 1312702/5897310 = 22.26%
+Number of clusters: 4856

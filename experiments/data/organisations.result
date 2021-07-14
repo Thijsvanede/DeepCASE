@@ -1,0 +1,259 @@
+Organisation:  0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-12-18T04:54:47 to 2020-03-17T23:47:45
+Events  : 24422
+Machines: 4184
+
+Risk levels:
+	INFO  : 24422
+	LOW   : 0
+	MEDIUM: 0
+	HIGH  : 0
+	ATTACK: 0
+
+Organisation:  1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-01-08T13:57:44 to 2020-03-03T16:04:46
+Events  : 2879
+Machines: 13
+
+Risk levels:
+	INFO  : 2706
+	LOW   : 173
+	MEDIUM: 0
+	HIGH  : 0
+	ATTACK: 0
+
+Organisation:  2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-01T01:31:49 to 2020-03-05T00:48:50
+Events  : 878
+Machines: 50
+
+Risk levels:
+	INFO  : 515
+	LOW   : 341
+	MEDIUM: 3
+	HIGH  : 2
+	ATTACK: 17
+
+Organisation:  3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-20T15:41:56 to 2020-03-05T17:12:05
+Events  : 8888
+Machines: 1376
+
+Risk levels:
+	INFO  : 6553
+	LOW   : 798
+	MEDIUM: 1473
+	HIGH  : 6
+	ATTACK: 58
+
+Organisation:  4
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-04T20:54:08 to 2020-03-05T10:12:55
+Events  : 2599
+Machines: 386
+
+Risk levels:
+	INFO  : 1459
+	LOW   : 639
+	MEDIUM: 395
+	HIGH  : 83
+	ATTACK: 23
+
+Organisation:  5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-25T05:24:23 to 2020-03-05T07:36:27
+Events  : 7117123
+Machines: 229627
+
+Risk levels:
+	INFO  : 4858475
+	LOW   : 2191848
+	MEDIUM: 19215
+	HIGH  : 10761
+	ATTACK: 36824
+
+Organisation:  6
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-20T04:49:01 to 2020-03-05T01:39:09
+Events  : 132416
+Machines: 881
+
+Risk levels:
+	INFO  : 123841
+	LOW   : 2358
+	MEDIUM: 2366
+	HIGH  : 3848
+	ATTACK: 3
+
+Organisation:  7
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-26T19:09:41 to 2020-03-18T12:44:15
+Events  : 59595
+Machines: 2185
+
+Risk levels:
+	INFO  : 57680
+	LOW   : 1430
+	MEDIUM: 224
+	HIGH  : 29
+	ATTACK: 232
+
+Organisation:  8
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-21T06:12:56 to 2020-03-05T10:33:45
+Events  : 319975
+Machines: 53381
+
+Risk levels:
+	INFO  : 304394
+	LOW   : 10615
+	MEDIUM: 658
+	HIGH  : 27
+	ATTACK: 4281
+
+Organisation:  9
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-01-15T05:05:03 to 2020-03-05T16:28:14
+Events  : 3337
+Machines: 358
+
+Risk levels:
+	INFO  : 2742
+	LOW   : 501
+	MEDIUM: 58
+	HIGH  : 0
+	ATTACK: 36
+
+Organisation: 10
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-20T12:56:10 to 2020-03-04T02:36:54
+Events  : 81523
+Machines: 1973
+
+Risk levels:
+	INFO  : 77316
+	LOW   : 3174
+	MEDIUM: 179
+	HIGH  : 807
+	ATTACK: 47
+
+Organisation: 11
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-01-01T00:14:37 to 2020-03-05T08:34:00
+Events  : 14867
+Machines: 1123
+
+Risk levels:
+	INFO  : 13344
+	LOW   : 1460
+	MEDIUM: 12
+	HIGH  : 1
+	ATTACK: 50
+
+Organisation: 12
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-18T13:46:57 to 2020-03-10T12:56:54
+Events  : 191545
+Machines: 4607
+
+Risk levels:
+	INFO  : 180352
+	LOW   : 6855
+	MEDIUM: 3642
+	HIGH  : 134
+	ATTACK: 562
+
+Organisation: 13
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-20T18:25:12 to 2020-02-07T05:50:59
+Events  : 1953
+Machines: 14
+
+Risk levels:
+	INFO  : 1883
+	LOW   : 70
+	MEDIUM: 0
+	HIGH  : 0
+	ATTACK: 0
+
+Organisation: 14
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-24T02:50:54 to 2020-03-18T00:06:58
+Events  : 26202
+Machines: 188
+
+Risk levels:
+	INFO  : 25927
+	LOW   : 275
+	MEDIUM: 0
+	HIGH  : 0
+	ATTACK: 0
+
+Organisation: 15
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-04T04:03:07 to 2020-03-04T20:00:19
+Events  : 382
+Machines: 23
+
+Risk levels:
+	INFO  : 260
+	LOW   : 74
+	MEDIUM: 27
+	HIGH  : 3
+	ATTACK: 18
+
+Organisation: 16
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-12-07T00:00:00 to 2020-03-14T15:09:48
+Events  : 2062074
+Machines: 18802
+
+Risk levels:
+	INFO  : 1850477
+	LOW   : 145995
+	MEDIUM: 32273
+	HIGH  : 30584
+	ATTACK: 2745
+
+Organisation: 17
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2019-11-20T14:08:40 to 2020-03-10T00:09:51
+Events  : 340819
+Machines: 67749
+
+Risk levels:
+	INFO  : 200296
+	LOW   : 15844
+	MEDIUM: 124379
+	HIGH  : 111
+	ATTACK: 189
+
+Organisation: 18
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-05T15:46:29 to 2020-03-05T09:08:08
+Events  : 2789
+Machines: 74
+
+Risk levels:
+	INFO  : 2302
+	LOW   : 483
+	MEDIUM: 0
+	HIGH  : 0
+	ATTACK: 4
+
+Organisation: 19
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Captured from 2020-02-06T14:39:27 to 2020-03-05T10:16:54
+Events  : 6521
+Machines: 391
+
+Risk levels:
+	INFO  : 6140
+	LOW   : 373
+	MEDIUM: 3
+	HIGH  : 5
+	ATTACK: 0

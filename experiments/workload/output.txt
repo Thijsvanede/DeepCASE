@@ -1,0 +1,472 @@
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                       Manual Mode                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+Timeframe from 2019-11-20 11:16:26 to 2019-12-20 11:15:28
+[1mStatistics - Datapoints[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 2204029
+Clustered             : 2129403/2204029 =  96.61%
+Anomalies             :   74626/2204029 =   3.39%
+Anomalies < confidence:  106294/2204029 =   4.82%
+
+[1mStatistics - Clusters[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Labels              : 95
+Clusters            : 2244
+Cluster size avarage: 948.9318
+Cluster size std    : 21866.5242
+Cluster size min    : 5
+Cluster size max    : 983472
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9912    0.9792    0.9852   1756853
+         LOW     0.8824    0.9578    0.9186    360518
+      MEDIUM     0.9472    0.2329    0.3739     12849
+        HIGH     0.9994    0.7983    0.8876      4071
+      ATTACK     0.9155    1.0000    0.9559     11729
+
+    accuracy                         0.9709   2146020
+   macro avg     0.9472    0.7936    0.8242   2146020
+weighted avg     0.9723    0.9709    0.9700   2146020
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1720297	  36360	    128	      0	     68
+    LOW	  15195	 345299	      0	      2	     22
+ MEDIUM	      1	   8980	   2993	      0	    875
+   HIGH	      0	    665	     39	   3250	    117
+ ATTACK	      0	      0	      0	      0	  11729
+
+[1mCluster metrics[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MIXED CLUSTERS                     INFO      LOW   MEDIUM     HIGH   ATTACK
+Cluster   602 [size=     746]:      729       17        0        0        0
+Cluster   603 [size=     623]:      615        8        0        0        0
+Cluster   604 [size=     127]:      123        4        0        0        0
+Cluster   605 [size=   30443]:    30142      301        0        0        0
+Cluster   606 [size=      60]:       59        1        0        0        0
+Cluster   607 [size=     291]:      289        2        0        0        0
+Cluster   608 [size=     185]:      183        2        0        0        0
+Cluster   610 [size=     301]:      300        1        0        0        0
+Cluster   611 [size=    1418]:     1403       15        0        0        0
+Cluster   614 [size=     983]:      977        6        0        0        0
+Cluster   619 [size=      20]:       19        1        0        0        0
+Cluster   628 [size=      26]:       24        2        0        0        0
+Cluster   630 [size=      10]:        9        1        0        0        0
+Cluster   704 [size=      13]:       12        1        0        0        0
+Cluster   854 [size=      23]:       22        1        0        0        0
+Cluster  1005 [size=       9]:        8        1        0        0        0
+Cluster  1007 [size=     101]:      100        1        0        0        0
+Cluster  1011 [size=      30]:       29        1        0        0        0
+Cluster  1015 [size=     389]:      387        2        0        0        0
+Cluster  1029 [size=      50]:       49        1        0        0        0
+Cluster  1030 [size=    6917]:     6869       48        0        0        0
+Cluster  1069 [size=      12]:       11        1        0        0        0
+Cluster  1072 [size=      46]:       45        1        0        0        0
+Cluster  1074 [size=     264]:      261        3        0        0        0
+Cluster  1097 [size=      95]:       89        6        0        0        0
+Cluster  1101 [size=     317]:      311        6        0        0        0
+Cluster  1121 [size=     109]:      108        1        0        0        0
+Cluster  1181 [size=     142]:      141        1        0        0        0
+Cluster  1201 [size=     212]:      206        6        0        0        0
+Cluster  1220 [size=       7]:        6        1        0        0        0
+Cluster  1242 [size=      23]:       22        1        0        0        0
+Cluster  1249 [size=     194]:      191        3        0        0        0
+Cluster  1280 [size=     856]:      843       13        0        0        0
+Cluster  1328 [size=    1024]:     1015        9        0        0        0
+Cluster  7843 [size=     699]:      542        0      143       14        0
+Cluster  7844 [size=     487]:      373        0       99       15        0
+Cluster  7845 [size=   26035]:    20844        0     4859      332        0
+Cluster  7846 [size=      89]:       72        0       13        4        0
+Cluster  7847 [size=     332]:      275        0       57        0        0
+Cluster  7848 [size=    1431]:     1127        0      277       27        0
+Cluster  7851 [size=    1174]:      937        0      230        7        0
+Cluster  7853 [size=       5]:        3        0        2        0        0
+Cluster  7859 [size=      25]:       22        0        3        0        0
+Cluster  7864 [size=       7]:        5        0        2        0        0
+Cluster  7871 [size=      12]:        9        0        3        0        0
+Cluster  7879 [size=      35]:       28        0        7        0        0
+Cluster  7882 [size=      12]:        9        0        3        0        0
+Cluster  7884 [size=       8]:        6        0        2        0        0
+Cluster  7888 [size=       6]:        4        0        2        0        0
+Cluster  7890 [size=      40]:       35        0        5        0        0
+Cluster  7899 [size=      25]:       23        0        2        0        0
+Cluster  7910 [size=      70]:       52        0       18        0        0
+Cluster  7914 [size=      10]:        8        0        2        0        0
+Cluster  7915 [size=      31]:       28        0        3        0        0
+Cluster  7916 [size=      21]:       18        0        3        0        0
+Cluster  7917 [size=      11]:        9        0        2        0        0
+Cluster  7921 [size=       8]:        7        0        1        0        0
+Cluster  7928 [size=       8]:        6        0        2        0        0
+Cluster  7930 [size=       8]:        6        0        2        0        0
+Cluster  7936 [size=      21]:       12        0        9        0        0
+Cluster  7971 [size=      22]:        4        0       18        0        0
+Cluster  8084 [size=      59]:       45        0       14        0        0
+Cluster  8105 [size=       7]:        6        0        1        0        0
+Cluster  8119 [size=     141]:      113        0       28        0        0
+Cluster  8122 [size=      12]:       10        0        2        0        0
+Cluster  8123 [size=      13]:       10        0        3        0        0
+Cluster  8125 [size=      61]:       48        0       13        0        0
+Cluster  8128 [size=     114]:       87        0       26        1        0
+Cluster  8130 [size=      28]:       23        0        5        0        0
+Cluster  8134 [size=     723]:      575        0      148        0        0
+Cluster  8149 [size=       5]:        3        0        2        0        0
+Cluster  8154 [size=       8]:        6        0        2        0        0
+Cluster  8155 [size=      14]:       12        0        2        0        0
+Cluster  8156 [size=      89]:       66        0       23        0        0
+Cluster  8157 [size=      54]:       46        0        7        1        0
+Cluster  8158 [size=    6890]:     5533        0     1269       88        0
+Cluster  8161 [size=     207]:      158        0       48        1        0
+Cluster  8171 [size=      29]:       23        0        6        0        0
+Cluster  8173 [size=      34]:       28        0        6        0        0
+Cluster  8177 [size=       5]:        4        0        1        0        0
+Cluster  8178 [size=      15]:       11        0        3        1        0
+Cluster  8183 [size=       5]:        2        0        2        1        0
+Cluster  8191 [size=     170]:      130        0       37        3        0
+Cluster  8203 [size=      13]:       11        0        2        0        0
+Cluster  8205 [size=      70]:       53        0       15        2        0
+Cluster  8209 [size=     294]:      239        0       50        5        0
+Cluster  8228 [size=      14]:        4        0        1        9        0
+Cluster  8230 [size=     105]:       82        0       21        2        0
+Cluster  8233 [size=     834]:      676        0      151        7        0
+Cluster  8255 [size=     116]:       98        0       18        0        0
+Cluster  8264 [size=       5]:        4        0        1        0        0
+Cluster  8269 [size=     381]:      307        0       73        1        0
+Cluster  8272 [size=       5]:        4        0        0        1        0
+Cluster  8288 [size=      41]:       19        0        2       20        0
+Cluster  8292 [size=       7]:        3        0        1        3        0
+Cluster  8310 [size=       6]:        4        0        2        0        0
+Cluster  8319 [size=     125]:      107        0       17        1        0
+Cluster  8322 [size=      17]:       14        0        3        0        0
+Cluster  8335 [size=      20]:       15        0        5        0        0
+Cluster  8340 [size=      12]:        9        0        3        0        0
+Cluster  8353 [size=       6]:        4        0        2        0        0
+Cluster  8355 [size=      57]:       45        0       10        2        0
+Cluster  8368 [size=       9]:        6        0        2        1        0
+Cluster  8372 [size=     203]:      166        0       33        4        0
+Cluster  8388 [size=      90]:       72        0       16        2        0
+Cluster  8396 [size=       5]:        2        0        0        3        0
+Cluster  8411 [size=      63]:       35        0       19        9        0
+Cluster  8413 [size=       5]:        4        0        0        1        0
+Cluster  8414 [size=       6]:        5        0        0        1        0
+Cluster  8421 [size=     492]:      399        0       85        8        0
+Cluster  8458 [size=      16]:       12        0        2        2        0
+Cluster  8464 [size=     110]:       77        0       17       16        0
+Cluster  8486 [size=     602]:      422        0      129       51        0
+Cluster  8497 [size=       8]:        6        0        2        0        0
+Cluster  8506 [size=      33]:       28        0        4        1        0
+Cluster  8511 [size=      17]:       14        0        3        0        0
+Cluster  8520 [size=       9]:        8        0        1        0        0
+Cluster 10595 [size=      25]:        3       22        0        0        0
+Cluster 11030 [size=      27]:       16        0       11        0        0
+Cluster 11032 [size=       5]:        2        0        3        0        0
+Cluster 11037 [size=     173]:       79        0       94        0        0
+Cluster 11044 [size=      20]:       12        0        8        0        0
+Cluster 11048 [size=       5]:        3        0        2        0        0
+Cluster 11051 [size=       6]:        3        0        3        0        0
+Cluster 11060 [size=       8]:        4        0        4        0        0
+Cluster 11062 [size=      12]:        6        0        6        0        0
+Cluster 11065 [size=      11]:        5        0        6        0        0
+Cluster 11077 [size=     698]:      313        0      381        4        0
+Cluster 11080 [size=       6]:        3        0        3        0        0
+Cluster 11091 [size=       6]:        1        0        5        0        0
+Cluster 11094 [size=       9]:        7        0        2        0        0
+Cluster 11096 [size=       8]:        3        0        5        0        0
+Cluster 11098 [size=      19]:        8        0       11        0        0
+Cluster 11105 [size=      14]:        8        0        6        0        0
+Cluster 11118 [size=     361]:        4        0      357        0        0
+Cluster 11174 [size=    1340]:        7        0     1333        0        0
+Cluster 11192 [size=      27]:        1        0       26        0        0
+Cluster 11268 [size=      13]:        0        9        4        0        0
+Cluster 11272 [size=      57]:        0       25       32        0        0
+Cluster 11280 [size=      16]:        0        0        3        5        8
+Cluster 11284 [size=      49]:        1        0       13        9       26
+Cluster 11315 [size=     259]:        2        0       15        0      242
+Cluster 11323 [size=    6564]:       41        0      538        0     5985
+Cluster 11350 [size=      25]:        0        0        1        0       24
+Cluster 11355 [size=       6]:        0        0        2        0        4
+Cluster 11356 [size=      20]:        0        0        2        0       18
+Cluster 11357 [size=     132]:        1        0       10        0      121
+Cluster 11365 [size=      11]:        0        0        1        0       10
+Cluster 11366 [size=      16]:        0        0        2        0       14
+Cluster 11367 [size=    1610]:       11        0      125        1     1473
+Cluster 11369 [size=      37]:        0        0        2        0       35
+Cluster 11371 [size=       7]:        0        0        1        0        6
+Cluster 11372 [size=       9]:        0        0        1        0        8
+Cluster 11377 [size=      36]:        1        0        2        0       33
+Cluster 11383 [size=      10]:        0        0        1        0        9
+Cluster 11385 [size=      20]:        0        0        1        0       19
+Cluster 11389 [size=      22]:        0        0        4        0       18
+Cluster 11391 [size=     117]:        2        0        9        0      106
+Cluster 11399 [size=      12]:        0        0        1        0       11
+Cluster 11403 [size=      58]:        0        0        2        0       56
+Cluster 11407 [size=      37]:        0        0        2        0       35
+Cluster 11415 [size=      38]:        0        0        2        0       36
+Cluster 11434 [size=      39]:        0        0        1        0       38
+Cluster 11451 [size=      50]:        1        0        3        0       46
+Cluster 11457 [size=      10]:        0        0        1        0        9
+Cluster 11486 [size=      10]:        0        0        1        0        9
+Cluster 11491 [size=      21]:        0        0        2        0       19
+Cluster 11504 [size=      16]:        0        0        1        0       15
+Cluster 11510 [size=      65]:        0        0        5        0       60
+Cluster 11514 [size=      28]:        0        0        1        0       27
+Cluster 11522 [size=     118]:        0        0       11        0      107
+Cluster 11531 [size=     129]:        1        0        7        0      121
+Cluster 11540 [size=       8]:        0        0        1        0        7
+Cluster 11561 [size=     134]:        0        0       13        0      121
+Cluster 11571 [size=       6]:        0        4        0        0        2
+Cluster 11573 [size=      20]:        0       13        0        0        7
+Cluster 11582 [size=      22]:       14        0        8        0        0
+Cluster 11587 [size=     116]:       64        2       50        0        0
+Cluster 11686 [size=      17]:        0        0        9        0        8
+Cluster 11690 [size=      44]:        0        0       27        0       17
+Cluster 11693 [size=       9]:        4        0        5        0        0
+Cluster 11698 [size=      38]:       24        0       14        0        0
+Cluster 11700 [size=    5019]:        1     5018        0        0        0
+Cluster 11709 [size=  220171]:        3   220168        0        0        0
+Cluster 13196 [size=   56214]:        1    56213        0        0        0
+Cluster 13834 [size=      42]:        0       35        7        0        0
+Cluster 13841 [size=     192]:        0      171       21        0        0
+Cluster 13848 [size=       5]:        0        4        1        0        0
+Cluster 13850 [size=      11]:        3        0        8        0        0
+Cluster 13853 [size=      45]:        7        0       38        0        0
+Cluster 13857 [size=       5]:        2        0        3        0        0
+Cluster 13862 [size=       6]:        3        0        3        0        0
+Cluster 13869 [size=       5]:        2        0        3        0        0
+Cluster 13872 [size=     237]:       44        0      193        0        0
+Cluster 13883 [size=      12]:        6        0        6        0        0
+Cluster 13890 [size=       6]:        1        0        5        0        0
+Cluster 13917 [size=      12]:        3        0        9        0        0
+Cluster 13919 [size=      19]:       10        9        0        0        0
+Cluster 13924 [size=      89]:       65       24        0        0        0
+Cluster 13929 [size=       8]:        4        4        0        0        0
+Cluster 13932 [size=       7]:        4        3        0        0        0
+Cluster 13935 [size=       5]:        4        1        0        0        0
+Cluster 13946 [size=     301]:      219       82        0        0        0
+Cluster 13951 [size=       5]:        4        1        0        0        0
+Cluster 13954 [size=      10]:        8        2        0        0        0
+Cluster 13960 [size=      12]:        6        6        0        0        0
+Cluster 14001 [size=      10]:        8        2        0        0        0
+Cluster 14003 [size=      39]:       28       11        0        0        0
+Cluster 14013 [size=     219]:      165       54        0        0        0
+Cluster 14022 [size=       5]:        3        2        0        0        0
+Cluster 14027 [size=     274]:      136      138        0        0        0
+Cluster 14028 [size=     231]:       88      143        0        0        0
+Cluster 14029 [size=     549]:      220      329        0        0        0
+Cluster 14030 [size=     565]:      251      314        0        0        0
+Cluster 14031 [size=     891]:      372      519        0        0        0
+Cluster 14039 [size=     590]:      205      385        0        0        0
+Cluster 14046 [size=       6]:        3        3        0        0        0
+Cluster 14050 [size=       6]:        4        2        0        0        0
+Cluster 14061 [size=     100]:       37       63        0        0        0
+Cluster 14063 [size=      10]:        3        7        0        0        0
+Cluster 14065 [size=      25]:       13       12        0        0        0
+Cluster 14081 [size=      23]:        9       14        0        0        0
+Cluster 14085 [size=       6]:        3        3        0        0        0
+Cluster 14096 [size=       6]:        1        5        0        0        0
+Cluster 14097 [size=       6]:        2        4        0        0        0
+Cluster 14098 [size=      11]:        4        7        0        0        0
+Cluster 14100 [size=      11]:        7        4        0        0        0
+Cluster 14139 [size=       9]:        3        6        0        0        0
+Cluster 14148 [size=      27]:       14       13        0        0        0
+Cluster 14149 [size=       9]:        6        3        0        0        0
+Cluster 14178 [size=     105]:       50       55        0        0        0
+Cluster 14182 [size=      12]:        7        5        0        0        0
+Cluster 14183 [size=      15]:        9        6        0        0        0
+Cluster 14184 [size=      30]:       17       13        0        0        0
+Cluster 14185 [size=      17]:        5       12        0        0        0
+Cluster 14187 [size=      89]:       38       51        0        0        0
+Cluster 14188 [size=       5]:        3        2        0        0        0
+Cluster 14190 [size=       6]:        1        5        0        0        0
+Cluster 14191 [size=       5]:        1        4        0        0        0
+Cluster 14192 [size=      18]:        7       11        0        0        0
+Cluster 14193 [size=      57]:       22       35        0        0        0
+Cluster 14194 [size=      35]:       17       18        0        0        0
+Cluster 14195 [size=    4258]:     1896     2362        0        0        0
+Cluster 14198 [size=     116]:       55       61        0        0        0
+Cluster 14204 [size=      12]:        3        9        0        0        0
+Cluster 14206 [size=      11]:        6        5        0        0        0
+Cluster 14213 [size=       9]:        3        6        0        0        0
+Cluster 14215 [size=      14]:        6        8        0        0        0
+Cluster 14219 [size=       6]:        4        2        0        0        0
+Cluster 14224 [size=      63]:       32       31        0        0        0
+Cluster 14232 [size=       8]:        7        1        0        0        0
+Cluster 14233 [size=      67]:       24       43        0        0        0
+Cluster 14237 [size=      76]:       38       38        0        0        0
+Cluster 14248 [size=      53]:       21       32        0        0        0
+Cluster 14251 [size=      54]:       18       36        0        0        0
+Cluster 14252 [size=      10]:        5        5        0        0        0
+Cluster 14258 [size=       9]:        6        3        0        0        0
+Cluster 14262 [size=      15]:        5       10        0        0        0
+Cluster 14266 [size=     212]:       78      134        0        0        0
+Cluster 14275 [size=       5]:        1        4        0        0        0
+Cluster 14278 [size=       5]:        2        3        0        0        0
+Cluster 14292 [size=       6]:        1        5        0        0        0
+Cluster 14293 [size=      16]:        2       14        0        0        0
+Cluster 14302 [size=      24]:       10       14        0        0        0
+Cluster 14306 [size=      66]:       33       33        0        0        0
+Cluster 14307 [size=      22]:        7       15        0        0        0
+Cluster 14311 [size=      11]:        7        4        0        0        0
+Cluster 14314 [size=       8]:        2        6        0        0        0
+Cluster 14321 [size=   15744]:     7006     8738        0        0        0
+Cluster 14358 [size=       7]:        2        5        0        0        0
+Cluster 14361 [size=      24]:       11       13        0        0        0
+Cluster 14370 [size=      58]:       26       32        0        0        0
+Cluster 14382 [size=      41]:       19       22        0        0        0
+Cluster 14391 [size=      44]:       17       27        0        0        0
+Cluster 14406 [size=     131]:       67       64        0        0        0
+Cluster 14408 [size=       5]:        4        1        0        0        0
+Cluster 14427 [size=       9]:        2        7        0        0        0
+Cluster 14429 [size=      45]:       20       25        0        0        0
+Cluster 14440 [size=     222]:      116      106        0        0        0
+Cluster 14463 [size=     323]:      155      168        0        0        0
+Cluster 14470 [size=      14]:        6        8        0        0        0
+Cluster 14487 [size=       7]:        2        5        0        0        0
+Cluster 14508 [size=      77]:        4        0        1       71        1
+Cluster 14800 [size=     185]:       25      160        0        0        0
+Cluster 14807 [size=      29]:        3       26        0        0        0
+Cluster 14814 [size=      16]:        2       14        0        0        0
+Cluster 14815 [size=     119]:       15      104        0        0        0
+Cluster 14818 [size=      11]:        2        9        0        0        0
+Cluster 14821 [size=     972]:      143      829        0        0        0
+Cluster 14822 [size=      14]:        3       11        0        0        0
+Cluster 14831 [size=       8]:        2        6        0        0        0
+Cluster 14832 [size=      24]:        8       16        0        0        0
+Cluster 14833 [size=      10]:        3        7        0        0        0
+Cluster 14834 [size=     112]:       13       99        0        0        0
+Cluster 14840 [size=      12]:        3        9        0        0        0
+Cluster 14844 [size=      79]:       10       69        0        0        0
+Cluster 14846 [size=      26]:        1       25        0        0        0
+Cluster 14848 [size=      39]:        2       37        0        0        0
+Cluster 14864 [size=      31]:        4       27        0        0        0
+Cluster 14876 [size=      36]:        8       28        0        0        0
+Cluster 14889 [size=       8]:        2        6        0        0        0
+Cluster 14892 [size=       6]:        1        5        0        0        0
+Cluster 14895 [size=       5]:        2        3        0        0        0
+Cluster 14904 [size=       5]:        1        4        0        0        0
+Cluster 14913 [size=    3091]:      467     2624        0        0        0
+Cluster 14921 [size=      18]:        3       15        0        0        0
+Cluster 14923 [size=       8]:        1        7        0        0        0
+Cluster 14937 [size=      36]:        5       31        0        0        0
+Cluster 14945 [size=      14]:        1       13        0        0        0
+Cluster 14951 [size=      46]:       11       35        0        0        0
+Cluster 14958 [size=      70]:       11       59        0        0        0
+Cluster 14986 [size=      54]:        9       45        0        0        0
+Cluster 14990 [size=      41]:        0        0        1        0       40
+Cluster 15000 [size=     142]:        0        0        4        0      138
+Cluster 15233 [size=      11]:        9        2        0        0        0
+Cluster 15238 [size=      21]:       19        2        0        0        0
+Cluster 15251 [size=       7]:        0        1        0        6        0
+
+Clusters           : 2244
+Clusters INFO      : 1552
+Clusters LOW       :  276
+Clusters MEDIUM    :   24
+Clusters HIGH      :   32
+Clusters ATTACK    :   43
+Clusters MIXED     :  317
+
+Homogeneity attacks: 0.9579
+Homogeneity overall: 0.9551
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-20 11:15:29 to 2020-01-19 11:15:28
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 2046969
+Automated             : 1908629/2046969 =  93.24%
+Anomalous             :  138340/2046969 =   6.76%
+Anomalous confidence  :   71350/2046969 =   3.49%
+Anomalous not in train:   51652/2046969 =   2.52%
+Anomalous > epsilon   :   15338/2046969 =   0.75%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 13114	 10756	 62912
+   LOW	   173	   735	  4350
+MEDIUM	   163	 23936	   908
+  HIGH	     1	   172	    23
+ATTACK	  1887	 16053	  3157
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9793    0.9565    0.9677   1521147
+         LOW     0.5503    0.9170    0.6878    242610
+      MEDIUM     0.6886    0.1914    0.2995     12983
+        HIGH     0.7125    0.9916    0.8292      2147
+      ATTACK     0.9507    0.0877    0.1607    129742
+
+    accuracy                         0.8873   1908629
+   macro avg     0.7763    0.6288    0.5890   1908629
+weighted avg     0.9205    0.8873    0.8726   1908629
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1454980	  65914	    185	      0	     68
+    LOW	  20133	 222464	      0	      0	     13
+ MEDIUM	      5	  10000	   2485	      0	    493
+   HIGH	      0	      2	      0	   2129	     16
+ ATTACK	  10680	 105880	    939	    859	  11384
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-19 11:15:33 to 2020-02-04 01:00:10
+[1mStatistics - Workload Reduction[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Datapoints            : 1749002
+Automated             : 1539996/1749002 =  88.05%
+Anomalous             :  209006/1749002 =  11.95%
+Anomalous confidence  :   58541/1749002 =   3.35%
+Anomalous not in train:   99941/1749002 =   5.71%
+Anomalous > epsilon   :   50524/1749002 =   2.89%
+
+[1mStatistics - Anomalies[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   T\P	  CONF	 TRAIN	   EPS
+  INFO	 40790	 56160	 52571
+   LOW	     0	     0	     3
+MEDIUM	     0	     0	     0
+  HIGH	     0	     0	     0
+ATTACK	  9734	 43781	  5967
+
+[1mPerformance[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+        INFO     0.9871    0.9912    0.9892   1310805
+         LOW     0.0000    0.0000    0.0000         2
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.9977    0.0390    0.0751    229189
+
+    accuracy                         0.8495   1539996
+   macro avg     0.3970    0.2061    0.2129   1539996
+weighted avg     0.9887    0.8495    0.8531   1539996
+
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1299296	  11351	    139	      0	     19
+    LOW	      0	      0	      0	      0	      2
+ MEDIUM	      0	      0	      0	      0	      0
+   HIGH	      0	      0	      0	      0	      0
+ ATTACK	  16939	 200292	   1098	   1912	   8948
+

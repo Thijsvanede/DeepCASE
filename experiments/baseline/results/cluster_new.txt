@@ -1,0 +1,164 @@
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 32783 samples
+Clustering took 8.3791 seconds
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 37323 samples
+Clustering took 11.0474 seconds
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 160565 samples
+Clustering took 236.2660 seconds
+NgramCluster
+Train
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    0.8789    0.9355   1423044
+         LOW     0.7869    0.9994    0.8805    516892
+      MEDIUM     0.2644    0.9004    0.4088      9323
+        HIGH     0.5370    0.9932    0.6971      2362
+      ATTACK     0.4768    1.0000    0.6457      7677
+
+    accuracy                         0.9114   1959298
+   macro avg     0.6130    0.9544    0.7135   1959298
+weighted avg     0.9377    0.9114    0.9171   1959298
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	  35530	1250656	 139867	  23137	   1239	   8145
+    LOW	   2511	      0	 516558	    216	     20	     98
+ MEDIUM	   1424	      0	      0	   8394	    764	    165
+   HIGH	    680	      0	      0	      0	   2346	     16
+ ATTACK	    557	      0	      0	      0	      0	   7677
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	  35530	1250656	 139867	  23137	   1239	   8145
+    LOW	   2511	      0	 516558	    216	     20	     98
+ MEDIUM	   1424	      0	      0	   8394	    764	    165
+   HIGH	    680	      0	      0	      0	   2346	     16
+ ATTACK	    557	      0	      0	      0	      0	   7677
+
+------------------------------------------------------------
+Unable to predict 40702/2000000 = 2.04%
+Number of clusters: 4540
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     0.9919    0.9982    0.9951   1423044
+         LOW     0.9981    0.9858    0.9919    516892
+      MEDIUM     0.8036    0.6697    0.7306      9323
+        HIGH     0.9649    0.9306    0.9474      2362
+      ATTACK     0.9535    0.8193    0.8813      7677
+
+    accuracy                         0.9926   1959298
+   macro avg     0.9424    0.8807    0.9093   1959298
+weighted avg     0.9925    0.9926    0.9925   1959298
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	  35530	1420529	    872	   1450	     56	    137
+    LOW	   2511	   7267	 509567	     32	      0	     26
+ MEDIUM	   1424	   2878	     41	   6244	     17	    143
+   HIGH	    680	    129	      1	     33	   2198	      1
+ ATTACK	    557	   1335	     34	     11	      7	   6290
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	  35530	1420529	    872	   1450	     56	    137
+    LOW	   2511	   7267	 509567	     32	      0	     26
+ MEDIUM	   1424	   2878	     41	   6244	     17	    143
+   HIGH	    680	    129	      1	     33	   2198	      1
+ ATTACK	    557	   1335	     34	     11	      7	   6290
+
+------------------------------------------------------------
+Unable to predict 40702/2000000 = 2.04%
+Number of clusters: 4540
+
+Test
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     0.9998    0.9004    0.9475   4954843
+         LOW     0.6829    0.9988    0.8112    677651
+      MEDIUM     0.0967    0.9161    0.1749     19955
+        HIGH     0.4516    0.9936    0.6210      3417
+      ATTACK     0.6709    0.9986    0.8026     12475
+
+    accuracy                         0.9125   5668341
+   macro avg     0.5804    0.9615    0.6714   5668341
+weighted avg     0.9577    0.9125    0.9280   5668341
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1327667	4461150	 314338	 170574	   3055	   5726
+    LOW	   5919	    277	 676857	    235	      4	    278
+ MEDIUM	  29595	    519	     14	  18281	   1056	     85
+   HIGH	    782	      1	      0	      0	   3395	     21
+ ATTACK	   1376	      7	      4	      0	      7	  12457
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1327667	4461150	 314338	 170574	   3055	   5726
+    LOW	   5919	    277	 676857	    235	      4	    278
+ MEDIUM	  29595	    519	     14	  18281	   1056	     85
+   HIGH	    782	      1	      0	      0	   3395	     21
+ ATTACK	   1376	      7	      4	      0	      7	  12457
+
+------------------------------------------------------------
+Unable to predict 1365339/7033680 = 19.41%
+Number of clusters: 4540
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     0.9894    0.9957    0.9926   4954843
+         LOW     0.9895    0.9421    0.9652    677651
+      MEDIUM     0.3329    0.3595    0.3457     19955
+        HIGH     0.9572    0.9892    0.9729      3417
+      ATTACK     0.9786    0.9210    0.9489     12475
+
+    accuracy                         0.9869   5668341
+   macro avg     0.8495    0.8415    0.8451   5668341
+weighted avg     0.9871    0.9869    0.9869   5668341
+
+------------------------------------------------------------
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1327667	4933603	   6696	  14353	     83	    108
+    LOW	   5919	  39110	 638439	     16	      2	     84
+ MEDIUM	  29595	  12663	      9	   7173	     56	     54
+   HIGH	    782	     31	      0	      1	   3380	      5
+ ATTACK	   1376	    897	     78	      1	     10	  11489
+
+    T\P	     -1	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+     -1	      0	      0	      0	      0	      0	      0
+   INFO	1327667	4933603	   6696	  14353	     83	    108
+    LOW	   5919	  39110	 638439	     16	      2	     84
+ MEDIUM	  29595	  12663	      9	   7173	     56	     54
+   HIGH	    782	     31	      0	      1	   3380	      5
+ ATTACK	   1376	    897	     78	      1	     10	  11489
+
+------------------------------------------------------------
+Unable to predict 1365339/7033680 = 19.41%
+Number of clusters: 4540

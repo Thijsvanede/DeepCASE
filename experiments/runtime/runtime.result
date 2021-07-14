@@ -1,0 +1,545 @@
+Size = 1
+K    = 0
+Epoch          took: 0.0028 seconds
+Query          took: 0.0754 seconds
+Fingerprinting took: 0.0038 seconds
+Clustering     took: 0.0007 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 1
+Epoch          took: 0.0027 seconds
+Query          took: 0.0741 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 2
+Epoch          took: 0.0027 seconds
+Query          took: 0.0741 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0007 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 3
+Epoch          took: 0.0026 seconds
+Query          took: 0.0735 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 4
+Epoch          took: 0.0026 seconds
+Query          took: 0.0740 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 5
+Epoch          took: 0.0026 seconds
+Query          took: 0.0722 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0007 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 6
+Epoch          took: 0.0026 seconds
+Query          took: 0.0737 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 7
+Epoch          took: 0.0026 seconds
+Query          took: 0.0745 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 8
+Epoch          took: 0.0026 seconds
+Query          took: 0.0745 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+K    = 9
+Epoch          took: 0.0026 seconds
+Query          took: 0.0741 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0006 seconds
+Tree           took: 0.0002 seconds
+Predict        took: 0.0002 seconds
+Size = 10
+K    = 0
+Epoch          took: 0.0028 seconds
+Query          took: 0.0738 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0012 seconds
+Tree           took: 0.0003 seconds
+Predict        took: 0.0004 seconds
+K    = 1
+Epoch          took: 0.0028 seconds
+Query          took: 0.0726 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0017 seconds
+Tree           took: 0.0005 seconds
+Predict        took: 0.0005 seconds
+K    = 2
+Epoch          took: 0.0028 seconds
+Query          took: 0.0737 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0023 seconds
+Tree           took: 0.0006 seconds
+Predict        took: 0.0007 seconds
+K    = 3
+Epoch          took: 0.0029 seconds
+Query          took: 0.0731 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0021 seconds
+Tree           took: 0.0006 seconds
+Predict        took: 0.0007 seconds
+K    = 4
+Epoch          took: 0.0030 seconds
+Query          took: 0.0729 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0012 seconds
+Tree           took: 0.0004 seconds
+Predict        took: 0.0004 seconds
+K    = 5
+Epoch          took: 0.0030 seconds
+Query          took: 0.0726 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0012 seconds
+Tree           took: 0.0004 seconds
+Predict        took: 0.0004 seconds
+K    = 6
+Epoch          took: 0.0030 seconds
+Query          took: 0.0742 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0017 seconds
+Tree           took: 0.0004 seconds
+Predict        took: 0.0005 seconds
+K    = 7
+Epoch          took: 0.0030 seconds
+Query          took: 0.0734 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0016 seconds
+Tree           took: 0.0005 seconds
+Predict        took: 0.0005 seconds
+K    = 8
+Epoch          took: 0.0028 seconds
+Query          took: 0.0741 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0012 seconds
+Tree           took: 0.0003 seconds
+Predict        took: 0.0004 seconds
+K    = 9
+Epoch          took: 0.0028 seconds
+Query          took: 0.0741 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0017 seconds
+Tree           took: 0.0005 seconds
+Predict        took: 0.0005 seconds
+Size = 100
+K    = 0
+Epoch          took: 0.0045 seconds
+Query          took: 0.0740 seconds
+Fingerprinting took: 0.0042 seconds
+Clustering     took: 0.0071 seconds
+Tree           took: 0.0022 seconds
+Predict        took: 0.0025 seconds
+K    = 1
+Epoch          took: 0.0045 seconds
+Query          took: 0.0731 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0063 seconds
+Tree           took: 0.0020 seconds
+Predict        took: 0.0023 seconds
+K    = 2
+Epoch          took: 0.0046 seconds
+Query          took: 0.0724 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0051 seconds
+Tree           took: 0.0017 seconds
+Predict        took: 0.0019 seconds
+K    = 3
+Epoch          took: 0.0045 seconds
+Query          took: 0.0740 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0042 seconds
+Tree           took: 0.0015 seconds
+Predict        took: 0.0017 seconds
+K    = 4
+Epoch          took: 0.0044 seconds
+Query          took: 0.0740 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0045 seconds
+Tree           took: 0.0016 seconds
+Predict        took: 0.0018 seconds
+K    = 5
+Epoch          took: 0.0044 seconds
+Query          took: 0.0736 seconds
+Fingerprinting took: 0.0044 seconds
+Clustering     took: 0.0066 seconds
+Tree           took: 0.0025 seconds
+Predict        took: 0.0026 seconds
+K    = 6
+Epoch          took: 0.0043 seconds
+Query          took: 0.0749 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0057 seconds
+Tree           took: 0.0018 seconds
+Predict        took: 0.0021 seconds
+K    = 7
+Epoch          took: 0.0042 seconds
+Query          took: 0.0761 seconds
+Fingerprinting took: 0.0042 seconds
+Clustering     took: 0.0071 seconds
+Tree           took: 0.0022 seconds
+Predict        took: 0.0025 seconds
+K    = 8
+Epoch          took: 0.0043 seconds
+Query          took: 0.0728 seconds
+Fingerprinting took: 0.0040 seconds
+Clustering     took: 0.0045 seconds
+Tree           took: 0.0016 seconds
+Predict        took: 0.0018 seconds
+K    = 9
+Epoch          took: 0.0043 seconds
+Query          took: 0.0744 seconds
+Fingerprinting took: 0.0048 seconds
+Clustering     took: 0.0067 seconds
+Tree           took: 0.0021 seconds
+Predict        took: 0.0024 seconds
+Size = 1000
+K    = 0
+Epoch          took: 0.0355 seconds
+Query          took: 0.0742 seconds
+Fingerprinting took: 0.0042 seconds
+Clustering     took: 0.0232 seconds
+Tree           took: 0.0135 seconds
+Predict        took: 0.0145 seconds
+K    = 1
+Epoch          took: 0.0350 seconds
+Query          took: 0.0792 seconds
+Fingerprinting took: 0.0043 seconds
+Clustering     took: 0.0239 seconds
+Tree           took: 0.0135 seconds
+Predict        took: 0.0147 seconds
+K    = 2
+Epoch          took: 0.0348 seconds
+Query          took: 0.0816 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0222 seconds
+Tree           took: 0.0131 seconds
+Predict        took: 0.0141 seconds
+K    = 3
+Epoch          took: 0.0357 seconds
+Query          took: 0.0790 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0214 seconds
+Tree           took: 0.0128 seconds
+Predict        took: 0.0140 seconds
+K    = 4
+Epoch          took: 0.0348 seconds
+Query          took: 0.0733 seconds
+Fingerprinting took: 0.0042 seconds
+Clustering     took: 0.0216 seconds
+Tree           took: 0.0130 seconds
+Predict        took: 0.0140 seconds
+K    = 5
+Epoch          took: 0.0352 seconds
+Query          took: 0.0794 seconds
+Fingerprinting took: 0.0041 seconds
+Clustering     took: 0.0215 seconds
+Tree           took: 0.0132 seconds
+Predict        took: 0.0140 seconds
+K    = 6
+Epoch          took: 0.0348 seconds
+Query          took: 0.0670 seconds
+Fingerprinting took: 0.0037 seconds
+Clustering     took: 0.0195 seconds
+Tree           took: 0.0093 seconds
+Predict        took: 0.0106 seconds
+K    = 7
+Epoch          took: 0.0352 seconds
+Query          took: 0.0803 seconds
+Fingerprinting took: 0.0036 seconds
+Clustering     took: 0.0189 seconds
+Tree           took: 0.0090 seconds
+Predict        took: 0.0096 seconds
+K    = 8
+Epoch          took: 0.0346 seconds
+Query          took: 0.0825 seconds
+Fingerprinting took: 0.0037 seconds
+Clustering     took: 0.0184 seconds
+Tree           took: 0.0086 seconds
+Predict        took: 0.0096 seconds
+K    = 9
+Epoch          took: 0.0345 seconds
+Query          took: 0.0807 seconds
+Fingerprinting took: 0.0037 seconds
+Clustering     took: 0.0205 seconds
+Tree           took: 0.0117 seconds
+Predict        took: 0.0125 seconds
+Size = 10000
+K    = 0
+Epoch          took: 0.3464 seconds
+Query          took: 0.4420 seconds
+Fingerprinting took: 0.0050 seconds
+Clustering     took: 0.1651 seconds
+Tree           took: 0.1037 seconds
+Predict        took: 0.1213 seconds
+K    = 1
+Epoch          took: 0.3489 seconds
+Query          took: 0.4424 seconds
+Fingerprinting took: 0.0050 seconds
+Clustering     took: 0.1607 seconds
+Tree           took: 0.1018 seconds
+Predict        took: 0.1193 seconds
+K    = 2
+Epoch          took: 0.3483 seconds
+Query          took: 0.4490 seconds
+Fingerprinting took: 0.0052 seconds
+Clustering     took: 0.1614 seconds
+Tree           took: 0.0942 seconds
+Predict        took: 0.1077 seconds
+K    = 3
+Epoch          took: 0.3472 seconds
+Query          took: 0.4503 seconds
+Fingerprinting took: 0.0050 seconds
+Clustering     took: 0.1589 seconds
+Tree           took: 0.0903 seconds
+Predict        took: 0.1107 seconds
+K    = 4
+Epoch          took: 0.3480 seconds
+Query          took: 0.4453 seconds
+Fingerprinting took: 0.0054 seconds
+Clustering     took: 0.1605 seconds
+Tree           took: 0.0932 seconds
+Predict        took: 0.1085 seconds
+K    = 5
+Epoch          took: 0.3500 seconds
+Query          took: 0.4574 seconds
+Fingerprinting took: 0.0050 seconds
+Clustering     took: 0.1618 seconds
+Tree           took: 0.0938 seconds
+Predict        took: 0.1140 seconds
+K    = 6
+Epoch          took: 0.3440 seconds
+Query          took: 0.4528 seconds
+Fingerprinting took: 0.0050 seconds
+Clustering     took: 0.1627 seconds
+Tree           took: 0.0920 seconds
+Predict        took: 0.1101 seconds
+K    = 7
+Epoch          took: 0.3397 seconds
+Query          took: 0.4586 seconds
+Fingerprinting took: 0.0056 seconds
+Clustering     took: 0.1464 seconds
+Tree           took: 0.0857 seconds
+Predict        took: 0.1036 seconds
+K    = 8
+Epoch          took: 0.3405 seconds
+Query          took: 0.4350 seconds
+Fingerprinting took: 0.0049 seconds
+Clustering     took: 0.1547 seconds
+Tree           took: 0.0913 seconds
+Predict        took: 0.1064 seconds
+K    = 9
+Epoch          took: 0.3458 seconds
+Query          took: 0.4365 seconds
+Fingerprinting took: 0.0051 seconds
+Clustering     took: 0.1574 seconds
+Tree           took: 0.0982 seconds
+Predict        took: 0.1084 seconds
+Size = 100000
+K    = 0
+Epoch          took: 3.7620 seconds
+Query          took: 4.0574 seconds
+Fingerprinting took: 0.0243 seconds
+Clustering     took: 2.8958 seconds
+Tree           took: 1.0732 seconds
+Predict        took: 1.7305 seconds
+K    = 1
+Epoch          took: 3.8676 seconds
+Query          took: 3.9716 seconds
+Fingerprinting took: 0.0315 seconds
+Clustering     took: 2.8038 seconds
+Tree           took: 1.0232 seconds
+Predict        took: 1.6821 seconds
+K    = 2
+Epoch          took: 4.0475 seconds
+Query          took: 4.0285 seconds
+Fingerprinting took: 0.0329 seconds
+Clustering     took: 2.8207 seconds
+Tree           took: 1.0427 seconds
+Predict        took: 1.6972 seconds
+K    = 3
+Epoch          took: 4.0335 seconds
+Query          took: 3.9411 seconds
+Fingerprinting took: 0.0293 seconds
+Clustering     took: 2.7345 seconds
+Tree           took: 1.0256 seconds
+Predict        took: 1.6918 seconds
+K    = 4
+Epoch          took: 4.0133 seconds
+Query          took: 3.8976 seconds
+Fingerprinting took: 0.0269 seconds
+Clustering     took: 2.8418 seconds
+Tree           took: 1.0761 seconds
+Predict        took: 1.7282 seconds
+K    = 5
+Epoch          took: 3.8110 seconds
+Query          took: 3.9793 seconds
+Fingerprinting took: 0.0291 seconds
+Clustering     took: 2.7550 seconds
+Tree           took: 1.0325 seconds
+Predict        took: 1.6806 seconds
+K    = 6
+Epoch          took: 3.7250 seconds
+Query          took: 3.6871 seconds
+Fingerprinting took: 0.0227 seconds
+Clustering     took: 2.6205 seconds
+Tree           took: 1.0053 seconds
+Predict        took: 1.7259 seconds
+K    = 7
+Epoch          took: 3.7115 seconds
+Query          took: 3.7054 seconds
+Fingerprinting took: 0.0248 seconds
+Clustering     took: 2.7778 seconds
+Tree           took: 1.0259 seconds
+Predict        took: 1.6104 seconds
+K    = 8
+Epoch          took: 3.6587 seconds
+Query          took: 3.7415 seconds
+Fingerprinting took: 0.0188 seconds
+Clustering     took: 2.5196 seconds
+Tree           took: 1.0413 seconds
+Predict        took: 1.6099 seconds
+K    = 9
+Epoch          took: 3.9647 seconds
+Query          took: 3.8099 seconds
+Fingerprinting took: 0.0209 seconds
+Clustering     took: 2.5200 seconds
+Tree           took: 1.0072 seconds
+Predict        took: 1.6165 seconds
+Size = 1000000
+K    = 0
+Epoch          took: 37.7995 seconds
+Query          took: 29.5162 seconds
+Fingerprinting took: 0.1906 seconds
+Clustering     took: 30.2447 seconds
+Tree           took: 11.9706 seconds
+Predict        took: 43.6229 seconds
+K    = 1
+Epoch          took: 37.5738 seconds
+Query          took: 30.3257 seconds
+Fingerprinting took: 0.2381 seconds
+Clustering     took: 29.2380 seconds
+Tree           took: 11.3924 seconds
+Predict        took: 46.6578 seconds
+K    = 2
+Epoch          took: 38.8185 seconds
+Query          took: 32.2833 seconds
+Fingerprinting took: 0.2225 seconds
+Clustering     took: 29.1595 seconds
+Tree           took: 11.5128 seconds
+Predict        took: 47.1767 seconds
+K    = 3
+Epoch          took: 36.2997 seconds
+Query          took: 30.4198 seconds
+Fingerprinting took: 0.2011 seconds
+Clustering     took: 30.3405 seconds
+Tree           took: 11.6607 seconds
+Predict        took: 44.1652 seconds
+K    = 4
+Epoch          took: 36.3297 seconds
+Query          took: 30.2947 seconds
+Fingerprinting took: 0.2021 seconds
+Clustering     took: 29.0316 seconds
+Tree           took: 11.4878 seconds
+Predict        took: 46.7291 seconds
+K    = 5
+Epoch          took: 37.7744 seconds
+Query          took: 31.8022 seconds
+Fingerprinting took: 0.2034 seconds
+Clustering     took: 28.5376 seconds
+Tree           took: 11.4342 seconds
+Predict        took: 45.8425 seconds
+K    = 6
+Epoch          took: 37.6623 seconds
+Query          took: 29.5535 seconds
+Fingerprinting took: 0.2107 seconds
+Clustering     took: 28.2265 seconds
+Tree           took: 11.3594 seconds
+Predict        took: 44.4734 seconds
+K    = 7
+Epoch          took: 37.7025 seconds
+Query          took: 34.0962 seconds
+Fingerprinting took: 0.2072 seconds
+Clustering     took: 31.2272 seconds
+Tree           took: 11.5342 seconds
+Predict        took: 44.6634 seconds
+K    = 8
+Epoch          took: 36.1563 seconds
+Query          took: 29.6390 seconds
+Fingerprinting took: 0.2041 seconds
+Clustering     took: 28.1834 seconds
+Tree           took: 11.1188 seconds
+Predict        took: 42.0674 seconds
+K    = 9
+Epoch          took: 35.9675 seconds
+Query          took: 32.4277 seconds
+Fingerprinting took: 0.2211 seconds
+Clustering     took: 29.0827 seconds
+Tree           took: 11.8073 seconds
+Predict        took: 44.7904 seconds
+Operation: epoch
+	Size =        1 -- 0.0026 seconds
+	Size =       10 -- 0.0029 seconds
+	Size =      100 -- 0.0044 seconds
+	Size =     1000 -- 0.0350 seconds
+	Size =    10000 -- 0.3459 seconds
+	Size =   100000 -- 3.8595 seconds
+	Size =  1000000 -- 37.2084 seconds
+Operation: query
+	Size =        1 -- 0.0740 seconds
+	Size =       10 -- 0.0735 seconds
+	Size =      100 -- 0.0739 seconds
+	Size =     1000 -- 0.0777 seconds
+	Size =    10000 -- 0.4469 seconds
+	Size =   100000 -- 3.8819 seconds
+	Size =  1000000 -- 31.0358 seconds
+Operation: fingerprinting
+	Size =        1 -- 0.0036 seconds
+	Size =       10 -- 0.0040 seconds
+	Size =      100 -- 0.0042 seconds
+	Size =     1000 -- 0.0040 seconds
+	Size =    10000 -- 0.0051 seconds
+	Size =   100000 -- 0.0261 seconds
+	Size =  1000000 -- 0.2101 seconds
+Operation: clustering
+	Size =        1 -- 0.0007 seconds
+	Size =       10 -- 0.0016 seconds
+	Size =      100 -- 0.0058 seconds
+	Size =     1000 -- 0.0211 seconds
+	Size =    10000 -- 0.1590 seconds
+	Size =   100000 -- 2.7290 seconds
+	Size =  1000000 -- 29.3272 seconds
+Operation: tree
+	Size =        1 -- 0.0002 seconds
+	Size =       10 -- 0.0004 seconds
+	Size =      100 -- 0.0019 seconds
+	Size =     1000 -- 0.0118 seconds
+	Size =    10000 -- 0.0944 seconds
+	Size =   100000 -- 1.0353 seconds
+	Size =  1000000 -- 11.5278 seconds
+Operation: predict
+	Size =        1 -- 0.0002 seconds
+	Size =       10 -- 0.0005 seconds
+	Size =      100 -- 0.0021 seconds
+	Size =     1000 -- 0.0128 seconds
+	Size =    10000 -- 0.1110 seconds
+	Size =   100000 -- 1.6773 seconds
+	Size =  1000000 -- 45.0189 seconds

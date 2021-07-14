@@ -1,0 +1,1448 @@
+Host: 5925
+-1337             , -1337             , -1337             , -1337             , -1337             , -1337             , -1337             , Unusual JA3 finger, Suspicious data up, Unusual JA3 finger, Suspicious Dynamic
+External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction, Suspicious RDP con
+External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, Suspicious RDP con
+External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction
+External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction
+External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction
+External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction, External IP Lookup, PsExec interaction
+External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, External IP Lookup, PsExec interaction
+
+Host: 38660
+SMBv1             , Suspicious use of , Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , SMBv1             , SMBv1             , Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Self-signed certif, SMBv1             , SMBv1             , Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Suspicious data do, Suspicious data do, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Unusual data downl, Suspicious data do, Potential SMB Brut, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Potential SMB Brut, Suspicious SMB Per, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At, RDP protocol      , RDP protocol      , Web Application At, Web Application At, Potential Apache S, Suspicious SMB Per
+RDP protocol      , Web Application At, Web Application At, Potential Apache S, Suspicious SMB Per, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, Possible Cross Sit, Potential SMB Brut, Suspicious SMB Per
+Suspicious SMB Per, Active Directory P, Active Directory P, Active Directory P, Suspicious Passwor, Suspicious data do, CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , Suspicious SMB Per
+Potential SMB Brut, Web Application At, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+CVE-2019-19781 Exp, Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential SMB Brut, Potential Apache S, Suspicious SMB Per
+Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Web Application At, Potential Apache S, Potential SMB Brut, Suspicious data do, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Active Directory P, Active Directory P, Active Directory P, Active Directory P, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Suspicious SMB Per
+Active Directory P, Active Directory P, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Suspicious SMB Per, Potential SMB Brut, Suspicious SMB Per
+Connection receive, Connection receive, Connection receive, Connection receive, Connection receive, Connection receive, Connection receive, RDP protocol      , RDP protocol      , Potential SMB Brut, Suspicious SMB Per
+Connection receive, Connection receive, Connection receive, Connection receive, Connection receive, Connection receive, RDP protocol      , RDP protocol      , Potential SMB Brut, Suspicious SMB Per, Suspicious SMB Per
+CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , Potential SMB Brut, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, HTTP Basic Authent, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Potential SMB Brut, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Potential SMB Brut, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, Possible Cross Sit, Potential SMB Brut, Possible Cross Sit, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+RDP protocol      , Potential Apache S, Connection receive, Connection receive, Potential Apache S, Potential SMB Brut, Potential SMB Brut, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Potential SMB Brut, SMBv1             , SMBv1             , Potential SMB Brut
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Possible Cross Sit, Web Application At, Web Application At
+Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Possible Cross Sit, Web Application At, Web Application At, Self-signed certif, Self-signed certif, Web Application At
+SMBv1             , Possible Cross Sit, Web Application At, Web Application At, Self-signed certif, Self-signed certif, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Web Application At
+RDP protocol      , RDP protocol      , Self-signed certif, Unusual data downl, Self-signed certif, Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Web Application At, Web Application At
+RDP Connection wit, RDP protocol      , RDP protocol      , Self-signed certif, Unusual data downl, Self-signed certif, Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Web Application At
+RDP protocol      , Self-signed certif, Unusual data downl, Self-signed certif, Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At
+Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Web Application At
+Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Web Application At, Web Application At
+Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Web Application At
+Potential SMB Brut, Unusual data downl, Self-signed certif, Web Application At, SMBv1             , Web Application At, Potential Apache S, Active Directory P, Potential Apache S, Active Directory P, Potential SMB Brut
+Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Potential SMB Brut, Suspicious Passwor, RDP Connection wit, RDP protocol      , RDP protocol      , Potential SMB Brut
+RDP protocol      , Potential SMB Brut, Potential SMB Brut, Possible Cross Sit, Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut
+Potential Apache S, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Potential SMB Brut, Potential SMB Brut
+Web Application At, Possible Cross Sit, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , Potential SMB Brut
+
+Host: 38670
+Self-signed certif, Suspicious use of , Self-signed certif, Suspicious use of , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per
+Self-signed certif, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, SMBv1             , Potential SMB Brut, SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Potential Apache S, Suspicious SMB Per, Suspicious SMB Per
+Self-signed certif, Unusual connection, Connection receive, Unusual connection, Unusual connection, Suspicious data do, Unusual data downl, SMBv1             , SMBv1             , Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , Potential SMB Brut, Suspicious SMB Per
+Suspicious data do, Suspicious data do, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Data download on s, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, RDP protocol      , RDP protocol      , Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, Suspicious SMB Per
+Suspicious SMB Per, Connection receive, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Suspicious SMB Per
+Potential Apache S, Web Application At, Suspicious SMB Per, Potential SMB Brut, Potential Apache S, Potential Apache S, RDP protocol      , RDP protocol      , Unusual connection, Connection receive, Suspicious SMB Per
+Potential SMB Brut, Potential Apache S, Potential Apache S, RDP protocol      , RDP protocol      , Unusual connection, Connection receive, Suspicious SMB Per, Potential SMB Brut, Potential SMB Brut, Suspicious SMB Per
+Web Application At, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, Suspicious SMB Per, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Suspicious SMB Per
+Web Application At, Web Application At, Web Application At, Web Application At, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Suspicious SMB Per
+Self-signed certif, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Potential Apache S, Web Application At, Self-signed certif, Suspicious SMB Per
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Potential Apache S, Unusual data downl, Potential SMB Brut, Potential Apache S, Self-signed certif, Self-signed certif, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, HTTP Basic Authent, Potential Apache S, Potential Apache S, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential SMB Brut
+Unusual connection, Unusual connection, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, Potential Apache S, Potential SMB Brut
+RDP Connection wit, Potential Apache S, RDP protocol      , RDP protocol      , Potential SMB Brut, Web Application At, Web Application At, Potential Apache S, Potential SMB Brut, Potential SMB Brut, Potential SMB Brut
+Port Sweep        , Port Sweep        , Web Application At, Possible Cross Sit, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, RDP protocol      , RDP protocol      , Potential SMB Brut
+Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Unusual connection, Unusual connection, Unusual connection, Unusual connection, Unusual connection, Unusual connection, Potential SMB Brut
+
+Host: 38678
+Self-signed certif, Suspicious use of , Self-signed certif, Self-signed certif, Suspicious use of , Self-signed certif, Suspicious use of , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Unusual connection, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Unusual connection, SMBv1             , Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Potential SMB Brut, Suspicious SMB Per
+SMBv1             , SMBv1             , Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Possible Cross Sit, Self-signed certif, Web Application At
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Possible Cross Sit, Self-signed certif, Web Application At, Self-signed certif, Web Application At
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Possible Cross Sit, Self-signed certif, Web Application At, Self-signed certif, Web Application At, Self-signed certif, Unusual Potential
+Self-signed certif, Self-signed certif, Possible Cross Sit, Self-signed certif, Web Application At, Self-signed certif, Web Application At, Self-signed certif, Unusual Potential , Potential Apache S, Web Application At
+Self-signed certif, Possible Cross Sit, Self-signed certif, Web Application At, Self-signed certif, Web Application At, Self-signed certif, Unusual Potential , Potential Apache S, Web Application At, Web Application At
+Possible Cross Sit, Self-signed certif, Web Application At, Self-signed certif, Web Application At, Self-signed certif, Unusual Potential , Potential Apache S, Web Application At, Web Application At, Web Application At
+Self-signed certif, Web Application At, Self-signed certif, Web Application At, Self-signed certif, Unusual Potential , Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At
+Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, SMBv1             , SMBv1             , Suspicious SMB Per
+Web Application At, Potential Apache S, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Potential Apache S, Self-signed certif, Potential SMB Brut, SMBv1             , Suspicious SMB Per
+Web Application At, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Data download on s, Potential SMB Brut, Suspicious SMB Per
+Potential SMB Brut, Suspicious SMB Per, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Web Application At, Web Application At, RDP protocol      , Potential Apache S, Web Application At, Potential Apache S, Web Application At, HTTP Basic Authent, Potential Apache S, Potential Apache S, Suspicious SMB Per
+RDP protocol      , Potential Apache S, Web Application At, Potential Apache S, Web Application At, HTTP Basic Authent, Potential Apache S, Potential Apache S, Suspicious SMB Per, Potential SMB Brut, Suspicious SMB Per
+Port Sweep        , Connection receive, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Suspicious SMB Per
+RDP protocol      , RDP protocol      , Suspicious SMB Per, Potential SMB Brut, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Potential SMB Brut, Self-signed certif, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Self-signed certif, Self-signed certif, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Self-signed certif, Potential SMB Brut, Suspicious SMB Per
+Unusual data downl, Suspicious data do, Suspicious data do, Suspicious data do, Self-signed certif, Self-signed certif, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, Suspicious SMB Per
+CVE-2019-19781 Exp, SMBv1             , CVE-2019-19781 Exp, Self-signed certif, RDP protocol      , RDP protocol      , CVE-2019-19781 Exp, Self-signed certif, CVE-2019-19781 Exp, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Unusual data downl, Potential Apache S, Potential Apache S, Potential Apache S, Port Sweep        , Data download on s, Suspicious SMB Per
+Potential Apache S, Potential SMB Brut, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Possible Cross Sit, Suspicious SMB Per
+Possible Cross Sit, Suspicious SMB Per, Self-signed certif, Potential SMB Brut, RDP Connection wit, Potential SMB Brut, RDP protocol      , RDP protocol      , Potential SMB Brut, Web Application At, Suspicious SMB Per
+Potential Apache S, RDP protocol      , RDP protocol      , Potential Apache S, Potential Apache S, Potential SMB Brut, Potential SMB Brut, Unusual data downl, Unusual data downl, Potential SMB Brut, Suspicious SMB Per
+Potential Apache S, Potential Apache S, HTTP Basic Authent, Potential Apache S, Potential Apache S, RDP protocol      , RDP protocol      , Potential Apache S, Potential SMB Brut, Potential Apache S, Suspicious SMB Per
+Potential SMB Brut, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Suspicious SMB Per
+HTTP Basic Authent, Connection receive, Potential Apache S, Potential Apache S, Connection receive, Potential Apache S, Potential Apache S, Connection receive, Connection receive, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , SMBv1             , Potential SMB Brut, SMBv1             , Suspicious SMB Per
+Web Application At, Web Application At, Potential Apache S, Web Application At, Web Application At, Potential Apache S, Potential SMB Brut, Potential SMB Brut, Self-signed certif, Self-signed certif, Suspicious SMB Per
+Potential SMB Brut, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Self-signed certif, SMBv1             , Unusual data downl, Unusual data downl, Web Application At
+Self-signed certif, SMBv1             , Unusual data downl, Unusual data downl, Web Application At, Self-signed certif, Web Application At, Web Application At, Self-signed certif, Unusual data downl, Web Application At
+Web Application At, Self-signed certif, Web Application At, Web Application At, Self-signed certif, Unusual data downl, Web Application At, Unusual data downl, Potential Apache S, Web Application At, Web Application At
+Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , SMBv1             , Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Potential SMB Brut
+Potential SMB Brut, Self-signed certif, RDP protocol      , RDP protocol      , RDP Connection wit, RDP Connection wit, RDP protocol      , RDP protocol      , Self-signed certif, Self-signed certif, Web Application At
+Self-signed certif, RDP protocol      , RDP protocol      , RDP Connection wit, RDP Connection wit, RDP protocol      , RDP protocol      , Self-signed certif, Self-signed certif, Web Application At, Web Application At
+Web Application At, Web Application At, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At, Web Application At
+Potential Apache S, Possible Cross Sit, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut
+Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, Potential SMB Brut
+Potential Apache S, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut
+Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential Apache S, RDP protocol      , RDP protocol      , Web Application At, Potential SMB Brut, Potential Apache S, Potential SMB Brut
+Potential Apache S, Potential Apache S, Web Application At, Web Application At, HTTP Basic Authent, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Potential SMB Brut
+Possible Cross Sit, RDP Connection wit, Possible Cross Sit, RDP protocol      , Possible Cross Sit, Possible Cross Sit, RDP Connection wit, RDP protocol      , RDP protocol      , Potential SMB Brut, Potential SMB Brut
+Possible Cross Sit, RDP Connection wit, RDP protocol      , RDP protocol      , Potential SMB Brut, Potential SMB Brut, Web Application At, Web Application At, Potential SMB Brut, Potential SMB Brut, Potential SMB Brut
+Potential SMB Brut, Potential SMB Brut, Potential SMB Brut, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Connection receive, Potential SMB Brut, Potential SMB Brut
+
+Host: 41835
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Connection receive, Unusual connection, RDP protocol      , RDP protocol      , PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Connection receive, Unusual connection, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Connection receive, Unusual connection, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , Connection receive, Unusual connection, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , Connection receive, Unusual connection, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Command Execution , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction
+
+Host: 42280
+RDP protocol      , RDP Connection wit, Potential SMB Brut, Self-signed certif, Potential Apache S, SMBv1             , Potential Apache S, Potential Apache S, Potential Apache S, Web Application At, Suspicious SMB Per
+CVE-2019-19781 Exp, Potential Apache S, Port Sweep        , RDP Connection wit, Potential Apache S, Web Application At, Self-signed certif, SMBv1             , Suspicious use of , SMBv1             , Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Consecutive failed, Web Application At, Potential Apache S, Web Application At, Web Application At, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Suspicious SMB Per
+Self-signed certif, Self-signed certif, SMBv1             , Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Suspicious Passwor, Self-signed certif, SMBv1             , Suspicious SMB Per
+Connection receive, Unusual connection, Unusual connection, Connection receive, Unusual connection, RDP protocol      , Suspicious Passwor, Web Application At, RDP protocol      , Potential Apache S, Suspicious SMB Per
+Web Application At, Web Application At, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+CVE-2019-19781 Exp, RDP Connection wit, Web Application At, Web Application At, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, RDP protocol      , Suspicious SMB Per
+Self-signed certif, SMBv1             , SMBv1             , SMBv1             , Potential SMB Brut, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, SMBv1             , Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, Suspicious data do, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential SMB Brut, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential Apache S, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, RDP protocol      , RDP Connection wit, RDP protocol      , RDP protocol      , Suspicious SMB Per
+RDP Connection wit, RDP protocol      , RDP protocol      , Suspicious SMB Per, Potential SMB Brut, Potential Apache S, Web Application At, Web Application At, Web Application At, Potential SMB Brut, Suspicious SMB Per
+Self-signed certif, Self-signed certif, SMBv1             , RDP Connection wit, RDP protocol      , RDP protocol      , Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Suspicious SMB Per
+Potential SMB Brut, Potential Apache S, Potential SMB Brut, Potential Apache S, Potential Apache S, RDP protocol      , Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp
+Potential Apache S, Potential SMB Brut, Potential Apache S, Potential Apache S, RDP protocol      , Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp
+Potential Apache S, Potential Apache S, RDP protocol      , Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, CVE-2019-19781 Exp
+Potential Apache S, RDP protocol      , Web Application At, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, CVE-2019-19781 Exp, CVE-2019-19781 Exp
+Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, Potential SMB Brut
+Self-signed certif, Self-signed certif, Self-signed certif, Potential SMB Brut, RDP Connection wit, RDP protocol      , RDP protocol      , Potential SMB Brut, Potential SMB Brut, Web Application At, Suspicious SMB Per
+Suspicious SMB Per, Web Application At, CVE-2019-19781 Exp, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut
+
+Host: 42281
+Web Application At, Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Suspicious SMB Per
+Self-signed certif, SMBv1             , Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708     , Suspicious SMB Per
+Web Application At, Web Application At, Potential Apache S, Web Application At, Web Application At, Potential Apache S, Web Application At, Web Application At, Potential Apache S, Potential Apache S, Suspicious SMB Per
+Self-signed certif, Potential Apache S, Anomalous connecti, Potential Apache S, Anomalous connecti, Anomalous connecti, Anomalous connecti, Unusual connection, Potential SMB Brut, Web Application At, Suspicious SMB Per
+Self-signed certif, Potential SMB Brut, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, Self-signed certif, SMBv1             , Self-signed certif, SMBv1             , Suspicious SMB Per
+SMBv1             , Potential SMB Brut, Web Application At, Potential Apache S, Self-signed certif, Self-signed certif, Suspicious Passwor, Potential SMB Brut, RDP protocol      , RDP Connection wit, Suspicious SMB Per
+Potential Apache S, Self-signed certif, Self-signed certif, Suspicious Passwor, Potential SMB Brut, RDP protocol      , RDP Connection wit, Suspicious SMB Per, Connection receive, Connection receive, Suspicious SMB Per
+Self-signed certif, Self-signed certif, Self-signed certif, Potential Apache S, Self-signed certif, Self-signed certif, SMBv1             , Self-signed certif, Self-signed certif, Self-signed certif, Suspicious SMB Per
+Web Application At, Web Application At, Potential Apache S, Web Application At, Web Application At, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential Apache S, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Potential SMB Brut, RDP Connection wit, RDP protocol      , Suspicious SMB Per
+Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential Apache S, Web Application At, Potential SMB Brut, RDP protocol      , RDP Connection wit, RDP protocol      , Suspicious SMB Per
+Potential Apache S, Potential SMB Brut, Potential Apache S, Potential SMB Brut, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, Potential Apache S, CVE-2019-19781 Exp, Suspicious SMB Per
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, CVE-2019-19781 Exp, RDP Connection wit, RDP protocol      , Potential SMB Brut, RDP protocol      , RDP Connection wit, RDP protocol      , Suspicious SMB Per
+RDP protocol      , Suspicious SMB Per, Potential Apache S, Potential SMB Brut, Potential Apache S, Web Application At, Potential Apache S, Potential Apache S, Potential SMB Brut, Potential Apache S, Potential SMB Brut
+RDP protocol      , Potential SMB Brut, Potential SMB Brut, RDP Connection wit, RDP protocol      , Web Application At, Web Application At, Potential Apache S, Potential Apache S, Web Application At, Potential SMB Brut
+
+Host: 44856
+RDP protocol      , Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction
+Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction
+Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory P, Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+
+Host: 46069
+Unusual user agent, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Potential Lateral , Potential Lateral , Anomalous Command , Anomalous Command , Possible Nyetya La, Possible Nyetya La
+PsExec interaction, Unusual user agent, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Potential Lateral , Potential Lateral , Anomalous Command , Anomalous Command , Possible Nyetya La
+Active Directory T, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, Active Directory A, HTTP Basic Authent, Active Directory T, Suspicious Remote
+PsExec interaction, PsExec interaction, Command Execution , RDP protocol      , RDP protocol      , Command Execution , Potential Lateral , Command Execution , PsExec interaction, PsExec interaction, Possible Nyetya La
+SMB2 Create for an, RDP protocol      , Active Directory A, Active Directory A, Active Directory T, SMB2 Create for an, Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an
+RDP protocol      , Active Directory A, Active Directory A, Active Directory T, SMB2 Create for an, Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an
+SMB2 Create for an, Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction
+Active Directory T, SMB2 Create for an, Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+Active Directory A, Active Directory T, SMB2 Create for an, Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an
+Unusual JA3 finger, Connection on unus, Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an
+Active Directory T, RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an
+RDP protocol      , SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an
+SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an, PsExec interaction, Active Directory T, SMB2 Create for an
+SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an, PsExec interaction, Active Directory T, SMB2 Create for an, PsExec interaction
+PsExec interaction, PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an, PsExec interaction, Active Directory T, SMB2 Create for an, PsExec interaction, SMB2 Create for an
+PsExec interaction, SMB2 Create for an, Unusual connection, SMB2 Create for an, SMB2 Create for an, PsExec interaction, Active Directory T, SMB2 Create for an, PsExec interaction, SMB2 Create for an, PsExec interaction
+SMB2 Create for an, SMB2 Create for an, PsExec interaction, Active Directory T, SMB2 Create for an, PsExec interaction, SMB2 Create for an, PsExec interaction, Suspicious Trusted, Active Directory A, PsExec interaction
+PsExec interaction, Suspicious Trusted, Active Directory A, PsExec interaction, RDP protocol      , RDP protocol      , Unusual JA3 finger, Active Directory T, Active Directory A, RDP protocol      , SMB2 Create for an
+Suspicious Trusted, Active Directory A, PsExec interaction, RDP protocol      , RDP protocol      , Unusual JA3 finger, Active Directory T, Active Directory A, RDP protocol      , SMB2 Create for an, SMB2 Create for an
+Active Directory A, PsExec interaction, RDP protocol      , RDP protocol      , Unusual JA3 finger, Active Directory T, Active Directory A, RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction
+RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , SMB2 Create for an, PsExec interaction, PsExec interaction
+SMB2 Create for an, SMB2 Create for an, PsExec interaction, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an
+Active Directory A, RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , SMB2 Create for an, PsExec interaction
+Active Directory T, Active Directory A, RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , SMB2 Create for an
+RDP protocol      , RDP protocol      , SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, Active Directory T, RDP protocol      , Active Directory A, SMB2 Create for an, PsExec interaction
+Active Directory T, RDP protocol      , Active Directory A, SMB2 Create for an, PsExec interaction, PsExec interaction, Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an
+RDP protocol      , Active Directory A, SMB2 Create for an, PsExec interaction, PsExec interaction, Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+Active Directory A, SMB2 Create for an, PsExec interaction, PsExec interaction, Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction
+PsExec interaction, PsExec interaction, Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, Unusual SMB2 Creat, PsExec interaction
+PsExec interaction, Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, Unusual SMB2 Creat, PsExec interaction, SMB2 Create for an
+Suspicious Trusted, PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, Unusual SMB2 Creat, PsExec interaction, SMB2 Create for an, SMB2 Create for an
+PsExec interaction, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, Unusual SMB2 Creat, PsExec interaction, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , Connection on unus, Unusual SMB2 Creat, PsExec interaction
+RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , Connection on unus, Unusual SMB2 Creat, PsExec interaction, Active Directory T, Unusual SMB2 Creat, PsExec interaction
+RDP protocol      , Connection on unus, Unusual SMB2 Creat, PsExec interaction, Active Directory T, Unusual SMB2 Creat, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Anomalous Command
+RDP protocol      , Active Directory T, Active Directory T, Active Directory T, RDP protocol      , Connection on unus, Active Directory T, Active Directory T, Active Directory A, Active Directory T, PsExec interaction
+Active Directory A, Active Directory T, PsExec interaction, Suspicious data up, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, Active Directory A, PsExec interaction, PsExec interaction
+Active Directory T, PsExec interaction, Suspicious data up, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, Active Directory A, PsExec interaction, PsExec interaction, PsExec interaction
+PsExec interaction, Suspicious data up, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, Active Directory A, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Connection on unus, Active Directory T, Suspicious data up, Anomalous connecti, PsExec interaction
+Connection on unus, Active Directory T, Suspicious data up, Anomalous connecti, PsExec interaction, Active Directory T, Active Directory T, Active Directory T, Active Directory A, Active Directory P, PsExec interaction
+Anomalous connecti, PsExec interaction, Active Directory T, Active Directory T, Active Directory T, Active Directory A, Active Directory P, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory A, Active Directory P, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Unusual user agent, PsExec interaction
+Active Directory T, Active Directory A, Active Directory P, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Unusual user agent, PsExec interaction, PsExec interaction
+Active Directory A, Active Directory P, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Unusual user agent, PsExec interaction, PsExec interaction, Anomalous Command
+Active Directory P, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, Unusual user agent, PsExec interaction, PsExec interaction, Anomalous Command , Anomalous Command
+PsExec interaction, PsExec interaction, Unusual user agent, PsExec interaction, PsExec interaction, Anomalous Command , Anomalous Command , Potential Lateral , Command Execution , Command Execution , Possible Nyetya La
+Active Directory P, Suspicious Trusted, Active Directory A, Suspicious Trusted, Active Directory A, Unusual user agent, Unusual user agent, Unusual user agent, Unusual user agent, RDP protocol      , PsExec interaction
+Active Directory A, Unusual user agent, Unusual user agent, Unusual user agent, Unusual user agent, RDP protocol      , PsExec interaction, Active Directory T, PsExec interaction, Active Directory P, PsExec interaction
+PsExec interaction, Active Directory P, PsExec interaction, Suspicious Trusted, Active Directory A, Active Directory A, PsExec interaction, Connection on unus, Connection on unus, Connection on unus, PsExec interaction
+Active Directory A, PsExec interaction, Connection on unus, Connection on unus, Connection on unus, PsExec interaction, Unusual connection, RDP protocol      , Connection on unus, RDP protocol      , PsExec interaction
+PsExec interaction, Connection on unus, Connection on unus, Connection on unus, PsExec interaction, Unusual connection, RDP protocol      , Connection on unus, RDP protocol      , PsExec interaction, PsExec interaction
+Connection on unus, Connection on unus, PsExec interaction, Unusual connection, RDP protocol      , Connection on unus, RDP protocol      , PsExec interaction, PsExec interaction, Active Directory T, PsExec interaction
+Active Directory T, PsExec interaction, Unusual JA3 finger, Suspicious Trusted, Active Directory A, PsExec interaction, Active Directory T, PsExec interaction, PsExec interaction, Active Directory A, PsExec interaction
+RDP protocol      , PsExec interaction, Unusual JA3 finger, RDP protocol      , RDP protocol      , Active Directory T, Active Directory T, Active Directory T, Active Directory A, RDP protocol      , PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory A, RDP protocol      , PsExec interaction, PsExec interaction, Unusual JA3 finger, Active Directory T, RDP protocol      , Anomalous Command
+Active Directory T, Active Directory A, RDP protocol      , Connection on unus, Active Directory A, RDP protocol      , RDP protocol      , Active Directory T, Active Directory A, Active Directory T, PsExec interaction
+Active Directory T, Active Directory A, Active Directory T, PsExec interaction, Active Directory T, Active Directory A, Active Directory T, PsExec interaction, Active Directory A, PsExec interaction, PsExec interaction
+PsExec interaction, Active Directory T, Active Directory A, Active Directory T, PsExec interaction, Active Directory A, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, PsExec interaction
+Active Directory T, Active Directory A, Active Directory T, PsExec interaction, Active Directory A, PsExec interaction, PsExec interaction, Active Directory T, Active Directory T, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , Active Directory T, Active Directory T, PsExec interaction, Active Directory A, Connection on unus, PsExec interaction, Active Directory T, Suspicious data up, PsExec interaction
+
+Host: 47519
+Active Directory T, Active Directory T, Active Directory T, Connection on unus, Active Directory T, Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an
+Active Directory T, Active Directory T, Connection on unus, Active Directory T, Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an
+Active Directory T, Connection on unus, Active Directory T, Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an
+Connection on unus, Active Directory T, Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an
+Active Directory T, Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+Suspicious data do, Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an
+Active Directory T, Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction
+Suspicious Account, Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction, SMB2 Create for an
+Suspicious Account, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an
+SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an, Active Directory T, SMB2 Create for an, SMB2 Create for an
+SMB2 Create for an, PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction
+PsExec interaction, PsExec interaction, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an, Active Directory T, SMB2 Create for an, SMB2 Create for an, PsExec interaction, PsExec interaction
+Active Directory T, Connection on unus, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, PsExec interaction
+Connection on unus, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory T, Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Suspicious Account, Suspicious Account, Active Directory T, Malicious archive , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory T, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory P, Active Directory T, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction, PsExec interaction
+Active Directory T, Active Directory T, Connection on unus, Suspicious Account, Active Directory T, Unusual user agent, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction
+Active Directory T, Connection on unus, Suspicious Account, Active Directory T, Unusual user agent, RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction, PsExec interaction
+
+Host: 58677
+Active Directory T, Active Directory T, Command Execution , Connection on unus, Connection on unus, Active Directory T, Command Execution , Active Directory T, Anomalous Command , Anomalous Command , PsExec interaction
+
+Host: 86129
+RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , RDP protocol      , Connection receive, RDP protocol      , PsExec interaction
+
+Host: 120187
+-1337             , -1337             , -1337             , Consecutive failed, SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per
+-1337             , -1337             , -1337             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per, Potential SMB Brut
+
+Host: 133961
+Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction, Command Execution , PsExec interaction
+Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction, Command Execution , PsExec interaction, Command Execution , PsExec interaction
+Command Execution , Command Execution , Command Execution , PsExec interaction, Command Execution , PsExec interaction, Command Execution , PsExec interaction, PsExec interaction, Command Execution , PsExec interaction
+Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction
+Command Execution , Command Execution , Command Execution , PsExec interaction, Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction
+Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction
+
+Host: 142294
+SMB2 Create for an, SMB2 Create for an, Connection receive, RDP protocol      , SMB2 Create for an, SMB2 Create for an, RDP protocol      , RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction
+SMB2 Create for an, Connection receive, RDP protocol      , SMB2 Create for an, SMB2 Create for an, RDP protocol      , RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, SMB2 Create for an
+Connection receive, RDP protocol      , SMB2 Create for an, SMB2 Create for an, RDP protocol      , RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an
+RDP protocol      , SMB2 Create for an, SMB2 Create for an, RDP protocol      , RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an
+SMB2 Create for an, SMB2 Create for an, RDP protocol      , RDP protocol      , SMB2 Create for an, SMB2 Create for an, PsExec interaction, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an, SMB2 Create for an
+Anomalous Command , RDP protocol      , Anomalous Command , Anomalous Command , Anomalous Command , Anomalous Command , RDP protocol      , Suspicious Account, Active Directory P, RDP protocol      , PsExec interaction
+Anomalous Command , Anomalous Command , RDP protocol      , Suspicious Account, Active Directory P, RDP protocol      , PsExec interaction, RDP protocol      , RDP protocol      , RDP protocol      , PsExec interaction
+
+Host: 174438
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , PsExec interaction
+RDP protocol      , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , RDP protocol      , PsExec interaction
+SMBv1             , SMBv1             , RDP protocol      , PsExec interaction, Command Execution , Command Execution , Command Execution , Command Execution , Suspicious Trusted, Command Execution , PsExec interaction
+Command Execution , Suspicious Trusted, Command Execution , PsExec interaction, Command Execution , Command Execution , Suspicious Trusted, Command Execution , Command Execution , Command Execution , PsExec interaction
+Command Execution , Command Execution , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , PsExec interaction
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Active Directory T, PsExec interaction
+SMBv1             , SMBv1             , SMBv1             , Active Directory T, Command Execution , Command Execution , SMBv1             , Suspicious Account, Command Execution , Command Execution , PsExec interaction
+Command Execution , SMBv1             , SMBv1             , SMBv1             , RDP protocol      , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Command Execution , PsExec interaction
+SMBv1             , SMBv1             , Command Execution , Command Execution , SMBv1             , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Command Execution , PsExec interaction
+Command Execution , Command Execution , SMBv1             , SMBv1             , SMBv1             , SMBv1             , RDP protocol      , Command Execution , Command Execution , SMBv1             , PsExec interaction
+SMBv1             , SMBv1             , Command Execution , Command Execution , SMBv1             , SMBv1             , Command Execution , SMBv1             , Command Execution , Active Directory T, PsExec interaction
+Command Execution , PsExec interaction, RDP protocol      , Command Execution , Command Execution , Command Execution , RDP protocol      , Command Execution , Active Directory T, Command Execution , PsExec interaction
+Command Execution , RDP protocol      , RDP protocol      , Command Execution , Command Execution , Active Directory T, Command Execution , Command Execution , Command Execution , Command Execution , PsExec interaction
+Command Execution , Command Execution , RDP protocol      , Active Directory T, RDP protocol      , RDP protocol      , Active Directory T, Command Execution , Command Execution , Command Execution , PsExec interaction
+RDP protocol      , Active Directory T, Command Execution , Command Execution , Command Execution , PsExec interaction, Active Directory T, Command Execution , Active Directory A, RDP protocol      , PsExec interaction
+
+Host: 174470
+Command Execution , Command Execution , SMBv1             , Active Directory T, Command Execution , SMBv1             , Command Execution , RDP protocol      , Potential Lateral , Command Execution , PsExec interaction
+RDP protocol      , SMBv1             , Command Execution , SMBv1             , Suspicious Account, SMBv1             , Command Execution , SMBv1             , SMBv1             , SMBv1             , PsExec interaction
+SMBv1             , Command Execution , Command Execution , Command Execution , SMBv1             , RDP protocol      , SMBv1             , Command Execution , Command Execution , Potential Lateral , PsExec interaction
+SMBv1             , SMBv1             , Active Directory T, Command Execution , Command Execution , SMBv1             , RDP protocol      , Command Execution , Command Execution , SMBv1             , PsExec interaction
+SMBv1             , SMBv1             , SMBv1             , SMBv1             , Command Execution , Command Execution , Command Execution , SMBv1             , SMBv1             , Potential Lateral , PsExec interaction
+RDP protocol      , SMBv1             , SMBv1             , Command Execution , Command Execution , SMBv1             , SMBv1             , Command Execution , RDP protocol      , Potential Lateral , PsExec interaction
+Command Execution , Active Directory T, Command Execution , Command Execution , Command Execution , Suspicious Account, Command Execution , Active Directory T, RDP protocol      , Potential Lateral , PsExec interaction
+
+Host: 184809
+-1337             , -1337             , -1337             , -1337             , -1337             , -1337             , -1337             , -1337             , -1337             , Unusual JA3 finger, PsExec interaction
+
+Host: 189263
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Drupalgeddon 2    , Drupalgeddon 2    , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction
+CVE-2019-19781 Exp, Drupalgeddon 2    , Drupalgeddon 2    , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La
+Drupalgeddon 2    , Drupalgeddon 2    , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La, Suspicious RDP con
+Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La, Suspicious RDP con, Potential SMB prob, Unusual Port Scan , Unusual JA3 finger, Suspicious RDP con
+Suspicious Passwor, PsExec interaction, Possible Nyetya La, Suspicious RDP con, Potential SMB prob, Unusual Port Scan , Unusual JA3 finger, Suspicious RDP con, SMBv1             , CVE-2019-19781 Exp, PsExec interaction
+PsExec interaction, Possible Nyetya La, Suspicious RDP con, Potential SMB prob, Unusual Port Scan , Unusual JA3 finger, Suspicious RDP con, SMBv1             , CVE-2019-19781 Exp, PsExec interaction, Possible Nyetya La
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La
+Qualys Vulnerabili, CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La, Anomalous Command
+CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Suspicious Passwor, PsExec interaction, Possible Nyetya La, Anomalous Command , Suspicious RDP con
+Anomalous Command , Suspicious RDP con, Suspicious Account, Unusual Port Sweep, Unusual Port Sweep, SMBv1             , Unusual connection, SMBv1             , Unusual connection, SMBv1             , PsExec interaction
+Suspicious RDP con, Suspicious Account, Unusual Port Sweep, Unusual Port Sweep, SMBv1             , Unusual connection, SMBv1             , Unusual connection, SMBv1             , PsExec interaction, Possible Nyetya La
+Unusual Port Scan , Unusual connection, Unusual connection, Command Execution , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per, SMBv1             , PsExec interaction
+Unusual connection, Command Execution , SMBv1             , SMBv1             , SMBv1             , SMBv1             , Suspicious SMB Per, SMBv1             , PsExec interaction, SMBv1             , Possible Nyetya La
+Suspicious SMB Per, SMBv1             , PsExec interaction, SMBv1             , Possible Nyetya La, Suspicious Passwor, SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , PsExec interaction
+SMBv1             , Possible Nyetya La, Suspicious Passwor, SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , PsExec interaction, SMBv1             , SMBv1             , Possible Nyetya La
+Suspicious Passwor, SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , PsExec interaction, SMBv1             , SMBv1             , Possible Nyetya La, CVE-2019-0708     , CVE-2019-0708
+Possible Nyetya La, Suspicious Passwor, SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , PsExec interaction, SMBv1             , SMBv1             , Possible Nyetya La, CVE-2019-0708
+SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , PsExec interaction, SMBv1             , SMBv1             , Possible Nyetya La, CVE-2019-0708     , CVE-2019-0708     , CVE-2019-0708
+Suspicious Passwor, SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , Command Execution , SMBv1             , Suspicious Account, Command Execution , SMBv1             , PsExec interaction
+SMBv1             , Potential SMB prob, Unusual JA3 finger, SMBv1             , Command Execution , SMBv1             , Suspicious Account, Command Execution , SMBv1             , PsExec interaction, Possible Nyetya La
+PsExec interaction, Possible Nyetya La, Unusual JA3 finger, SMBv1             , Suspicious Passwor, Connection receive, Potential SMB prob, Unusual JA3 finger, Command Execution , SMBv1             , Suspicious RDP con
+Unusual JA3 finger, Command Execution , SMBv1             , Suspicious RDP con, Command Execution , SMBv1             , SMBv1             , Qualys Vulnerabili, Unusual JA3 finger, Command Execution , PsExec interaction
+SMBv1             , Suspicious RDP con, Command Execution , SMBv1             , SMBv1             , Qualys Vulnerabili, Unusual JA3 finger, Command Execution , PsExec interaction, SMBv1             , Possible Nyetya La
+Unusual Port Sweep, Unusual Port Sweep, Unusual Port Sweep, Unusual Port Sweep, Unusual Port Sweep, Unusual Port Sweep, Unusual Port Scan , Unusual HTTP Basic, SMBv1             , Suspicious Passwor, Suspicious RDP con
+Unusual Port Sweep, Unusual Port Scan , Unusual HTTP Basic, SMBv1             , Suspicious Passwor, Suspicious RDP con, Unusual user agent, Potential SMB prob, Command Execution , SMBv1             , PsExec interaction
+Unusual HTTP Basic, SMBv1             , Suspicious Passwor, Suspicious RDP con, Unusual user agent, Potential SMB prob, Command Execution , SMBv1             , PsExec interaction, SMBv1             , Possible Nyetya La
+Qualys Vulnerabili, Command Execution , SMBv1             , Command Execution , Qualys Vulnerabili, Unusual Port Scan , Command Execution , Drupalgeddon 2    , SMBv1             , RDP protocol      , PsExec interaction
+SMBv1             , Potential SMB prob, Command Execution , Unusual JA3 finger, RDP protocol      , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Potential SMB prob, Port Scan         , Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction, Suspicious Passwor, RDP protocol      , Command Execution , Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Connection receive, SMBv1             , Potential Nyetya L, PsExec interaction
+Command Execution , Unusual user agent, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, RDP protocol      , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , RDP protocol      , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Unusual connection, Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , Port Scan         , Active Directory P, Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , Command Execution , RDP protocol      , Connection receive, Port Sweep        , Port Scan         , SMBv1             , PsExec interaction
+SMBv1             , Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , Port Scan         , SMBv1             , Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Potential Apache S, Potential Web Shel, Web Application At, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , SMBv1             , Active Directory P, PsExec interaction
+Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, RDP protocol      , SMBv1             , SMBv1             , Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+SMBv1             , Command Execution , Command Execution , SMBv1             , Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, RDP protocol      , Command Execution , SMBv1             , PsExec interaction
+Potential Web Shel, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, RDP protocol      , Dropper attempt to, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Dropper attempt to, Qualys Vulnerabili, Command Execution , SMBv1             , SMBv1             , PsExec interaction
+Potential Web Shel, Web Application At, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , Qualys Vulnerabili, Potential Nyetya L, PsExec interaction
+CVE-2019-19781 Exp, Qualys Vulnerabili, SMBv1             , Command Execution , Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Command Execution , SMBv1             , PsExec interaction
+Drupalgeddon 2    , Drupalgeddon 2    , RDP protocol      , Potential SMB prob, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , SMBv1             , PsExec interaction
+Potential Apache S, Potential Web Shel, RDP protocol      , Potential SMB prob, Qualys Vulnerabili, Command Execution , SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+Command Execution , SMBv1             , Potential Nyetya L, Active Directory P, RDP protocol      , Potential SMB prob, Unusual JA3 finger, Command Execution , Drupalgeddon 2    , SMBv1             , PsExec interaction
+Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , SMBv1             , Active Directory P, SMBv1             , Potential Nyetya L, PsExec interaction
+Unusual Port Sweep, Port Scan         , Unusual Port Sweep, Port Sweep        , Unusual Port Sweep, Unusual Port Sweep, Port Sweep        , Command Execution , Drupalgeddon 2    , SMBv1             , PsExec interaction
+Web Application At, Qualys Vulnerabili, SMBv1             , Drupalgeddon 2    , Drupalgeddon 2    , Port Scan         , Command Execution , Drupalgeddon 2    , SMBv1             , Potential Nyetya L, PsExec interaction
+Potential SMB prob, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , SMBv1             , SMBv1             , Command Execution , Command Execution , SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Command Execution , Port Scan         , Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Potential SMB prob, Command Execution , Command Execution , SMBv1             , SMBv1             , Command Execution , Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Qualys Vulnerabili, Port Scan         , SMBv1             , Potential Apache S, Web Application At, Potential Web Shel, Potential Nyetya L, PsExec interaction
+Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Dropper attempt to, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Drupalgeddon 2    , Drupalgeddon 2    , SMBv1             , Potential Nyetya L, PsExec interaction
+Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Command Execution , Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , PsExec interaction
+Potential Web Shel, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Web Application At, SMBv1             , Potential Web Shel, Potential Nyetya L, PsExec interaction
+Port Sweep        , Unusual Port Sweep, Unusual Port Sweep, Port Sweep        , Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction, Potential Nyetya L, Active Directory P, RDP protocol      , Command Execution , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Port Scan         , Port Scan         , Qualys Vulnerabili, SMBv1             , Port Scan         , Potential Nyetya L, PsExec interaction
+Suspicious Account, SMBv1             , Drupalgeddon 2    , Drupalgeddon 2    , SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Command Execution , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Command Execution , Potential Apache S, Web Application At, Potential Web Shel, SMBv1             , Active Directory P, Potential Nyetya L, PsExec interaction
+Active Directory P, RDP protocol      , Command Execution , SMBv1             , SMBv1             , Command Execution , SMBv1             , Potential SMB prob, Command Execution , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Unusual user agent, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Potential Apache S, Potential Web Shel, SMBv1             , Drupalgeddon 2    , Drupalgeddon 2    , PsExec interaction
+Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Active Directory P, Qualys Vulnerabili, PsExec interaction
+Qualys Vulnerabili, CVE-2019-19781 Exp, Port Scan         , Port Sweep        , Port Sweep        , Unusual Port Sweep, Port Sweep        , Port Sweep        , SMBv1             , SMBv1             , PsExec interaction
+CVE-2019-19781 Exp, Unusual JA3 finger, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Port Scan         , SMBv1             , Potential Nyetya L, PsExec interaction
+SMBv1             , SMBv1             , Potential SMB prob, SMBv1             , Command Execution , Command Execution , Port Scan         , Drupalgeddon 2    , SMBv1             , Potential Nyetya L, PsExec interaction
+Potential SMB prob, Drupalgeddon 2    , Drupalgeddon 2    , Command Execution , SMBv1             , Active Directory P, Potential Nyetya L, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Command Execution , Connection receive, Port Scan         , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, PsExec interaction
+Potential Nyetya L, Active Directory P, Qualys Vulnerabili, RDP protocol      , Potential SMB prob, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , PsExec interaction
+Active Directory P, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Potential Nyetya L, RDP protocol      , Potential SMB prob, Port Scan         , SMBv1             , Command Execution , PsExec interaction
+Potential SMB prob, Command Execution , Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Command Execution , Potential SMB prob, Drupalgeddon 2    , SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Command Execution , SMBv1             , Potential Nyetya L, Active Directory P, RDP protocol      , SMBv1             , Potential SMB prob, Command Execution , Qualys Vulnerabili, SMBv1             , PsExec interaction
+Active Directory P, RDP protocol      , SMBv1             , Command Execution , Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , PsExec interaction
+Command Execution , SMBv1             , Potential Nyetya L, Active Directory P, Command Execution , RDP protocol      , SMBv1             , Command Execution , Drupalgeddon 2    , SMBv1             , PsExec interaction
+Unusual Port Sweep, Port Sweep        , Port Sweep        , Unusual Port Sweep, Port Scan         , Connection receive, Command Execution , SMBv1             , Command Execution , Potential Nyetya L, PsExec interaction
+SMBv1             , Qualys Vulnerabili, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , Active Directory P, Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, CVE-2019-19781 Exp, Command Execution , Port Scan         , Connection receive, Port Scan         , Unusual Port Sweep, Port Sweep        , Command Execution , SMBv1             , PsExec interaction
+Potential SMB prob, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Apache S, Web Application At, Potential Web Shel, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Potential SMB prob, Qualys Vulnerabili, Command Execution , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Drupalgeddon 2    , Drupalgeddon 2    , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Command Execution , Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , Active Directory P, Drupalgeddon 2    , PsExec interaction
+Qualys Vulnerabili, Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Drupalgeddon 2    , Drupalgeddon 2    , Port Scan         , SMBv1             , Active Directory P, PsExec interaction
+Connection receive, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Connection receive, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Command Execution , CVE-2019-19781 Exp, CVE-2019-19781 Exp, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , PsExec interaction
+Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Drupalgeddon 2    , RDP protocol      , Drupalgeddon 2    , SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Drupalgeddon 2    , Potential Nyetya L, PsExec interaction
+SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Active Directory P, RDP protocol      , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, SMBv1             , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Drupalgeddon 2    , SMBv1             , Active Directory P, Potential Nyetya L, RDP protocol      , Command Execution , CVE-2019-19781 Exp, CVE-2019-19781 Exp, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Command Execution , RDP protocol      , Qualys Vulnerabili, SMBv1             , Unusual connection, Potential Nyetya L, PsExec interaction
+Command Execution , SMBv1             , Port Scan         , Command Execution , Drupalgeddon 2    , Drupalgeddon 2    , SMBv1             , RDP protocol      , Active Directory P, Potential Apache S, PsExec interaction
+SMBv1             , Potential SMB prob, Port Scan         , Connection receive, Command Execution , Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Active Directory P, Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Port Scan         , Active Directory P, PsExec interaction
+Port Sweep        , Qualys Vulnerabili, Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , Port Scan         , SMBv1             , Command Execution , SMBv1             , CVE-2019-0708
+Qualys Vulnerabili, Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , Port Scan         , SMBv1             , Command Execution , SMBv1             , CVE-2019-0708     , CVE-2019-0708
+Port Sweep        , Port Sweep        , Port Sweep        , Port Sweep        , Port Scan         , SMBv1             , Command Execution , SMBv1             , CVE-2019-0708     , CVE-2019-0708     , Suspicious RDP con
+SMBv1             , CVE-2019-0708     , CVE-2019-0708     , Suspicious RDP con, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Active Directory P, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , SMBv1             , Potential Nyetya L, PsExec interaction
+RDP protocol      , Command Execution , Potential Apache S, Potential Web Shel, Web Application At, Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, PsExec interaction
+Connection receive, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Drupalgeddon 2    , PsExec interaction
+Drupalgeddon 2    , Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, Qualys Vulnerabili, RDP protocol      , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Potential Apache S, Potential Web Shel, Qualys Vulnerabili, RDP protocol      , SQL Injection     , SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Port Scan         , Drupalgeddon 2    , Drupalgeddon 2    , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, CVE-2019-19781 Exp, Drupalgeddon 2    , SMBv1             , Active Directory P, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Drupalgeddon 2    , SMBv1             , CVE-2019-19781 Exp, CVE-2019-19781 Exp, Active Directory P, Potential Nyetya L, PsExec interaction
+Port Scan         , Port Sweep        , Port Sweep        , Qualys Vulnerabili, SMBv1             , Qualys Vulnerabili, RDP protocol      , Qualys Vulnerabili, Qualys Vulnerabili, Active Directory P, PsExec interaction
+Drupalgeddon 2    , Port Scan         , Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Qualys Vulnerabili, SMBv1             , Drupalgeddon 2    , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Port Scan         , RDP protocol      , SMBv1             , Qualys Vulnerabili, Active Directory P, SMBv1             , PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Drupalgeddon 2    , Drupalgeddon 2    , RDP protocol      , SMBv1             , SMBv1             , PsExec interaction
+Potential Apache S, Potential Web Shel, Web Application At, Qualys Vulnerabili, Suspicious Account, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Command Execution , SMBv1             , PsExec interaction
+Port Scan         , SMBv1             , SMBv1             , RDP protocol      , Command Execution , Drupalgeddon 2    , SMBv1             , SMBv1             , Port Scan         , Potential Nyetya L, PsExec interaction
+Drupalgeddon 2    , Command Execution , Port Scan         , Port Scan         , Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , Potential Nyetya L, PsExec interaction
+Qualys Vulnerabili, Qualys Vulnerabili, SMBv1             , RDP protocol      , SMBv1             , Potential SMB prob, Command Execution , Command Execution , Active Directory P, Potential Nyetya L, PsExec interaction
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-11-20 11:16:26 to 2019-12-20 11:15:28
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1660756	  60392	   1645	  33992	     68
+    LOW	    147	 360058	    289	      2	     22
+ MEDIUM	      1	      0	   3925	   8048	    875
+   HIGH	      0	      0	      0	   3954	    117
+ ATTACK	      0	      0	      0	      0	  11729
+
+
+True = 4, Pred = 0
+Samples: 0
+
+True = 4, Pred = 1
+Samples: 0
+
+True = 4, Pred = 2
+Samples: 0
+
+True = 4, Pred = 3
+Samples: 0
+
+True = 3, Pred = 0
+Samples: 0
+
+True = 3, Pred = 1
+Samples: 0
+
+True = 3, Pred = 2
+Samples: 0
+
+True = 2, Pred = 0
+Samples: 1
+Host: (tensor([805]), tensor([1]))
+Cluster [?     , size=    1]: HTTP 1xx Response With Body Content
+	                              -1337: 0.0157
+	HTTP 1xx Response With Body Content: 0.9843
+
+True = 2, Pred = 1
+Samples: 0
+
+True = 1, Pred = 0
+Samples: 147
+Host: (tensor([    4,    64,  2630, 28376, 40961, 50080]), tensor([  1,   1,   5,   8,   3, 129]))
+Cluster [?     , size=  144]: Company test
+	Company test: 0.9969
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Unusual user agent string observed: 0.8965
+	Deprecated SSL Version Usage      : 0.1035
+Cluster [?     , size=    1]: Company test
+	Company test: 0.9393
+	Bladabindi   : 0.0607
+Cluster [?     , size=    1]: Company test 
+	                                       -1337: 0.0166
+	Unusual Access to Recently Registered Domain: 0.0603
+	Company test                               : 0.8943
+	Loki Bot                                    : 0.0274
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2019-12-20 11:15:29 to 2020-01-19 11:15:28
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1386444	  70706	   2537	  61866	     68
+    LOW	    257	 340488	    305	   1229	     35
+ MEDIUM	     13	      0	   4377	  16696	    650
+   HIGH	      1	      0	     10	   3763	     22
+ ATTACK	      0	     11	      0	      0	  11200
+
+
+True = 4, Pred = 0
+Samples: 0
+
+True = 4, Pred = 1
+Samples: 11
+Host: (tensor([46799, 56149]), tensor([9, 2]))
+Cluster [?     , size=   11]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9803
+	Command Execution Over SMB          : 0.0114
+
+True = 4, Pred = 2
+Samples: 0
+
+True = 4, Pred = 3
+Samples: 0
+
+True = 3, Pred = 0
+Samples: 1
+Host: (tensor([16]), tensor([1]))
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port            : 0.0445
+	RDP protocol                                : 0.0615
+	Possible Cross Site Scripting Attempt       : 0.0137
+	Web Application Attack                      : 0.8319
+	Potential Apache Struts Exploitation Attempt: 0.0389
+
+True = 3, Pred = 1
+Samples: 0
+
+True = 3, Pred = 2
+Samples: 10
+Host: (tensor([   16, 38660, 38678, 42280]), tensor([1, 1, 3, 5]))
+Cluster [?     , size=    1]: Web Application Attack
+	Web Application Attack                      : 0.8122
+	Potential Apache Struts Exploitation Attempt: 0.0699
+	Port Scan                                   : 0.1179
+Cluster [?     , size=    2]: Web Application Attack
+	SMBv1                                       : 0.0777
+	Possible Cross Site Scripting Attempt       : 0.0143
+	Web Application Attack                      : 0.7864
+	Potential Apache Struts Exploitation Attempt: 0.1216
+Cluster [?     , size=    1]: Web Application Attack
+	SMBv1                                : 0.0474
+	Potential SMB Brute Force Attack     : 0.0137
+	Self-signed certificate on high port : 0.0137
+	Possible Cross Site Scripting Attempt: 0.9252
+Cluster [?     , size=    2]: Web Application Attack
+	SMBv1                                       : 0.0259
+	Potential SMB Brute Force Attack            : 0.0340
+	Web Application Attack                      : 0.8079
+	Potential Apache Struts Exploitation Attempt: 0.0547
+	Port Scan                                   : 0.0711
+Cluster [?     , size=    1]: Web Application Attack
+	Active Directory Password Policy Query      : 0.0468
+	Web Application Attack                      : 0.8177
+	Potential Apache Struts Exploitation Attempt: 0.1294
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0459
+	Active Directory Password Policy Query      : 0.0769
+	Potential SMB Brute Force Attack            : 0.0326
+	Web Application Attack                      : 0.8052
+	Potential Apache Struts Exploitation Attempt: 0.0394
+Cluster [?     , size=    1]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.5887
+	Web Application Attack                      : 0.3916
+	Potential Apache Struts Exploitation Attempt: 0.0137
+Cluster [?     , size=    1]: Web Application Attack
+	Active Directory Password Policy Query      : 0.0593
+	SMBv1                                       : 0.0171
+	Potential SMB Brute Force Attack            : 0.0138
+	Self-signed certificate on high port        : 0.0139
+	Web Application Attack                      : 0.8087
+	Potential Apache Struts Exploitation Attempt: 0.0872
+
+True = 2, Pred = 0
+Samples: 13
+Host: (tensor([    16,    383,  38660,  38670,  42280,  42281, 111652]), tensor([1, 2, 1, 2, 2, 4, 1]))
+Cluster [?     , size=    3]: Web Application Attack
+	Active Directory Password Policy Query      : 0.0750
+	SMBv1                                       : 0.0619
+	Web Application Attack                      : 0.7807
+	Potential Apache Struts Exploitation Attempt: 0.0824
+Cluster [?     , size=    2]: Web Application Attack
+	Active Directory Password Policy Query      : 0.0951
+	SMBv1                                       : 0.0758
+	Web Application Attack                      : 0.8061
+	Potential Apache Struts Exploitation Attempt: 0.0229
+Cluster [?     , size=    2]: Web Application Attack
+	RDP protocol                          : 0.0502
+	Active Directory Password Policy Query: 0.0698
+	SMBv1                                 : 0.0814
+	Web Application Attack                : 0.7986
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port     : 0.0992
+	SMBv1                                : 0.0718
+	Possible Cross Site Scripting Attempt: 0.0213
+	Web Application Attack               : 0.8077
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0739
+	SMBv1                                       : 0.0199
+	Web Application Attack                      : 0.7629
+	Potential Apache Struts Exploitation Attempt: 0.1432
+Cluster [?     , size=    1]: Web Application Attack
+	SMBv1                                       : 0.0876
+	Possible Cross Site Scripting Attempt       : 0.0368
+	Web Application Attack                      : 0.7705
+	Potential Apache Struts Exploitation Attempt: 0.1051
+Cluster [?     , size=    3]: HTTP 1xx Response With Body Content
+	HTTP 1xx Response With Body Content: 0.9785
+
+True = 2, Pred = 1
+Samples: 0
+
+True = 1, Pred = 0
+Samples: 257
+Host: (tensor([   22,   192,  1323,  1421,  2630, 38670, 50080, 56924]), tensor([  3,   1,   2,   1,   1,   1, 247,   1]))
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Beaconing activity                : 0.0897
+	Unusual user agent string observed: 0.8735
+	Unusual JA3 fingerprint observed  : 0.0368
+Cluster [?     , size=  253]: Company test
+	Company test: 0.9963
+Cluster [?     , size=    1]: Company test
+	                                       -1337: 0.0133
+	Unusual Access to Recently Registered Domain: 0.0758
+	Company test                               : 0.9085
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Unusual user agent string observed    : 0.9451
+	Active Directory Password Policy Query: 0.0285
+	Malicious Script Download             : 0.0264
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0661
+	SMBv1                                       : 0.0251
+	Web Application Attack                      : 0.7572
+	Potential Apache Struts Exploitation Attempt: 0.1432
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-01-19 11:15:33 to 2020-02-18 11:15:25
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1649238	  57853	    792	  17733	     25
+    LOW	   2501	 243242	    335	    137	    156
+ MEDIUM	     10	     23	   1601	    829	    720
+   HIGH	      0	      0	    102	   5794	     11
+ ATTACK	      9	      5	      3	     11	   9900
+
+
+True = 4, Pred = 0
+Samples: 9
+Host: (tensor([38660, 38670, 38678, 42280]), tensor([1, 2, 5, 1]))
+Cluster [?     , size=    8]: Potential SMB Brute Force Attack
+	Potential SMB Brute Force Attack: 0.9857
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port         : 0.1082
+	Potential SMB Brute Force Attack            : 0.8670
+	Potential Apache Struts Exploitation Attempt: 0.0209
+
+True = 4, Pred = 1
+Samples: 5
+Host: (tensor([  355, 46967, 68621, 69269, 81592]), tensor([1, 1, 1, 1, 1]))
+Cluster [?     , size=    2]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9878
+Cluster [?     , size=    2]: Unusual connection received on unusual port
+	Unusual connection received on unusual port: 0.9845
+Cluster [?     , size=    1]: Suspicious Trusted Domain Enumeration
+	Connection received on unusual port  : 0.0150
+	Suspicious Trusted Domain Enumeration: 0.9710
+
+True = 4, Pred = 2
+Samples: 3
+Host: (tensor([1031]), tensor([3]))
+Cluster [?     , size=    3]: CVE-2019-0708
+	Unusual Potential Apache Struts Exploitation: 0.0132
+	CVE-2019-0708                               : 0.9623
+
+True = 4, Pred = 3
+Samples: 11
+Host: (tensor([38660, 38678]), tensor([6, 5]))
+Cluster [?     , size=    2]: Web Application Attack
+	SMBv1                                : 0.0168
+	Self-signed certificate on high port : 0.0126
+	Possible Cross Site Scripting Attempt: 0.9548
+	Web Application Attack               : 0.0157
+Cluster [?     , size=    1]: Web Application Attack
+	Self-signed certificate on high port        : 0.0249
+	Web Application Attack                      : 0.8013
+	Potential Apache Struts Exploitation Attempt: 0.0607
+	Unusual Potential Apache Struts Exploitation: 0.1130
+Cluster [?     , size=    1]: Web Application Attack
+	Unusual data download                       : 0.1185
+	Self-signed certificate on high port        : 0.0117
+	Web Application Attack                      : 0.8079
+	Potential Apache Struts Exploitation Attempt: 0.0619
+Cluster [?     , size=    1]: Web Application Attack
+	SMBv1                                       : 0.0590
+	Self-signed certificate on high port        : 0.0453
+	Possible Cross Site Scripting Attempt       : 0.0172
+	Web Application Attack                      : 0.7847
+	Potential Apache Struts Exploitation Attempt: 0.0938
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                        : 0.1650
+	Self-signed certificate on high port: 0.0119
+	Web Application Attack              : 0.8124
+	RDP Connection with rapid Cookie    : 0.0107
+Cluster [?     , size=    2]: Web Application Attack
+	Web Application Attack                      : 0.7406
+	Potential Apache Struts Exploitation Attempt: 0.2595
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                        : 0.0802
+	Potential SMB Brute Force Attack    : 0.0415
+	Self-signed certificate on high port: 0.0239
+	Web Application Attack              : 0.8359
+Cluster [?     , size=    1]: Web Application Attack
+	Potential SMB Brute Force Attack            : 0.1106
+	Web Application Attack                      : 0.8101
+	Potential Apache Struts Exploitation Attempt: 0.0793
+Cluster [?     , size=    1]: Web Application Attack
+	Web Application Attack                      : 0.8110
+	Potential Apache Struts Exploitation Attempt: 0.1890
+
+True = 3, Pred = 0
+Samples: 0
+
+True = 3, Pred = 1
+Samples: 0
+
+True = 3, Pred = 2
+Samples: 102
+Host: (tensor([   16,  1031, 38660, 38670, 38678, 41534, 41541, 42280, 42281, 42284]), tensor([40,  2,  4,  5,  3, 15, 13, 12,  2,  6]))
+Cluster [?     , size=    3]: Web Application Attack
+	RDP protocol                                : 0.0870
+	Web Application Attack                      : 0.6112
+	Potential Apache Struts Exploitation Attempt: 0.2850
+	CVE-2019-19781 Exploit                      : 0.0112
+Cluster [?     , size=    3]: Web Application Attack
+	Port Sweep                                  : 0.1528
+	Potential SMB Brute Force Attack            : 0.0176
+	Web Application Attack                      : 0.8166
+	Potential Apache Struts Exploitation Attempt: 0.0130
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0691
+	Active Directory Password Policy Query      : 0.1153
+	Web Application Attack                      : 0.8018
+	Potential Apache Struts Exploitation Attempt: 0.0138
+Cluster [?     , size=    8]: Web Application Attack
+	RDP protocol                                : 0.0764
+	Web Application Attack                      : 0.8204
+	Potential Apache Struts Exploitation Attempt: 0.0856
+Cluster [?     , size=    2]: Web Application Attack
+	Port Sweep                                  : 0.0853
+	Active Directory Password Policy Query      : 0.0740
+	Web Application Attack                      : 0.8291
+	Potential Apache Struts Exploitation Attempt: 0.0118
+Cluster [?     , size=    3]: Web Application Attack
+	SMBv1                                       : 0.0722
+	Self-signed certificate on high port        : 0.0217
+	Web Application Attack                      : 0.7907
+	Potential Apache Struts Exploitation Attempt: 0.1154
+Cluster [?     , size=    8]: Web Application Attack
+	Data download on suspicious port            : 0.0450
+	Connection received on unusual port         : 0.0132
+	Web Application Attack                      : 0.8090
+	Potential Apache Struts Exploitation Attempt: 0.1040
+Cluster [?     , size=    6]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.0506
+	Web Application Attack                      : 0.7751
+	Potential Apache Struts Exploitation Attempt: 0.1662
+Cluster [?     , size=    1]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.1273
+	Web Application Attack                      : 0.7384
+	Potential Apache Struts Exploitation Attempt: 0.1342
+Cluster [?     , size=   23]: Unusual Potential Apache Struts Exploitation
+	Web Application Attack                      : 0.0101
+	Unusual Potential Apache Struts Exploitation: 0.9830
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0475
+	Active Directory Password Policy Query      : 0.0583
+	Potential SMB Brute Force Attack            : 0.0449
+	Web Application Attack                      : 0.8055
+	Potential Apache Struts Exploitation Attempt: 0.0438
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port     : 0.0340
+	Self-signed certificate on high port : 0.0140
+	Possible Cross Site Scripting Attempt: 0.0185
+	Web Application Attack               : 0.8118
+	Port Scan                            : 0.1218
+Cluster [?     , size=    7]: Web Application Attack
+	Data download on suspicious port      : 0.0242
+	Active Directory Password Policy Query: 0.0212
+	Possible Cross Site Scripting Attempt : 0.9471
+Cluster [?     , size=    2]: Web Application Attack
+	Port Sweep                                  : 0.0776
+	SMBv1                                       : 0.0107
+	Web Application Attack                      : 0.8177
+	Potential Apache Struts Exploitation Attempt: 0.0808
+Cluster [?     , size=    2]: Web Application Attack
+	Potential SMB Brute Force Attack            : 0.0152
+	Web Application Attack                      : 0.6637
+	Potential Apache Struts Exploitation Attempt: 0.0613
+	CVE-2019-0708                               : 0.2598
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                                  : 0.1106
+	Web Application Attack                      : 0.8289
+	Potential Apache Struts Exploitation Attempt: 0.0228
+	CVE-2019-19781 Exploit                      : 0.0377
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port            : 0.0392
+	RDP protocol                                : 0.0667
+	Potential SMB Brute Force Attack            : 0.0242
+	Web Application Attack                      : 0.8380
+	Potential Apache Struts Exploitation Attempt: 0.0297
+Cluster [?     , size=    2]: Web Application Attack
+	Possible Cross Site Scripting Attempt: 0.9268
+	Web Application Attack               : 0.0728
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port     : 0.1099
+	Possible Cross Site Scripting Attempt: 0.1220
+	Web Application Attack               : 0.7681
+Cluster [?     , size=    1]: Web Application Attack
+	Active Directory Password Policy Query      : 0.1195
+	Web Application Attack                      : 0.7590
+	Potential Apache Struts Exploitation Attempt: 0.0417
+	Port Scan                                   : 0.0755
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                                  : 0.0816
+	Active Directory Password Policy Query      : 0.0743
+	Web Application Attack                      : 0.7882
+	Potential Apache Struts Exploitation Attempt: 0.0413
+	CVE-2019-19781 Exploit                      : 0.0146
+Cluster [?     , size=    1]: Web Application Attack
+	Unusual data download                       : 0.1141
+	Web Application Attack                      : 0.8031
+	Potential Apache Struts Exploitation Attempt: 0.0828
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0486
+	Web Application Attack                      : 0.6500
+	Potential Apache Struts Exploitation Attempt: 0.0169
+	CVE-2019-0708                               : 0.2795
+Cluster [?     , size=    5]: Web Application Attack
+	Active Directory Password Policy Query: 0.0980
+	SMBv1                                 : 0.0748
+	Possible Cross Site Scripting Attempt : 0.0171
+	Web Application Attack                : 0.8039
+Cluster [?     , size=    2]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.5835
+	Web Application Attack                      : 0.3899
+	Potential Apache Struts Exploitation Attempt: 0.0140
+	CVE-2019-19781 Exploit                      : 0.0126
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                                  : 0.0757
+	Web Application Attack                      : 0.8223
+	Potential Apache Struts Exploitation Attempt: 0.0270
+	Port Scan                                   : 0.0749
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port            : 0.0220
+	Connection received on unusual port         : 0.0300
+	Active Directory Password Policy Query      : 0.0821
+	Web Application Attack                      : 0.8230
+	Potential Apache Struts Exploitation Attempt: 0.0429
+Cluster [?     , size=    2]: Web Application Attack
+	Active Directory Password Policy Query      : 0.0885
+	Possible Cross Site Scripting Attempt       : 0.0114
+	Web Application Attack                      : 0.8237
+	Potential Apache Struts Exploitation Attempt: 0.0764
+Cluster [?     , size=    1]: Web Application Attack
+	Connection received on unusual port         : 0.0624
+	SMBv1                                       : 0.0666
+	Potential SMB Brute Force Attack            : 0.0200
+	Web Application Attack                      : 0.7877
+	Potential Apache Struts Exploitation Attempt: 0.0553
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.1274
+	Web Application Attack                      : 0.7743
+	Unusual Potential Apache Struts Exploitation: 0.0807
+	CVE-2019-19781 Exploit                      : 0.0111
+Cluster [?     , size=    1]: Web Application Attack
+	Web Application Attack                      : 0.8012
+	Potential Apache Struts Exploitation Attempt: 0.0705
+	Unusual Potential Apache Struts Exploitation: 0.1283
+Cluster [?     , size=    1]: Web Application Attack
+	Unusual data download               : 0.0112
+	RDP protocol                        : 0.0836
+	SMBv1                               : 0.0564
+	Self-signed certificate on high port: 0.0153
+	Web Application Attack              : 0.8182
+	CVE-2019-19781 Exploit              : 0.0154
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0942
+	Possible Cross Site Scripting Attempt       : 0.0395
+	Web Application Attack                      : 0.8138
+	Potential Apache Struts Exploitation Attempt: 0.0311
+	RDP Connection with rapid Cookie            : 0.0214
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0966
+	Possible Cross Site Scripting Attempt       : 0.0673
+	Web Application Attack                      : 0.7511
+	Potential Apache Struts Exploitation Attempt: 0.0803
+Cluster [?     , size=    2]: Web Application Attack
+	SMBv1                                       : 0.0221
+	Potential SMB Brute Force Attack            : 0.0202
+	Web Application Attack                      : 0.8055
+	Potential Apache Struts Exploitation Attempt: 0.0387
+	Port Scan                                   : 0.0932
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                                  : 0.0385
+	Active Directory Password Policy Query      : 0.0977
+	SMBv1                                       : 0.0181
+	Possible Cross Site Scripting Attempt       : 0.0106
+	Web Application Attack                      : 0.7808
+	Potential Apache Struts Exploitation Attempt: 0.0543
+Cluster [?     , size=    1]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.4569
+	Web Application Attack                      : 0.5247
+	Potential Apache Struts Exploitation Attempt: 0.0111
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                            : 0.3264
+	Data download on suspicious port      : 0.0160
+	Active Directory Password Policy Query: 0.5208
+	Port Scan                             : 0.1261
+
+True = 2, Pred = 0
+Samples: 10
+Host: (tensor([   360,    383,   1321, 118586, 119138]), tensor([2, 2, 1, 1, 4]))
+Cluster [?     , size=   10]: HTTP 1xx Response With Body Content
+	HTTP 1xx Response With Body Content          : 0.9733
+	Unusual Possible Cross Site Scripting Attempt: 0.0117
+
+True = 2, Pred = 1
+Samples: 23
+Host: (tensor([   586,    749,    878,    879,  56149,  72804, 119138]), tensor([ 1, 11,  2,  2,  1,  1,  5]))
+Cluster [?     , size=    2]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9871
+Cluster [?     , size=   10]: Unusual Possible Cross Site Scripting Attempt
+	Unusual Possible Cross Site Scripting Attempt: 0.9788
+	Unusual Potential Apache Struts Exploitation : 0.0111
+Cluster [?     , size=   11]: Suspicious Password Policy Query
+	Self-signed certificate on high port: 0.1197
+	Suspicious Password Policy Query    : 0.8537
+
+True = 1, Pred = 0
+Samples: 2501
+Host: (tensor([     4,     22,     78,    727,    787,    879,   1323,   2630,   3357,
+         30065,  38660,  38670,  38678,  41534,  41541,  42280,  42281,  42284,
+         42399,  43597,  50080,  97309, 100168, 100794, 115742, 115750, 120187]), tensor([  2,   4,   2,   1,   1,  65,   4,  18,   3,   2, 122, 130, 114,  39,
+         47, 635, 617, 617,   1,   1,  68,   1,   1,   1,   2,   2,   1]))
+Cluster [?     , size=  104]: Company test
+	Company test: 0.9862
+Cluster [?     , size=    5]: Unusual user agent string observed
+	Beaconing activity                : 0.0215
+	Unusual user agent string observed: 0.9529
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Beaconing activity                : 0.0137
+	Unusual user agent string observed: 0.8783
+	Active Directory Trust Enumeration: 0.0137
+	Kerberos Authentication Failure   : 0.0899
+Cluster [?     , size=    2]: Unusual user agent string observed
+	                                 -1337: 0.9251
+	Anomalous connection between two hosts: 0.0749
+Cluster [?     , size= 1053]: Potential SMB Brute Force Attack
+	Potential SMB Brute Force Attack: 0.9845
+Cluster [?     , size= 1090]: Potential SMB Brute Force Attack
+	SMBv1                               : 0.6691
+	Self-signed certificate on high port: 0.3162
+Cluster [?     , size=    8]: Potential SMB Brute Force Attack
+	Connection received on unusual port: 0.1109
+	Potential SMB Brute Force Attack   : 0.8737
+Cluster [?     , size=    4]: Potential SMB Brute Force Attack
+	Connection received on unusual port         : 0.3731
+	Potential SMB Brute Force Attack            : 0.6042
+	Potential Apache Struts Exploitation Attempt: 0.0133
+Cluster [?     , size=    4]: Potential SMB Brute Force Attack
+	Port Sweep: 0.2595
+	SMBv1     : 0.6486
+	Port Scan : 0.0887
+Cluster [?     , size=   17]: Potential SMB Brute Force Attack
+	Port Sweep                          : 0.1646
+	SMBv1                               : 0.6122
+	Self-signed certificate on high port: 0.2081
+Cluster [?     , size=    7]: Potential SMB Brute Force Attack
+	Data download on suspicious port    : 0.2717
+	SMBv1                               : 0.5884
+	Potential SMB Brute Force Attack    : 0.1067
+	Self-signed certificate on high port: 0.0293
+Cluster [?     , size=    4]: Potential SMB Brute Force Attack
+	SMBv1                               : 0.6986
+	Self-signed certificate on high port: 0.2363
+	Port Scan                           : 0.0616
+Cluster [?     , size=   64]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.1552
+	SMBv1                                 : 0.5555
+	Self-signed certificate on high port  : 0.2792
+Cluster [?     , size=   63]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query      : 0.5304
+	Potential SMB Brute Force Attack            : 0.4386
+	Potential Apache Struts Exploitation Attempt: 0.0110
+Cluster [?     , size=   40]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.3878
+	Potential SMB Brute Force Attack      : 0.3309
+	Self-signed certificate on high port  : 0.2632
+Cluster [?     , size=   12]: Potential SMB Brute Force Attack
+	Connection received on unusual port : 0.1189
+	SMBv1                               : 0.6042
+	Self-signed certificate on high port: 0.2608
+Cluster [?     , size=    2]: Potential SMB Brute Force Attack
+	Connection received on unusual port : 0.3571
+	SMBv1                               : 0.0190
+	Potential SMB Brute Force Attack    : 0.3312
+	Self-signed certificate on high port: 0.2865
+Cluster [?     , size=    3]: Potential SMB Brute Force Attack
+	Data download on suspicious port: 0.0634
+	Potential SMB Brute Force Attack: 0.9241
+Cluster [?     , size=    8]: Potential SMB Brute Force Attack
+	Potential SMB Brute Force Attack    : 0.3511
+	Self-signed certificate on high port: 0.0188
+	Suspicious Password Policy Query    : 0.6195
+Cluster [?     , size=    5]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.3357
+	SMBv1                                 : 0.0147
+	Potential SMB Brute Force Attack      : 0.2547
+	Self-signed certificate on high port  : 0.3868
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	SMBv1                               : 0.0539
+	Potential SMB Brute Force Attack    : 0.2853
+	Self-signed certificate on high port: 0.0127
+	Suspicious Password Policy Query    : 0.6481
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Unusual user agent string observed : 0.8294
+	Connection on unusual port         : 0.1384
+	Active Directory Trust Enumeration : 0.0132
+	TLS Certificate With Default Values: 0.0190
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Beaconing activity                  : 0.1070
+	Unusual user agent string observed  : 0.8546
+	Self-signed certificate on high port: 0.0203
+	HTTP Basic Authentication           : 0.0181
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Unusual connection between two hosts        : 0.0159
+	Connection received on unusual port         : 0.0484
+	Active Directory Password Policy Query      : 0.4990
+	Potential SMB Brute Force Attack            : 0.4047
+	Web Application Attack                      : 0.0146
+	Potential Apache Struts Exploitation Attempt: 0.0175
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port : 0.3633
+	Potential SMB Brute Force Attack    : 0.3858
+	Self-signed certificate on high port: 0.2510
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Automatic Mode                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Timeframe from 2020-02-18 11:15:29 to 2020-03-18 12:44:14
+[1mConfusion matrix[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    T\P	   INFO	    LOW	 MEDIUM	   HIGH	 ATTACK
+   INFO	1487346	  56027	    782	  23472	     80
+    LOW	   7225	 255723	    252	    132	    139
+ MEDIUM	      0	     18	   2170	    483	    235
+   HIGH	      2	      0	     16	   2760	     16
+ ATTACK	     86	      4	      3	      4	   3560
+
+
+True = 4, Pred = 0
+Samples: 86
+Host: (tensor([ 41835,  44856,  46069,  47519, 133961, 142294, 174438, 189263]), tensor([ 4, 13, 36, 20,  4,  1,  4,  4]))
+Cluster [?     , size=   86]: PsExec interaction
+	PsExec interaction: 0.9813
+
+True = 4, Pred = 1
+Samples: 4
+Host: (tensor([ 46069,  46967, 138832, 188603]), tensor([1, 1, 1, 1]))
+Cluster [?     , size=    1]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9928
+Cluster [?     , size=    1]: Suspicious Trusted Domain Enumeration
+	RDP protocol                         : 0.0137
+	Suspicious Trusted Domain Enumeration: 0.7053
+	Suspicious Account Enumeration       : 0.2651
+Cluster [?     , size=    1]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9479
+	PsExec interaction                  : 0.0473
+Cluster [?     , size=    1]: WinWrapper
+	     -1337: 0.0293
+	WinWrapper: 0.9707
+
+True = 4, Pred = 2
+Samples: 3
+Host: (tensor([189263]), tensor([3]))
+Cluster [?     , size=    3]: CVE-2019-0708
+	CVE-2019-0708: 0.9838
+
+True = 4, Pred = 3
+Samples: 4
+Host: (tensor([  5062,  50080, 171490]), tensor([1, 1, 2]))
+Cluster [?     , size=    2]: Bladabindi
+	Bladabindi: 0.9809
+Cluster [?     , size=    2]: Winnti
+	Winnti: 0.9882
+
+True = 3, Pred = 0
+Samples: 2
+Host: (tensor([16]), tensor([2]))
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port     : 0.1044
+	SMBv1                                : 0.0684
+	Possible Cross Site Scripting Attempt: 0.0154
+	Web Application Attack               : 0.8117
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port            : 0.0348
+	RDP protocol                                : 0.0604
+	Active Directory Password Policy Query      : 0.0147
+	Web Application Attack                      : 0.8413
+	Potential Apache Struts Exploitation Attempt: 0.0350
+
+True = 3, Pred = 1
+Samples: 0
+
+True = 3, Pred = 2
+Samples: 16
+Host: (tensor([   16, 38678, 42281, 42284]), tensor([11,  2,  1,  2]))
+Cluster [?     , size=    1]: Web Application Attack
+	Port Sweep                            : 0.0284
+	Data download on suspicious port      : 0.0273
+	RDP protocol                          : 0.0708
+	Active Directory Password Policy Query: 0.0713
+	Web Application Attack                : 0.8021
+Cluster [?     , size=    3]: Web Application Attack
+	Data download on suspicious port     : 0.0280
+	Potential SMB Brute Force Attack     : 0.0311
+	Possible Cross Site Scripting Attempt: 0.9301
+Cluster [?     , size=    2]: Web Application Attack
+	Possible Cross Site Scripting Attempt       : 0.0704
+	Web Application Attack                      : 0.7657
+	Potential Apache Struts Exploitation Attempt: 0.1396
+	CVE-2019-19781 Exploit                      : 0.0243
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0631
+	Web Application Attack                      : 0.8270
+	Potential Apache Struts Exploitation Attempt: 0.0861
+	CVE-2019-19781 Exploit                      : 0.0151
+Cluster [?     , size=    1]: Web Application Attack
+	RDP protocol                                : 0.0790
+	Potential SMB Brute Force Attack            : 0.0473
+	Web Application Attack                      : 0.7536
+	Potential Apache Struts Exploitation Attempt: 0.1202
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port   : 0.0511
+	Connection received on unusual port: 0.0420
+	Unusual data download              : 0.0165
+	Potential SMB Brute Force Attack   : 0.0678
+	Web Application Attack             : 0.8142
+Cluster [?     , size=    2]: Web Application Attack
+	SMBv1                                       : 0.0156
+	Web Application Attack                      : 0.8111
+	Potential Apache Struts Exploitation Attempt: 0.0352
+	Port Scan                                   : 0.1107
+	CVE-2019-19781 Exploit                      : 0.0136
+Cluster [?     , size=    1]: Web Application Attack
+	Connection received on unusual port         : 0.0663
+	Potential SMB Brute Force Attack            : 0.0369
+	Possible Cross Site Scripting Attempt       : 0.0194
+	Web Application Attack                      : 0.7873
+	Potential Apache Struts Exploitation Attempt: 0.0508
+	CVE-2019-19781 Exploit                      : 0.0393
+Cluster [?     , size=    1]: Unusual Potential Apache Struts Exploitation
+	Unusual Potential Apache Struts Exploitation: 0.9847
+Cluster [?     , size=    1]: Web Application Attack
+	Active Directory Password Policy Query      : 0.1270
+	Web Application Attack                      : 0.8270
+	Potential Apache Struts Exploitation Attempt: 0.0303
+	Unusual Potential Apache Struts Exploitation: 0.0157
+Cluster [?     , size=    1]: Web Application Attack
+	SMBv1                                       : 0.0117
+	Potential SMB Brute Force Attack            : 0.0224
+	Web Application Attack                      : 0.8116
+	Potential Apache Struts Exploitation Attempt: 0.0698
+	Port Scan                                   : 0.0650
+	CVE-2019-19781 Exploit                      : 0.0103
+Cluster [?     , size=    1]: Web Application Attack
+	Data download on suspicious port            : 0.0262
+	RDP protocol                                : 0.0470
+	Active Directory Password Policy Query      : 0.0582
+	Web Application Attack                      : 0.7661
+	Potential Apache Struts Exploitation Attempt: 0.0862
+
+True = 2, Pred = 0
+Samples: 0
+
+True = 2, Pred = 1
+Samples: 18
+Host: (tensor([   267,   6191,  46069,  52807,  53280,  62023, 155469]), tensor([1, 2, 2, 1, 4, 1, 7]))
+Cluster [?     , size=   17]: Anomalous Command Execution Over SMB
+	Anomalous Command Execution Over SMB: 0.9756
+Cluster [?     , size=    1]: Unusual connection received on unusual port
+	Unusual connection received on unusual port: 0.9865
+	Malicious File Download                    : 0.0135
+
+True = 1, Pred = 0
+Samples: 7225
+Host: (tensor([   749,    879,   1812,   2630,   3514,  35337,  38660,  38670,  38678,
+         41534,  41541,  42189,  42281,  42284,  50080,  81669,  81682,  97287,
+        120187, 150089, 151360, 152115, 163909, 169518, 172041, 174438, 175781]), tensor([   4,   88,    2,    8,    1,   35, 1428, 1330, 1418,  742,  740,    1,
+         663,  693,   49,    1,    1,    1,    6,    1,    1,    1,    4,    1,
+           1,    4,    1]))
+Cluster [?     , size= 4439]: Potential SMB Brute Force Attack
+	Potential SMB Brute Force Attack            : 0.9833
+	Potential Apache Struts Exploitation Attempt: 0.0102
+Cluster [?     , size=  894]: Potential SMB Brute Force Attack
+	SMBv1                               : 0.6671
+	Self-signed certificate on high port: 0.3159
+Cluster [?     , size=   16]: Potential SMB Brute Force Attack
+	Port Sweep                          : 0.1691
+	SMBv1                               : 0.6086
+	Self-signed certificate on high port: 0.2056
+Cluster [?     , size=   10]: Potential SMB Brute Force Attack
+	Connection received on unusual port : 0.3587
+	SMBv1                               : 0.0173
+	Potential SMB Brute Force Attack    : 0.3670
+	Self-signed certificate on high port: 0.2511
+Cluster [?     , size=   64]: Company test
+	Company test: 0.9831
+Cluster [?     , size=    2]: Unusual user agent string observed
+	Unusual user agent string observed: 0.8776
+	Connection on unusual port        : 0.0993
+	Active Directory Trust Enumeration: 0.0193
+Cluster [?     , size=    1]: Unusual user agent string observed
+	                           -1337: 0.9841
+	Unusual JA3 fingerprint observed: 0.0117
+Cluster [?     , size=    1]: Unusual user agent string observed
+	Unusual user agent string observed  : 0.8256
+	Connection on unusual port          : 0.1601
+	Self-signed certificate on high port: 0.0143
+Cluster [?     , size=   15]: Potential SMB Brute Force Attack
+	Connection received on unusual port : 0.1195
+	SMBv1                               : 0.6022
+	Self-signed certificate on high port: 0.2545
+Cluster [?     , size=   59]: Potential SMB Brute Force Attack
+	Connection received on unusual port: 0.1071
+	Potential SMB Brute Force Attack   : 0.8751
+Cluster [?     , size=   84]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.1539
+	SMBv1                                 : 0.5568
+	Self-signed certificate on high port  : 0.2767
+Cluster [?     , size= 1532]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query      : 0.5261
+	Potential SMB Brute Force Attack            : 0.4461
+	Potential Apache Struts Exploitation Attempt: 0.0133
+Cluster [?     , size=   11]: Potential SMB Brute Force Attack
+	Connection received on unusual port: 0.3773
+	Potential SMB Brute Force Attack   : 0.6046
+Cluster [?     , size=    1]: Unusual user agent string observed
+	                             -1337: 0.0204
+	Unusual user agent string observed: 0.8538
+	Unusual Beaconing Activity        : 0.1257
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port    : 0.3754
+	SMBv1                               : 0.4833
+	Potential SMB Brute Force Attack    : 0.0788
+	Self-signed certificate on high port: 0.0104
+	Web Application Attack              : 0.0445
+Cluster [?     , size=   22]: Potential SMB Brute Force Attack
+	Data download on suspicious port: 0.3090
+	SMBv1                           : 0.5623
+	Potential SMB Brute Force Attack: 0.1196
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port            : 0.5533
+	RDP protocol                                : 0.0140
+	SMBv1                                       : 0.2022
+	Web Application Attack                      : 0.2192
+	Potential Apache Struts Exploitation Attempt: 0.0103
+Cluster [?     , size=   34]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.3900
+	SMBv1                                 : 0.0123
+	Potential SMB Brute Force Attack      : 0.3265
+	Self-signed certificate on high port  : 0.2654
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port    : 0.1158
+	Connection received on unusual port : 0.0775
+	SMBv1                               : 0.6030
+	Potential SMB Brute Force Attack    : 0.0158
+	Self-signed certificate on high port: 0.1879
+Cluster [?     , size=    3]: Potential SMB Brute Force Attack
+	Potential SMB Brute Force Attack            : 0.3444
+	Potential Apache Struts Exploitation Attempt: 0.0166
+	Suspicious Password Policy Query            : 0.6195
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port   : 0.0989
+	Active Directory Password Policy Query: 0.1230
+	SMBv1                                 : 0.4891
+	Self-signed certificate on high port  : 0.2838
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port   : 0.1694
+	Active Directory Password Policy Query: 0.2639
+	SMBv1                                 : 0.0164
+	Potential SMB Brute Force Attack      : 0.2380
+	Self-signed certificate on high port  : 0.3124
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query      : 0.3301
+	SMBv1                                       : 0.2642
+	Potential SMB Brute Force Attack            : 0.0489
+	Self-signed certificate on high port        : 0.3122
+	Web Application Attack                      : 0.0113
+	Potential Apache Struts Exploitation Attempt: 0.0334
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port   : 0.0621
+	Active Directory Password Policy Query: 0.1352
+	SMBv1                                 : 0.5299
+	Self-signed certificate on high port  : 0.2728
+Cluster [?     , size=    2]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.3304
+	SMBv1                                 : 0.0201
+	Potential SMB Brute Force Attack      : 0.2489
+	Self-signed certificate on high port  : 0.3938
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.4107
+	Potential SMB Brute Force Attack      : 0.3914
+	Self-signed certificate on high port  : 0.1883
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.3528
+	Potential SMB Brute Force Attack      : 0.3855
+	Self-signed certificate on high port  : 0.2293
+	Possible Cross Site Scripting Attempt : 0.0238
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port   : 0.1657
+	Active Directory Password Policy Query: 0.4433
+	Potential SMB Brute Force Attack      : 0.3743
+	DNS Zone Transfer Query               : 0.0108
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port         : 0.1979
+	Active Directory Password Policy Query      : 0.4610
+	Potential SMB Brute Force Attack            : 0.3082
+	Potential Apache Struts Exploitation Attempt: 0.0298
+Cluster [?     , size=    3]: Unusual user agent string observed
+	Unusual user agent string observed: 0.9643
+	Unusual JA3 fingerprint observed  : 0.0339
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port: 0.4258
+	Unusual data download           : 0.0151
+	RDP protocol                    : 0.0112
+	SMBv1                           : 0.4397
+	Potential SMB Brute Force Attack: 0.1071
+Cluster [?     , size=    1]: Unusual user agent string observed
+	                                 -1337: 0.9251
+	Anomalous connection between two hosts: 0.0749
+Cluster [?     , size=    7]: Potential SMB Brute Force Attack
+	Port Sweep: 0.2543
+	SMBv1     : 0.6528
+	Port Scan : 0.0834
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port: 0.3420
+	SMBv1                           : 0.1682
+	Potential SMB Brute Force Attack: 0.4897
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port: 0.3037
+	SMBv1                           : 0.2935
+	Potential SMB Brute Force Attack: 0.3957
+Cluster [?     , size=    2]: Potential SMB Brute Force Attack
+	Data download on suspicious port      : 0.3641
+	Active Directory Password Policy Query: 0.2115
+	SMBv1                                 : 0.3721
+	Potential SMB Brute Force Attack      : 0.0487
+Cluster [?     , size=    4]: PsExec interaction
+	PsExec interaction: 0.9848
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Connection received on unusual port   : 0.0950
+	Active Directory Password Policy Query: 0.5299
+	SMBv1                                 : 0.0249
+	Potential SMB Brute Force Attack      : 0.3502
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Port Sweep                            : 0.1004
+	Data download on suspicious port      : 0.2619
+	Active Directory Password Policy Query: 0.0370
+	SMBv1                                 : 0.6007
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Data download on suspicious port      : 0.3386
+	Active Directory Password Policy Query: 0.1396
+	SMBv1                                 : 0.4394
+	Potential SMB Brute Force Attack      : 0.0825
+Cluster [?     , size=    1]: Potential SMB Brute Force Attack
+	Active Directory Password Policy Query: 0.0219
+	SMBv1                                 : 0.0430
+	Potential SMB Brute Force Attack      : 0.3107
+	Suspicious Password Policy Query      : 0.6243

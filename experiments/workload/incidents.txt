@@ -1,0 +1,118 @@
+Impact medium: 23332
+Impact high  : 4526
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                 Manual Mode (Training)                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Workload Reduction
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total     datapoints: 1792439
+Clustered datapoints: 1739802/1792439 =  97.0634%
+Anomalous datapoints:   52637/1792439 =   2.9366%
+
+Total clusters      : 2015
+Cluster size avarage: 863.4253
+Cluster size std    : 19765.7804
+Cluster size min    : 5
+Cluster size max    : 847796
+
+Known labels: 93
+
+Classification report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+       False     1.0000    1.0000    1.0000   1749823
+        True     0.9954    0.9907    0.9930      4387
+
+    accuracy                         1.0000   1754210
+   macro avg     0.9977    0.9953    0.9965   1754210
+weighted avg     1.0000    1.0000    1.0000   1754210
+
+Confusion matrix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+True  positive (malicious detected as malicious):    4346
+True  negative (benign    detected as benign   ): 1749803
+False positive (benign    detected as malicious):      20
+False negative (malicious detected as benign   ):      41
+
+Cluster metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Homogeneity cluster  6846 [shape=  536]: -0.0000 (Malicous = 20, Benign = 516)
+Homogeneity cluster  6847 [shape=  403]: -0.0000 (Malicous = 50, Benign = 353)
+Homogeneity cluster  6848 [shape=  375]: 0.0000 (Malicous = 9, Benign = 366)
+Homogeneity cluster  6849 [shape=  100]: 0.0000 (Malicous = 14, Benign = 86)
+Homogeneity cluster  6851 [shape=  468]: 0.0000 (Malicous = 10, Benign = 458)
+Homogeneity cluster  6852 [shape=   39]: -0.0000 (Malicous = 10, Benign = 29)
+Homogeneity cluster  6853 [shape=   94]: -0.0000 (Malicous = 5, Benign = 89)
+Homogeneity cluster  6854 [shape=  195]: 0.0000 (Malicous = 11, Benign = 184)
+Homogeneity cluster  6855 [shape=   62]: 0.0000 (Malicous = 2, Benign = 60)
+Homogeneity cluster  6857 [shape=14609]: 0.0000 (Malicous = 329, Benign = 14280)
+Homogeneity cluster  6859 [shape=  257]: -0.0000 (Malicous = 2, Benign = 255)
+Homogeneity cluster  6860 [shape=   36]: 0.0000 (Malicous = 17, Benign = 19)
+Homogeneity cluster  6862 [shape=  297]: 0.0000 (Malicous = 2, Benign = 295)
+Homogeneity cluster  6865 [shape=  228]: 0.0000 (Malicous = 2, Benign = 226)
+Homogeneity cluster  6866 [shape=   47]: -0.0000 (Malicous = 7, Benign = 40)
+Homogeneity cluster  6867 [shape=   12]: 0.0000 (Malicous = 7, Benign = 5)
+Homogeneity cluster  6868 [shape=  289]: 0.0000 (Malicous = 10, Benign = 279)
+Homogeneity cluster  6869 [shape=   23]: 0.0000 (Malicous = 2, Benign = 21)
+Homogeneity cluster  6870 [shape=  128]: 0.0000 (Malicous = 3, Benign = 125)
+Homogeneity cluster  6879 [shape=    5]: 0.0000 (Malicous = 1, Benign = 4)
+Homogeneity cluster  6888 [shape= 3260]: -0.0000 (Malicous = 71, Benign = 3189)
+Homogeneity cluster  6908 [shape=  809]: -0.0000 (Malicous = 30, Benign = 779)
+Homogeneity cluster  6926 [shape=  332]: 0.0000 (Malicous = 4, Benign = 328)
+Homogeneity cluster  6943 [shape=    8]: -0.0000 (Malicous = 6, Benign = 2)
+Homogeneity cluster  6968 [shape=  187]: 0.0000 (Malicous = 2, Benign = 185)
+Homogeneity cluster  7005 [shape=    9]: 0.0000 (Malicous = 1, Benign = 8)
+Homogeneity cluster  7042 [shape=    7]: -0.0000 (Malicous = 1, Benign = 6)
+Homogeneity cluster  7183 [shape=   10]: 0.0000 (Malicous = 2, Benign = 8)
+Homogeneity cluster  9206 [shape=  520]: 0.0000 (Malicous = 4, Benign = 516)
+Homogeneity cluster  9347 [shape=   13]: 0.0000 (Malicous = 3, Benign = 10)
+Homogeneity cluster  9350 [shape=   37]: -0.0000 (Malicous = 6, Benign = 31)
+Homogeneity cluster  9392 [shape= 5171]: 0.0000 (Malicous = 1, Benign = 5170)
+Homogeneity cluster  9534 [shape=    9]: 0.0000 (Malicous = 2, Benign = 7)
+Homogeneity cluster  9538 [shape=   57]: 0.0000 (Malicous = 17, Benign = 40)
+Homogeneity cluster 11574 [shape=   39]: -0.0000 (Malicous = 37, Benign = 2)
+Homogeneity cluster 11801 [shape=   15]: 0.0000 (Malicous = 14, Benign = 1)
+Homogeneity cluster 11921 [shape=   38]: -0.0000 (Malicous = 37, Benign = 1)
+
+Homogeneity all          : 0.8321
+Homogeneity not anomalous: 0.9024
+
+Benign    clusters: 1942
+Malicious clusters: 36
+Mixed     clusters: 37
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Automatic Mode (Testing)                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Classification report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              precision    recall  f1-score   support
+
+       False     1.0000    0.9996    0.9998   1673643
+        True     0.8517    0.9946    0.9176      3684
+
+    accuracy                         0.9996   1677327
+   macro avg     0.9258    0.9971    0.9587   1677327
+weighted avg     0.9997    0.9996    0.9996   1677327
+
+Confusion matrix
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+True  positive (malicious detected as malicious):    3664
+True  negative (benign    detected as benign   ): 1673005
+False positive (benign    detected as malicious):     638
+False negative (malicious detected as benign   ):      20
+
+Anomaly metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Anomalies total           :  101132/1778459 =   5.6865%
+Anomalies confidence      :   56312/1778459 =   3.1663%
+Anomalies not in training :   36323/1778459 =   2.0424%
+Anomalies > epsilon       :    8497/1778459 =   0.4778%
+
+Anomalies malicious total          :    377/101132 =   0.3728%
+Anomalies malicious confidence     :     57/101132 =   0.0564%
+Anomalies malicious not in training:    316/101132 =   0.3125%
+Anomalies malicious > epsilon      :      4/101132 =   0.0040%

@@ -1,0 +1,291 @@
+0,Active Directory Account Enumeration
+1,Active Directory Password Policy Query
+2,Active Directory Trust Enumeration
+3,Administrator RDP Connection
+4,Adwind RAT
+5,Ambiguous Transfer-Encoding header field
+6,Ammyy Admin Check-In
+7,Andromeda
+8,Anomalous Ammyy Admin Check-In
+9,Anomalous Command Execution Over SMB
+10,Anomalous connection between two hosts
+11,Babylon
+12,Bandook
+13,Beaconing activity
+14,Bedep
+15,BetaBot
+16,BitCoin Miner
+17,BitCoinMiner
+18,BitTorrent
+19,BlackHole
+20,Bladabindi
+21,Blocked HTTP Connection
+22,BrowseFox
+23,Buran
+24,CNCERT CC Sinkhole
+25,CVE-2010-3275
+26,CVE-2011-2371
+27,CVE-2017-7269 Exploit
+28,CVE-2018-13379 Exploit
+29,CVE-2018-2628 Exploit
+30,CVE-2018-7600 Exploit
+31,CVE-2019-0708
+32,CVE-2019-1003000 Exploit
+33,CVE-2019-16759 Exploit
+34,CVE-2019-19781 Exploit
+35,CVE-2020-0601 Exploit
+36,CVE-2020-0796 Exploit
+37,Canadian Pharmacy Online Drugstore Scam
+38,Carberp
+39,Certificate with Explicit EC Parameters
+40,China Chopper Web Shell
+41,CoinHive Monero Miner
+42,CoinMiner
+43,Command Execution Over SMB
+44,Conficker
+45,Connection on suspicious port
+46,Connection on unusual port
+47,Connection received on unusual port
+48,Consecutive failed SMB login attempts
+49,Consecutive failed Telnet logins
+50,Crimson RAT
+51,CryptoWall
+52,Cryptolocker
+53,DGA activity
+54,DNS Tunneling
+55,DNS Zone Transfer Query
+56,DNS-over-HTTPS
+57,Dark Hydrus
+58,Data download on suspicious port
+59,Data upload on suspicious port
+60,Dealply
+61,Delivery errors for outbound SMTP
+62,Deprecated SSL Version Usage
+63,Dinwod
+64,Domain involved in spam emails
+65,Download Of File With Malicious PowerShell
+66,Dridex
+67,Dropper attempt to download payload
+68,Drupalgeddon 2
+69,Dyreza RAT
+70,EXE Embedded in page
+71,Emotet
+72,Empire Listener
+73,External IP Lookup
+74,FTP Clear-Text Password Transmission
+75,FTP File Upload to a Public Server
+76,FTP Telnet Evasion
+77,Fake Virus Phone Scam
+78,Fareit
+79,Farfli
+80,Feodo
+81,FileBulldog
+82,FlyStudio
+83,Formbook
+84,Fynloski
+85,Gamarue
+86,Gaming Client
+87,Generic FakeAV
+88,GenericClickFraud
+89,GenericTrojan_11
+90,GomyHit
+91,HTTP 1xx Response With Body Content
+92,HTTP 414 URI Too Long
+93,HTTP Basic Authentication
+94,Hupigon
+95,IMAP Clear-Text Password Transmission
+96,IcedID
+97,Injected Coin Miner in Compromised Website
+98,Injected redirection to suspicious site
+99,InstallCore
+100,Kerberos AS-REQ with RC4 Encryption
+101,Kerberos Authentication Failure
+102,Khelios
+103,Kovter
+104,LDAP Authentication Failure
+105,Lastline blocking test
+106,Lastline sensor rule test
+107,Lastline test
+108,Lethic
+109,Linkury
+110,Locky
+111,Login to cryptocurrency mining pool
+112,Login to pastebin.com API
+113,Loki Bot
+114,Luminosity
+115,MS Sinkhole Resolved
+116,Magecart
+117,Malicious Binary Download
+118,Malicious Document Download
+119,Malicious File Download
+120,Malicious Script Download
+121,Malicious android app download
+122,Malicious archive download
+123,Malicious java app download
+124,Malicious redirector
+125,Metasploit WinRM
+126,Metasploit web server
+127,Microsoft Watson
+128,Mirai Login Attempt
+129,Mirai Variant
+130,NanoCore
+131,Necurs
+132,Nemty
+133,Nessus
+134,NetwiredRC
+135,Network Defender rule match
+136,Neutrino
+137,Nitol
+138,Nmap
+139,Obfuscated JavaScript
+140,OpenVAS
+141,OxyPumper
+142,POP3 Clear-Text Password Transmission
+143,PhishTank blacklisted host
+144,Phishing
+145,Phishing: Email Provider
+146,Phishing: Financial Sector
+147,Phishing: Payment Service
+148,Phishing: Social Networking
+149,Phishing: e-Commerce
+150,PoisonIvy
+151,Pony
+152,Port Scan
+153,Port Sweep
+154,Possible Apache Struts OGNL Exploit Attempt
+155,Possible Cross Site Scripting Attempt
+156,Possible Nyetya Lateral Movement
+157,Potential AD Account Enumeration
+158,Potential Apache Struts Exploitation Attempt
+159,Potential CVE-2019-9978 Exploitation Attempt
+160,Potential FTP URL stream injection
+161,Potential Lateral Movement: Psexec SMB Create
+162,Potential Nyetya Lateral Movement
+163,Potential Remote Shell Command
+164,Potential SMB Brute Force Attack
+165,Potential SMB probe for MS17-010 patch
+166,Potential ThinkPHP RCE Exploitation Attempt
+167,Potential Web Shell Command
+168,PsExec interaction
+169,Pykspa
+170,Qakbot
+171,Qarallax
+172,Qualys Vulnerability Scan
+173,RDP Connection with Nessus Cookie
+174,RDP Connection with nmap Cookie
+175,RDP Connection with rapid Cookie
+176,RDP Jump Box
+177,RDP protocol
+178,RIG Exploit kit
+179,Ramnit
+180,Ranbyus
+181,Recently registered domain access
+182,Recslurp
+183,RelevantKnowledge
+184,Remcos RAT
+185,Remote Task Scheduling
+186,Revenge RAT
+187,SMB2 Create for an .exe file
+188,SMBv1
+189,SMTP Clear-Text Password Transmission
+190,SQL Injection
+191,SSH connection on unusual port
+192,Sality
+193,Self-signed certificate on high port
+194,Shellshock Exploit Attempt
+195,Shlayer
+196,Simda
+197,Sinkdns Sinkhole
+198,Sinkhole host
+199,Spigot
+200,Spyrat
+201,SuppoBox
+202,Suspicious Account Enumeration
+203,Suspicious DNS Resolution
+204,Suspicious DNS Zone Transfer
+205,Suspicious Dynamic DNS Public IP Check
+206,Suspicious FTP Upload to an External Server
+207,Suspicious Kerberos AS_REQ RC4 Encryption
+208,Suspicious Kerberos Authentication Failure
+209,Suspicious LDAP Authentication Failure
+210,Suspicious Password Policy Query
+211,Suspicious RDP Jump Box
+212,Suspicious RDP connection
+213,Suspicious Redirection Gateway Domain
+214,Suspicious Remote Shell Command
+215,Suspicious Remote Task Scheduling
+216,Suspicious SMB Permission Errors
+217,Suspicious SSH connection
+218,Suspicious SSL certificate
+219,Suspicious TLS Certificate
+220,Suspicious TLS Certificate Fields
+221,Suspicious Tor Connection
+222,Suspicious Trusted Domain Enumeration
+223,Suspicious URL
+224,Suspicious Use of DNS-Over-HTTPS
+225,Suspicious VNC Connection
+226,Suspicious VPN connection
+227,Suspicious Wordpress URL
+228,Suspicious data download
+229,Suspicious data upload
+230,Suspicious javascript obfuscation
+231,Suspicious use of SMBv1
+232,Suspicious use of self-signed certificate
+233,TDLClickServer
+234,TDS_Redirect
+235,TELNET Clear-Text Password Transmission
+236,TLS Certificate With Default Values
+237,Time Series Anomaly
+238,Tofsee
+239,Tor
+240,Transfer-Encoding in HTTP 1.0
+241,TrickBot
+242,URLhaus blacklisted host
+243,USPSDapato
+244,Uncommon HTTP 1xx Response With Body Content
+245,Unknown Crypto Miner
+246,Unusual Access to Recently Registered Domain
+247,Unusual Beaconing Activity
+248,Unusual DGA Activity
+249,Unusual DNS Resolution
+250,Unusual DNS Tunneling
+251,Unusual External IP Lookup
+252,Unusual HTTP Basic Authentication
+253,Unusual JA3 fingerprint observed
+254,Unusual Port Scan
+255,Unusual Port Sweep
+256,Unusual Possible Cross Site Scripting Attempt
+257,Unusual Potential Apache Struts Exploitation
+258,Unusual SMB2 Create for an .exe file
+259,Unusual connection between two hosts
+260,Unusual connection received on unusual port
+261,Unusual data download
+262,Unusual data upload
+263,Unusual delivery errors for outbound SMTP
+264,Unusual user agent string observed
+265,Upatre
+266,Ursnif
+267,VBS.Jenxcus
+268,VNC Traffic
+269,VPN Traffic
+270,Virut
+271,WSHRAT
+272,Web Application Attack
+273,Web Shell Command
+274,WinHTTP User-Agent
+275,WinWrapper
+276,Winnti
+277,Winnti Scanner
+278,XMR-Stak
+279,XMRig
+280,Xtrat
+281,Yoddos
+282,Zegost
+283,ZeroAccess
+284,ZeuS Gameover
+285,Zusy
+286,http-evader Test Suite
+287,libtorrent
+288,uTorrent
+289,unescape of long unicode string
+290,windows-x64-vncinject-reverse_tcp_uuid

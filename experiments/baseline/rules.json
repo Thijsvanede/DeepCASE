@@ -1,0 +1,626 @@
+[
+    {
+        "category": "AlienVault Scada",
+        "directives": []
+    },
+
+    {
+        "category": "AlienVault Network",
+        "directives": []
+    },
+
+    {
+        "category": "AlienVault Misc",
+        "directives": [
+            {
+                "title": "AV-FREE-FEED Misc, suspicious executable download from a bad IP reputation site on non-common port on DST_IP",
+                "subtitle": "Delivery & Attack, File Download - Poor Reputation Host, Suspicious executable download from a bad IP reputation site on non-common port - Priority 4",
+                "rules": [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "AlienVault Scan",
+        "directives": [
+            {
+                "title": "AV-FREE-FEED Network scan, SIP service discovery activity from SRC_IP",
+                "subtitle": "Reconnaissance & Probing, Service discovery, SIP - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, SSH service discovery activity from SRC_IP",
+                "subtitle": "Reconnaissance & Probing, Service discovery, SSH - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, Nikto web vulnerability assessment tool usage against DST_IP",
+                "subtitle": "Reconnaissance & Probing, Web vulnerability scanning, Nikto - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, DirBuster web scanner usage against DST_IP",
+                "subtitle": "Reconnaissance & Probing, WebServer Attack, DirBuster - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, VNC service discovery from SRC_IP",
+                "subtitle": "Reconnaissance & Probing, Service discovery, VNC - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, Microsoft Remote Desktop service discovery from SRC_IP",
+                "subtitle": "Reconnaissance & Probing, Service discovery, Microsoft Remote Desktop - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, SSH outbound scanning behaviour detected from SRC_IP",
+                "subtitle": "Reconnaissance & Probing, Scan from internal network, SSH Scanning - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, SkipFish web vulnerability assessment tool usage against DST_IP",
+                "subtitle": "Reconnaissance & Probing, Web vulnerability scanning, SkipFish - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, local host scanning port 445/TCP on SRC_IP",
+                "subtitle": "System Compromise, Worm infection, Internal Host scanning - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, local host scanning port 139/TCP on SRC_IP",
+                "subtitle": "System Compromise, Worm infection, Internal Host scanning - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, SNMP default community string discovery detected from SRC_IP",
+                "subtitle": "AV-FREE-FEED Network scan, SNMP default community string discovery detected from SRC_IP",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, web vulnerability assessment tool usage against DST_IP",
+                "subtitle": "Reconnaissance & Probing, Web vulnerability scanning, Vulnerability Scanner - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Network scan, web vulnerability assessment tool usage against DST_IP",
+                "subtitle": "Reconnaissance & Probing, Web vulnerability scanning, Vulnerability Scanner - Priority 3",
+                "rules": [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "AlienVault Policy",
+        "directives": [
+            {
+                "title": "AV-FREE-FEED Policy violation, eDonkey P2P usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - P2P, eDonkey - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, BitTorrent P2P usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - P2P, BitTorrent - Priority 4",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, Google Talk IM usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - Chat Client, Google Talk - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, Skype IM usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - Chat Client, Skype IM - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, MSN Messenger IM usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - Chat Client, MSN Messenger - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, IRC chat usage on SRC_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - Chat Client, IRC - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, TeamViewer remote desktop usage on DST_IP",
+                "subtitle": "Environmental Awareness, Desktop Software - Remote Desktop, TeamViewer - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, vulnerable Java version detected on SRC_IP",
+                "subtitle": "Environmental Awareness, Vulnerable software, Java - Priority 3",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, Linux package manager update detected on SRC_IP",
+                "subtitle": "Environmental Awareness, Software Update, Linux Package Manager - Priority 1",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Policy violation, vulnerable Adobe Flash detected on SRC_IP",
+                "subtitle": "Environmental Awareness, Vulnerable software, Adobe Flash - Priority 3",
+                "rules": [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "AlienVault Dos",
+        "directives": []
+    },
+
+    {
+        "category": "AlienVault Malware",
+        "directives": [
+            {
+                "title": "AV-FREE-FEED Malware, trojan Sality detected on SRC_IP",
+                "subtitle": "System Compromise, Trojan infection, Sality - Priority 5",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "AV-FREE-FEED Malware, trojan from Bancos family detected on SRC_IP",
+                "subtitle": "System Compromise, Trojan infection, Bancos - Priority 5",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "AlienVault Attacks",
+        "directives": [
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "AlienVault BruteForce",
+        "directives": [
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            },
+            {
+                "title": "TODO",
+                "subtitle": "TODO",
+                "rules": [
+
+                ]
+            }
+        ]
+    }
+]

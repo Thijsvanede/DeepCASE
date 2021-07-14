@@ -1,0 +1,365 @@
+Detectors: 395
+Threats  : 291
+
+LOGS
+───────────────────────────────────────────────────────
+Adwind RAT                                   :       10
+Ambiguous Transfer-Encoding header field     :        3
+Andromeda                                    :        9
+Anomalous Ammyy Admin Check-In               :        5
+Anomalous Command Execution Over SMB         :     1406
+Anomalous connection between two hosts       :      715
+Babylon                                      :       39
+Bandook                                      :        1
+Bedep                                        :        2
+BetaBot                                      :        7
+BitCoin Miner                                :      160
+BitCoinMiner                                 :      929
+BitTorrent                                   :    24445
+BlackHole                                    :        4
+Bladabindi                                   :      232
+BrowseFox                                    :       13
+Buran                                        :        6
+CNCERT CC Sinkhole                           :        7
+CVE-2017-7269 Exploit                        :       33
+CVE-2018-13379 Exploit                       :        4
+CVE-2018-2628 Exploit                        :      246
+CVE-2018-7600 Exploit                        :       51
+CVE-2019-0708                                :     4578
+CVE-2019-1003000 Exploit                     :       25
+CVE-2019-16759 Exploit                       :       23
+CVE-2019-19781 Exploit                       :    28753
+CVE-2020-0601 Exploit                        :       54
+Canadian Pharmacy Online Drugstore Scam      :        2
+Carberp                                      :     2666
+Certificate with Explicit EC Parameters      :        1
+China Chopper Web Shell                      :        4
+CoinHive Monero Miner                        :       33
+CoinMiner                                    :      534
+Conficker                                    :        4
+Connection on suspicious port                :     1312
+Crimson RAT                                  :        4
+CryptoWall                                   :        6
+Cryptolocker                                 :       13
+Dark Hydrus                                  :       16
+Dealply                                      :       24
+Deprecated SSL Version Usage                 :        2
+Dinwod                                       :        3
+Domain involved in spam emails               :        2
+Download Of File With Malicious PowerShell   :      139
+Dridex                                       :      103
+Dropper attempt to download payload          :      976
+Drupalgeddon 2                               :      504
+Dyreza RAT                                   :        8
+EXE Embedded in page                         :        3
+Emotet                                       :       18
+Empire Listener                              :        4
+Fake Virus Phone Scam                        :       97
+Fareit                                       :       20
+Farfli                                       :       37
+Feodo                                        :     1116
+FileBulldog                                  :        1
+FlyStudio                                    :       15
+Formbook                                     :       37
+Fynloski                                     :        4
+Gamarue                                      :       17
+Gaming Client                                :    14296
+Generic FakeAV                               :        2
+GenericClickFraud                            :      200
+GenericTrojan_11                             :        6
+HTTP 1xx Response With Body Content          :       70
+HTTP 414 URI Too Long                        :      652
+HTTP Basic Authentication                    :   123963
+Hupigon                                      :        2
+IMAP Clear-Text Password Transmission        :    42547
+IcedID                                       :        7
+Injected redirection to suspicious site      :       28
+InstallCore                                  :       58
+Khelios                                      :        4
+Kovter                                       :        3
+company blocking test                       :      175
+company sensor rule test                    :       11
+company test                                :      949
+Lethic                                       :        1
+Linkury                                      :     1024
+Locky                                        :       13
+Loki Bot                                     :      399
+Luminosity                                   :        3
+MS Sinkhole Resolved                         :        3
+Magecart                                     :       16
+Malicious Binary Download                    :     1738
+Malicious Document Download                  :       49
+Malicious File Download                      :   122840
+Malicious Script Download                    :      193
+Malicious android app download               :        2
+Malicious archive download                   :      323
+Malicious java app download                  :        3
+Malicious redirector                         :        4
+Metasploit WinRM                             :        5
+Metasploit web server                        :        1
+Mirai Login Attempt                          :  2116494
+Mirai Variant                                :      908
+NanoCore                                     :     1272
+Necurs                                       :       91
+Nemty                                        :       15
+NetwiredRC                                   :      183
+Network Defender rule match                  :      440
+Neutrino                                     :       10
+Nitol                                        :       34
+Nmap                                         :       93
+Obfuscated JavaScript                        :      267
+OpenVAS                                      :        1
+OxyPumper                                    :        2
+PhishTank blacklisted host                   :      891
+Phishing                                     :      250
+Phishing: Email Provider                     :        5
+Phishing: Financial Sector                   :        2
+Phishing: Payment Service                    :        2
+Phishing: Social Networking                  :       10
+Phishing: e-Commerce                         :        1
+PoisonIvy                                    :        6
+Pony                                         :       18
+Possible Nyetya Lateral Movement             :       21
+Potential CVE-2019-9978 Exploitation Attempt :        8
+Potential Remote Shell Command               :       53
+Potential SMB Brute Force Attack             :    14883
+Potential ThinkPHP RCE Exploitation Attempt  :    14035
+PsExec interaction                           :      263
+Pykspa                                       :       22
+Qakbot                                       :       18
+Qarallax                                     :     1211
+Qualys Vulnerability Scan                    :      372
+RIG Exploit kit                              :        2
+Ramnit                                       :       28
+Ranbyus                                      :       10
+Recslurp                                     :        3
+RelevantKnowledge                            :      470
+Remcos RAT                                   :      277
+Revenge RAT                                  :        2
+SMB2 Create for an .exe file                 :     3371
+SQL Injection                                :     4476
+Sality                                       :        1
+Shellshock Exploit Attempt                   :      276
+Shlayer                                      :       34
+Simda                                        :        2
+Sinkdns Sinkhole                             :        4
+Sinkhole host                                :      584
+Spigot                                       :       75
+Spyrat                                       :        3
+SuppoBox                                     :       30
+Suspicious Account Enumeration               :      495
+Suspicious DNS Zone Transfer                 :      134
+Suspicious Dynamic DNS Public IP Check       :       77
+Suspicious FTP Upload to an External Server  :      128
+Suspicious Kerberos AS_REQ RC4 Encryption    :      336
+Suspicious Kerberos Authentication Failure   :     1354
+Suspicious LDAP Authentication Failure       :      370
+Suspicious Password Policy Query             :      760
+Suspicious RDP Jump Box                      :      198
+Suspicious RDP connection                    :     1897
+Suspicious Redirection Gateway Domain        :      200
+Suspicious Remote Shell Command              :      271
+Suspicious Remote Task Scheduling            :       56
+Suspicious SMB Permission Errors             :      745
+Suspicious SSH connection                    :      313
+Suspicious SSL certificate                   :       26
+Suspicious TLS Certificate                   :      963
+Suspicious Tor Connection                    :      367
+Suspicious Trusted Domain Enumeration        :     1204
+Suspicious URL                               :        5
+Suspicious Use of DNS-Over-HTTPS             :      548
+Suspicious VNC Connection                    :      282
+Suspicious VPN connection                    :     1392
+Suspicious Wordpress URL                     :      390
+Suspicious data download                     :     3310
+Suspicious data upload                       :     2723
+Suspicious javascript obfuscation            :        3
+Suspicious use of SMBv1                      :      496
+Suspicious use of self-signed certificate    :      770
+TDLClickServer                               :       66
+TDS_Redirect                                 :        1
+TELNET Clear-Text Password Transmission      :      597
+Tofsee                                       :        1
+Transfer-Encoding in HTTP 1.0                :        1
+TrickBot                                     :       68
+URLhaus blacklisted host                     :      209
+USPSDapato                                   :        6
+Uncommon HTTP 1xx Response With Body Content :      368
+Unknown Crypto Miner                         :    39395
+Unusual Access to Recently Registered Domain :      449
+Unusual Beaconing Activity                   :     1073
+Unusual DGA Activity                         :        3
+Unusual DNS Resolution                       :      137
+Unusual DNS Tunneling                        :       26
+Unusual External IP Lookup                   :      826
+Unusual HTTP Basic Authentication            :       22
+Unusual Port Scan                            :     1482
+Unusual Port Sweep                           :     2016
+Unusual Possible Cross Site Scripting Attempt:      700
+Unusual Potential Apache Struts Exploitation :     1651
+Unusual connection received on unusual port  :     1175
+Unusual delivery errors for outbound SMTP    :       40
+Unusual user agent string observed           :     3999
+Upatre                                       :        5
+Ursnif                                       :        1
+VBS.Jenxcus                                  :        4
+Virut                                        :        4
+WSHRAT                                       :        1
+Web Application Attack                       :   156520
+Web Shell Command                            :      579
+WinWrapper                                   :     1516
+Winnti                                       :      186
+Winnti Scanner                               :      636
+XMR-Stak                                     :        3
+XMRig                                        :       29
+Xtrat                                        :      114
+Yoddos                                       :        1
+Zegost                                       :      545
+ZeroAccess                                   :     9544
+ZeuS Gameover                                :       22
+Zusy                                         :       12
+http-evader Test Suite                       :      130
+libtorrent                                   :      500
+uTorrent                                     :     5924
+unescape of long unicode string              :       15
+windows-x64-vncinject-reverse_tcp_uuid       :        1
+───────────────────────────────────────────────────────
+Total                                        :  2791020
+
+INFO
+───────────────────────────────────────────────────────
+Active Directory Account Enumeration         :      297
+Active Directory Password Policy Query       :    43565
+Active Directory Trust Enumeration           :   294268
+Administrator RDP Connection                 :    21555
+Adwind RAT                                   :        1
+Ambiguous Transfer-Encoding header field     :        5
+Ammyy Admin Check-In                         :       46
+Beaconing activity                           :   111554
+BitTorrent                                   :    28213
+Bladabindi                                   :       10
+Blocked HTTP Connection                      :        1
+CVE-2010-3275                                :       15
+CVE-2011-2371                                :        2
+CVE-2018-13379 Exploit                       :        1
+CVE-2018-7600 Exploit                        :        1
+CVE-2019-0708                                :      967
+CVE-2019-1003000 Exploit                     :       24
+CVE-2019-19781 Exploit                       :    11534
+CVE-2020-0601 Exploit                        :        2
+CVE-2020-0796 Exploit                        :       20
+Command Execution Over SMB                   :    28007
+Connection on unusual port                   :    63064
+Connection received on unusual port          :    42209
+Consecutive failed SMB login attempts        :      674
+Consecutive failed Telnet logins             :      690
+DGA activity                                 :        7
+DNS Tunneling                                :      170
+DNS Zone Transfer Query                      :     5843
+DNS-over-HTTPS                               :    16618
+Data download on suspicious port             :    24585
+Data upload on suspicious port               :     1771
+Delivery errors for outbound SMTP            :      179
+Deprecated SSL Version Usage                 :     3770
+Download Of File With Malicious PowerShell   :        1
+Dropper attempt to download payload          :       46
+Drupalgeddon 2                               :      122
+Emotet                                       :        1
+External IP Lookup                           :    24040
+FTP Clear-Text Password Transmission         :       13
+FTP File Upload to a Public Server           :     2208
+FTP Telnet Evasion                           :        1
+Feodo                                        :       73
+Formbook                                     :        4
+Gaming Client                                :     6849
+GenericClickFraud                            :        9
+GomyHit                                      :        1
+HTTP 1xx Response With Body Content          :   177141
+HTTP 414 URI Too Long                        :      216
+HTTP Basic Authentication                    :   132256
+Hupigon                                      :        1
+IMAP Clear-Text Password Transmission        :     6714
+Injected Coin Miner in Compromised Website   :        1
+Injected redirection to suspicious site      :        3
+InstallCore                                  :        3
+Kerberos AS-REQ with RC4 Encryption          :    25211
+Kerberos Authentication Failure              :    48029
+LDAP Authentication Failure                  :      837
+company blocking test                       :      835
+company sensor rule test                    :       35
+company test                                :      447
+Login to cryptocurrency mining pool          :        3
+Login to pastebin.com API                    :        2
+Malicious Binary Download                    :        1
+Malicious Script Download                    :    21165
+Malicious archive download                   :       57
+Malicious redirector                         :        2
+Metasploit web server                        :        2
+Microsoft Watson                             :    19060
+Mirai Login Attempt                          :     1618
+Mirai Variant                                :    23055
+Nessus                                       :        2
+NetwiredRC                                   :        1
+Nmap                                         :      118
+Obfuscated JavaScript                        :        1
+OpenVAS                                      :        1
+POP3 Clear-Text Password Transmission        :     2791
+Port Scan                                    :    79318
+Port Sweep                                   :   173356
+Possible Apache Struts OGNL Exploit Attempt  :       13
+Possible Cross Site Scripting Attempt        :     7594
+Potential AD Account Enumeration             :        5
+Potential Apache Struts Exploitation Attempt :   152566
+Potential FTP URL stream injection           :       18
+Potential Lateral Movement: Psexec SMB Create:       32
+Potential Nyetya Lateral Movement            :      110
+Potential Remote Shell Command               :     1595
+Potential SMB Brute Force Attack             :    69583
+Potential SMB probe for MS17-010 patch       :      103
+Potential ThinkPHP RCE Exploitation Attempt  :       27
+Potential Web Shell Command                  :     6143
+PsExec interaction                           :      679
+Qualys Vulnerability Scan                    :     1731
+RDP Connection with Nessus Cookie            :        1
+RDP Connection with nmap Cookie              :     1006
+RDP Connection with rapid Cookie             :    12827
+RDP Jump Box                                 :     5883
+RDP protocol                                 :  4740129
+Recently registered domain access            :     3186
+Remcos RAT                                   :        2
+Remote Task Scheduling                       :     1647
+SMB2 Create for an .exe file                 :    12762
+SMBv1                                        :   171788
+SMTP Clear-Text Password Transmission        :     1718
+SQL Injection                                :     3395
+SSH connection on unusual port               :     5956
+Self-signed certificate on high port         :   302722
+Shellshock Exploit Attempt                   :      116
+Shlayer                                      :        4
+Suspicious DNS Resolution                    :     1471
+Suspicious Redirection Gateway Domain        :        3
+Suspicious SSL certificate                   :       23
+Suspicious TLS Certificate Fields            :        6
+Suspicious Wordpress URL                     :      525
+TELNET Clear-Text Password Transmission      :      373
+TLS Certificate With Default Values          :     6816
+Time Series Anomaly                          :     1848
+Tor                                          :    16002
+TrickBot                                     :        2
+URLhaus blacklisted host                     :        1
+Unknown Crypto Miner                         :      180
+Unusual JA3 fingerprint observed             :    92794
+Unusual SMB2 Create for an .exe file         :     2041
+Unusual connection between two hosts         :    18089
+Unusual data download                        :    33138
+Unusual data upload                          :    17915
+Unusual user agent string observed           :   287793
+VNC Traffic                                  :     2441
+VPN Traffic                                  :   129512
+Web Application Attack                       :   164485
+WinHTTP User-Agent                           :    13568
+Zegost                                       :        5
+libtorrent                                   :      125
+uTorrent                                     :     3383
+───────────────────────────────────────────────────────
+Total                                        :  7741198

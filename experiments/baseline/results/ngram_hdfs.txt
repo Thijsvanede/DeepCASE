@@ -1,0 +1,280 @@
+NgramMatch
+Train
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000     89736
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000     89736
+   macro avg     0.2000    0.2000    0.2000     89736
+weighted avg     1.0000    1.0000    1.0000     89736
+
+------------------------------------------------------------
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	  5389	 89736	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+------------------------------------------------------------
+Unable to predict 5389/95125 = 5.67%
+Number of n-grams stored: 1204
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000     89736
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000     89736
+   macro avg     0.2000    0.2000    0.2000     89736
+weighted avg     1.0000    1.0000    1.0000     89736
+
+------------------------------------------------------------
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	  5389	 89736	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+------------------------------------------------------------
+Unable to predict 5389/95125 = 5.67%
+Number of n-grams stored: 1204
+
+Test
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000  10125798
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000  10125798
+   macro avg     0.2000    0.2000    0.2000  10125798
+weighted avg     1.0000    1.0000    1.0000  10125798
+
+------------------------------------------------------------
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  666416	10125798	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+------------------------------------------------------------
+Unable to predict 666416/10792214 = 6.17%
+Number of n-grams stored: 1204
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000  10125798
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000  10125798
+   macro avg     0.2000    0.2000    0.2000  10125798
+weighted avg     1.0000    1.0000    1.0000  10125798
+
+------------------------------------------------------------
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  666416	10125798	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+------------------------------------------------------------
+Unable to predict 666416/10792214 = 6.17%
+Number of n-grams stored: 1204
+
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 995 samples
+Clustering took 0.0164 seconds
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 1441 samples
+Clustering took 0.0773 seconds
+Computing unique sequences
+Unique sequences computed
+Started one-hot encoding
+Finished one-hot encoding
+Clustering 4193 samples
+Clustering took 0.2937 seconds
+NgramCluster
+Train
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000     94183
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000     94183
+   macro avg     0.2000    0.2000    0.2000     94183
+weighted avg     1.0000    1.0000    1.0000     94183
+
+------------------------------------------------------------
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	   942	 94183	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	   942	 94183	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+------------------------------------------------------------
+Unable to predict 942/95125 = 0.99%
+Number of clusters: 446
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000     94183
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000     94183
+   macro avg     0.2000    0.2000    0.2000     94183
+weighted avg     1.0000    1.0000    1.0000     94183
+
+------------------------------------------------------------
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	   942	 94183	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+   T\P	    -1	  INFO	   LOW	MEDIUM	  HIGH	ATTACK
+    -1	     0	     0	     0	     0	     0	     0
+  INFO	   942	 94183	     0	     0	     0	     0
+   LOW	     0	     0	     0	     0	     0	     0
+MEDIUM	     0	     0	     0	     0	     0	     0
+  HIGH	     0	     0	     0	     0	     0	     0
+ATTACK	     0	     0	     0	     0	     0	     0
+
+------------------------------------------------------------
+Unable to predict 942/95125 = 0.99%
+Number of clusters: 446
+
+Test
+
+Prediction risk: max
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000  10664929
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000  10664929
+   macro avg     0.2000    0.2000    0.2000  10664929
+weighted avg     1.0000    1.0000    1.0000  10664929
+
+------------------------------------------------------------
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  127285	10664929	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  127285	10664929	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+------------------------------------------------------------
+Unable to predict 127285/10792214 = 1.18%
+Number of clusters: 446
+
+
+Prediction risk: common
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        INFO     1.0000    1.0000    1.0000  10664929
+         LOW     0.0000    0.0000    0.0000         0
+      MEDIUM     0.0000    0.0000    0.0000         0
+        HIGH     0.0000    0.0000    0.0000         0
+      ATTACK     0.0000    0.0000    0.0000         0
+
+   micro avg     1.0000    1.0000    1.0000  10664929
+   macro avg     0.2000    0.2000    0.2000  10664929
+weighted avg     1.0000    1.0000    1.0000  10664929
+
+------------------------------------------------------------
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  127285	10664929	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+     T\P	      -1	    INFO	     LOW	  MEDIUM	    HIGH	  ATTACK
+      -1	       0	       0	       0	       0	       0	       0
+    INFO	  127285	10664929	       0	       0	       0	       0
+     LOW	       0	       0	       0	       0	       0	       0
+  MEDIUM	       0	       0	       0	       0	       0	       0
+    HIGH	       0	       0	       0	       0	       0	       0
+  ATTACK	       0	       0	       0	       0	       0	       0
+
+------------------------------------------------------------
+Unable to predict 127285/10792214 = 1.18%
+Number of clusters: 446
+
