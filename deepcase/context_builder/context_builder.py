@@ -279,7 +279,7 @@ class ContextBuilder(nn.Module):
                             .format(epoch, epochs, total_loss/total_items,
                             width=len(str(epochs))))
 
-            except KeyboardInterrupt:
+            except Exception as e:
                 print("\nTraining interrupted, performing clean stop")
                 break
 
@@ -332,11 +332,11 @@ class ContextBuilder(nn.Module):
         self.train(mode)
 
         # Return result
-        return  confidence[inverse], attention[inverse]
+        return confidence[inverse], attention[inverse]
 
 
-    def fit_predict(self, X, y, epochs=10, learning_rate=0.01, teach_ratio=0.5,
-                    verbose=True):
+    def fit_predict(self, X, y, epochs=10, batch_size=128, learning_rate=0.01,
+                    optimizer=optim.SGD, teach_ratio=0.5, verbose=True):
         """Fit the sequence predictor with labelled data
 
             Parameters
@@ -350,8 +350,14 @@ class ContextBuilder(nn.Module):
             epochs : int, default=10
                 Number of epochs to train with
 
+            batch_size : int, default=128
+                Batch size to use for training
+
             learning_rate : float, default=0.01
                 Learning rate to use for training
+
+            optimizer : optim.Optimizer, default=torch.optim.SGD
+                Optimizer to use for training
 
             teach_ratio : float, default=0.5
                 Ratio of sequences to train including labels
@@ -367,85 +373,16 @@ class ContextBuilder(nn.Module):
         logger.info("fit_predict {} samples".format(X.shape[0]))
 
         # Apply fit and predict in sequence
-        return self.fit(X, y,
-                    epochs,
-                    learning_rate,
-                    teach_ratio,
-                    verbose
-                ).predict(X)
-
-    ########################################################################
-    #                       ContextBuilder Forecast                        #
-    ########################################################################
-
-    def forecast(self, X, y=None, forecast=1, n=1, batch_size=32, verbose=True):
-        """Forcast the n most likely future events for the given context.
-
-            Parameters
-            ----------
-            X : array-like of type=int and shape=(n_samples, context_size)
-                Input context for which to perform analysis
-
-            y : ignored
-
-            forecast : int, default=1
-                Number of events to look at into the future
-
-            n : int, default=1
-                Depth of the analysis, i.e. number of possible paths to explore
-
-            batch_size : int, default=32
-                Size of batches to analyse simultaneously
-
-            verbose : boolean, default=True
-                If True, output training progress to stdout
-
-            Returns
-            -------
-            prediction : torch.Tensor of shape=(n_samples, forecast, n)
-                Predicted events following given input
-
-            confidence : torch.Tensor of shape=(n_samples, forecast, n)
-                Confidence of predicted events
-            """
-        logger.info("forecast {} samples".format(X.shape[0]))
-
-        # Memory optimization, only use unique values
-        X, inverse = unique_2d(X)
-
-        logger.info("forecast {}/{} unique samples".format(X.shape[0], inverse.shape[0]))
-
-        # Initialise results
-        confidence = list()
-        prediction = list()
-
-        # Prepare data
-        data = DataLoader(X, batch_size=batch_size, shuffle=False)
-        # Add progress if verbose
-        if verbose:
-            data = tqdm(data, desc="Predicting")
-
-        # Loop over batches
-        for batch in data:
-
-            # Get confidence levels
-            confidence_, _ = self.predict(batch, steps=forecast)
-
-            # Get top results
-            confidence_, indices_ = confidence_.exp().sort(
-                dim        = 2,
-                descending = True,
-            )
-            # Append predictions
-            confidence.append(confidence_[:,:,:n])
-            prediction.append(indices_   [:,:,:n])
-
-        # Concatenate results
-        prediction = torch.cat(prediction)
-        confidence = torch.cat(confidence)
-
-        # Return result
-        return prediction[inverse], confidence[inverse]
+        return self.fit(
+            X             = X,
+            y             = y,
+            epochs        = epochs,
+            batch_size    = batch_size,
+            learning_rate = learning_rate,
+            optimizer     = optimizer
+            teach_ratio   = teach_ratio,
+            verbose       = verbose,
+        ).predict(X)
 
     ########################################################################
     #                         ContextBuilder Query                         #
@@ -635,9 +572,6 @@ class ContextBuilder(nn.Module):
             confidence_optim = torch.cat(confidence_optim)
             # Return result
             return confidence, attention, inverse, confidence_orig, confidence_optim
-
-        print(attention)
-        exit()
 
         # Return result
         return confidence, attention, inverse

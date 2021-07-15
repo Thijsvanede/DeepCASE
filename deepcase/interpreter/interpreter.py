@@ -225,9 +225,6 @@ class Interpreter(object):
             verbose     = verbose,
         )
 
-        print(fingerprints)
-        exit()
-
         # Create looup table
         indices_y = lookup_table(y.squeeze(1),
             key     = lambda x: x.item(),
@@ -332,7 +329,7 @@ class Interpreter(object):
         logger.info("fit_predict {} samples".format(X.shape[0]))
 
         # Call fit and predict in sequence
-        return self.fit(X, Y,
+        return self.fit(X, y,
             score      = score,
             iterations = iterations,
             batch_size = batch_size,

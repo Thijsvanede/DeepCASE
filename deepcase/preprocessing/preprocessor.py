@@ -6,12 +6,12 @@ from tqdm import tqdm
 class Preprocessor(object):
     """Preprocessor for loading data from standard data formats."""
 
-    def __init__(self, context, timeout, NO_EVENT=-1337):
+    def __init__(self, length, timeout, NO_EVENT=-1337):
         """Preprocessor for loading data from standard data formats.
 
             Parameters
             ----------
-            context : int
+            length : int
                 Number of events in context.
 
             timeout : float
@@ -24,7 +24,7 @@ class Preprocessor(object):
                 event simply does not have enough preceding context events.
             """
         # Set context length
-        self.context_length = context
+        self.context_length = length
         self.timeout        = timeout
 
         # Set no-event event
@@ -383,6 +383,7 @@ class Preprocessor(object):
 
         # Transform to sequences and return
         return self.sequence(data, labels=labels, verbose=verbose)
+
 
 if __name__ == "__main__":
     ########################################################################

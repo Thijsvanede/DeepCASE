@@ -26,7 +26,7 @@ class Cluster(object):
 
             Parameters
             ----------
-            X : array-like of shape=(n_samples, n_features)
+            X : sparse array-like of shape=(n_samples, n_features)
                 Samples to cluster using DBSCAN
 
             eps : float, default=0.1
@@ -50,7 +50,7 @@ class Cluster(object):
                 Clusters from DBSCAN
             """
         # Ensure array is sparse
-        assert sp.issparse(X)
+        assert sp.issparse(X), "X should be a sparse array"
 
         # Get unique rows
         X, inverse, weights = sp_unique(X)
