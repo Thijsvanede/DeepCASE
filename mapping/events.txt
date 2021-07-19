@@ -1,0 +1,291 @@
+Active Directory Account Enumeration
+Active Directory Password Policy Query
+Active Directory Trust Enumeration
+Administrator RDP Connection
+Adwind RAT
+Ambiguous Transfer-Encoding header field
+Ammyy Admin Check-In
+Andromeda
+Anomalous Ammyy Admin Check-In
+Anomalous Command Execution Over SMB
+Anomalous connection between two hosts
+Babylon
+Bandook
+Beaconing activity
+Bedep
+BetaBot
+BitCoin Miner
+BitCoinMiner
+BitTorrent
+BlackHole
+Bladabindi
+Blocked HTTP Connection
+BrowseFox
+Buran
+CNCERT CC Sinkhole
+CVE-2010-3275
+CVE-2011-2371
+CVE-2017-7269 Exploit
+CVE-2018-13379 Exploit
+CVE-2018-2628 Exploit
+CVE-2018-7600 Exploit
+CVE-2019-0708
+CVE-2019-1003000 Exploit
+CVE-2019-16759 Exploit
+CVE-2019-19781 Exploit
+CVE-2020-0601 Exploit
+CVE-2020-0796 Exploit
+Canadian Pharmacy Online Drugstore Scam
+Carberp
+Certificate with Explicit EC Parameters
+China Chopper Web Shell
+CoinHive Monero Miner
+CoinMiner
+Command Execution Over SMB
+Conficker
+Connection on suspicious port
+Connection on unusual port
+Connection received on unusual port
+Consecutive failed SMB login attempts
+Consecutive failed Telnet logins
+Crimson RAT
+CryptoWall
+Cryptolocker
+DGA activity
+DNS Tunneling
+DNS Zone Transfer Query
+DNS-over-HTTPS
+Dark Hydrus
+Data download on suspicious port
+Data upload on suspicious port
+Dealply
+Delivery errors for outbound SMTP
+Deprecated SSL Version Usage
+Dinwod
+Domain involved in spam emails
+Download Of File With Malicious PowerShell
+Dridex
+Dropper attempt to download payload
+Drupalgeddon 2
+Dyreza RAT
+EXE Embedded in page
+Emotet
+Empire Listener
+External IP Lookup
+FTP Clear-Text Password Transmission
+FTP File Upload to a Public Server
+FTP Telnet Evasion
+Fake Virus Phone Scam
+Fareit
+Farfli
+Feodo
+FileBulldog
+FlyStudio
+Formbook
+Fynloski
+Gamarue
+Gaming Client
+Generic FakeAV
+GenericClickFraud
+GenericTrojan_11
+GomyHit
+HTTP 1xx Response With Body Content
+HTTP 414 URI Too Long
+HTTP Basic Authentication
+Hupigon
+IMAP Clear-Text Password Transmission
+IcedID
+Injected Coin Miner in Compromised Website
+Injected redirection to suspicious site
+InstallCore
+Kerberos AS-REQ with RC4 Encryption
+Kerberos Authentication Failure
+Khelios
+Kovter
+LDAP Authentication Failure
+Lastline blocking test
+Lastline sensor rule test
+Lastline test
+Lethic
+Linkury
+Locky
+Login to cryptocurrency mining pool
+Login to pastebin.com API
+Loki Bot
+Luminosity
+MS Sinkhole Resolved
+Magecart
+Malicious Binary Download
+Malicious Document Download
+Malicious File Download
+Malicious Script Download
+Malicious android app download
+Malicious archive download
+Malicious java app download
+Malicious redirector
+Metasploit WinRM
+Metasploit web server
+Microsoft Watson
+Mirai Login Attempt
+Mirai Variant
+NanoCore
+Necurs
+Nemty
+Nessus
+NetwiredRC
+Network Defender rule match
+Neutrino
+Nitol
+Nmap
+Obfuscated JavaScript
+OpenVAS
+OxyPumper
+POP3 Clear-Text Password Transmission
+PhishTank blacklisted host
+Phishing
+Phishing: Email Provider
+Phishing: Financial Sector
+Phishing: Payment Service
+Phishing: Social Networking
+Phishing: e-Commerce
+PoisonIvy
+Pony
+Port Scan
+Port Sweep
+Possible Apache Struts OGNL Exploit Attempt
+Possible Cross Site Scripting Attempt
+Possible Nyetya Lateral Movement
+Potential AD Account Enumeration
+Potential Apache Struts Exploitation Attempt
+Potential CVE-2019-9978 Exploitation Attempt
+Potential FTP URL stream injection
+Potential Lateral Movement: Psexec SMB Create
+Potential Nyetya Lateral Movement
+Potential Remote Shell Command
+Potential SMB Brute Force Attack
+Potential SMB probe for MS17-010 patch
+Potential ThinkPHP RCE Exploitation Attempt
+Potential Web Shell Command
+PsExec interaction
+Pykspa
+Qakbot
+Qarallax
+Qualys Vulnerability Scan
+RDP Connection with Nessus Cookie
+RDP Connection with nmap Cookie
+RDP Connection with rapid Cookie
+RDP Jump Box
+RDP protocol
+RIG Exploit kit
+Ramnit
+Ranbyus
+Recently registered domain access
+Recslurp
+RelevantKnowledge
+Remcos RAT
+Remote Task Scheduling
+Revenge RAT
+SMB2 Create for an .exe file
+SMBv1
+SMTP Clear-Text Password Transmission
+SQL Injection
+SSH connection on unusual port
+Sality
+Self-signed certificate on high port
+Shellshock Exploit Attempt
+Shlayer
+Simda
+Sinkdns Sinkhole
+Sinkhole host
+Spigot
+Spyrat
+SuppoBox
+Suspicious Account Enumeration
+Suspicious DNS Resolution
+Suspicious DNS Zone Transfer
+Suspicious Dynamic DNS Public IP Check
+Suspicious FTP Upload to an External Server
+Suspicious Kerberos AS_REQ RC4 Encryption
+Suspicious Kerberos Authentication Failure
+Suspicious LDAP Authentication Failure
+Suspicious Password Policy Query
+Suspicious RDP Jump Box
+Suspicious RDP connection
+Suspicious Redirection Gateway Domain
+Suspicious Remote Shell Command
+Suspicious Remote Task Scheduling
+Suspicious SMB Permission Errors
+Suspicious SSH connection
+Suspicious SSL certificate
+Suspicious TLS Certificate
+Suspicious TLS Certificate Fields
+Suspicious Tor Connection
+Suspicious Trusted Domain Enumeration
+Suspicious URL
+Suspicious Use of DNS-Over-HTTPS
+Suspicious VNC Connection
+Suspicious VPN connection
+Suspicious Wordpress URL
+Suspicious data download
+Suspicious data upload
+Suspicious javascript obfuscation
+Suspicious use of SMBv1
+Suspicious use of self-signed certificate
+TDLClickServer
+TDS_Redirect
+TELNET Clear-Text Password Transmission
+TLS Certificate With Default Values
+Time Series Anomaly
+Tofsee
+Tor
+Transfer-Encoding in HTTP 1.0
+TrickBot
+URLhaus blacklisted host
+USPSDapato
+Uncommon HTTP 1xx Response With Body Content
+Unknown Crypto Miner
+Unusual Access to Recently Registered Domain
+Unusual Beaconing Activity
+Unusual DGA Activity
+Unusual DNS Resolution
+Unusual DNS Tunneling
+Unusual External IP Lookup
+Unusual HTTP Basic Authentication
+Unusual JA3 fingerprint observed
+Unusual Port Scan
+Unusual Port Sweep
+Unusual Possible Cross Site Scripting Attempt
+Unusual Potential Apache Struts Exploitation
+Unusual SMB2 Create for an .exe file
+Unusual connection between two hosts
+Unusual connection received on unusual port
+Unusual data download
+Unusual data upload
+Unusual delivery errors for outbound SMTP
+Unusual user agent string observed
+Upatre
+Ursnif
+VBS.Jenxcus
+VNC Traffic
+VPN Traffic
+Virut
+WSHRAT
+Web Application Attack
+Web Shell Command
+WinHTTP User-Agent
+WinWrapper
+Winnti
+Winnti Scanner
+XMR-Stak
+XMRig
+Xtrat
+Yoddos
+Zegost
+ZeroAccess
+ZeuS Gameover
+Zusy
+http-evader Test Suite
+libtorrent
+uTorrent
+unescape of long unicode string
+windows-x64-vncinject-reverse_tcp_uuid

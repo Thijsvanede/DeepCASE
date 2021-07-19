@@ -1,0 +1,1274 @@
+[
+    {
+        "category": "network",
+        "directives": [
+            {
+                "title": "Cobalt Strike DNS Beaconing",
+                "subtitle": "Detects suspicious DNS queries known from Cobalt Strike beacons",
+                "id": "2975af79-28c4-4d2f-a951-9095f229df29",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "cobalt-strike-dns-beaconing",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "1": "cobalt-strike-dns-beaconing--2975af79-28c4-4d2f-a951-9095f229df29"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "cobalt-strike-dns-beaconing",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "1": "cobalt-strike-dns-beaconing--2975af79-28c4-4d2f-a951-9095f229df29"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "High DNS Bytes Out",
+                "subtitle": "High DNS queries bytes amount from host per short period of time",
+                "id": "0f6c1bf5-70a5-4963-aef9-aab1eefb50bd",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "high-dns-bytes-out",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "2": "high-dns-bytes-out--0f6c1bf5-70a5-4963-aef9-aab1eefb50bd"
+                        },
+                        "events": {
+                            "250": "Unusual DNS Tunneling",
+                            "54": "DNS Tunneling"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "high-dns-bytes-out",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": 60,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "2": "high-dns-bytes-out--0f6c1bf5-70a5-4963-aef9-aab1eefb50bd"
+                        },
+                        "events": {
+                            "250": "Unusual DNS Tunneling",
+                            "54": "DNS Tunneling"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "High DNS Requests Rate",
+                "subtitle": "High DNS requests amount from host per short period of time",
+                "id": "b4163085-4001-46a3-a79a-55d8bbbc7a3a",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "high-dns-requests-rate",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "3": "high-dns-requests-rate--b4163085-4001-46a3-a79a-55d8bbbc7a3a"
+                        },
+                        "events": {
+                            "56": "DNS-over-HTTPS",
+                            "203": "Suspicious DNS Resolution",
+                            "55": "DNS Zone Transfer Query",
+                            "250": "Unusual DNS Tunneling",
+                            "204": "Suspicious DNS Zone Transfer",
+                            "205": "Suspicious Dynamic DNS Public IP Check",
+                            "54": "DNS Tunneling",
+                            "224": "Suspicious Use of DNS-Over-HTTPS",
+                            "197": "Sinkdns Sinkhole",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "high-dns-requests-rate",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": 60,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "3": "high-dns-requests-rate--b4163085-4001-46a3-a79a-55d8bbbc7a3a"
+                        },
+                        "events": {
+                            "56": "DNS-over-HTTPS",
+                            "203": "Suspicious DNS Resolution",
+                            "55": "DNS Zone Transfer Query",
+                            "250": "Unusual DNS Tunneling",
+                            "204": "Suspicious DNS Zone Transfer",
+                            "205": "Suspicious Dynamic DNS Public IP Check",
+                            "54": "DNS Tunneling",
+                            "224": "Suspicious Use of DNS-Over-HTTPS",
+                            "197": "Sinkdns Sinkhole",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Wannacry Killswitch Domain",
+                "subtitle": "Detects wannacry killswitch domain dns queries",
+                "id": "3eaf6218-3bed-4d8a-8707-274096f12a18",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "wannacry-killswitch-domain",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "4": "wannacry-killswitch-domain--3eaf6218-3bed-4d8a-8707-274096f12a18"
+                        },
+                        "events": {}
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "wannacry-killswitch-domain",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "4": "wannacry-killswitch-domain--3eaf6218-3bed-4d8a-8707-274096f12a18"
+                        },
+                        "events": {}
+                    }
+                ]
+            },
+            {
+                "title": "Telegram Bot API Request",
+                "subtitle": "Detects suspicious DNS queries to api.telegram.org used by Telegram Bots of any kind",
+                "id": "c64c5175-5189-431b-a55e-6d9882158251",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "telegram-bot-api-request",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "5": "telegram-bot-api-request--c64c5175-5189-431b-a55e-6d9882158251"
+                        },
+                        "events": {}
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "telegram-bot-api-request",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "5": "telegram-bot-api-request--c64c5175-5189-431b-a55e-6d9882158251"
+                        },
+                        "events": {}
+                    }
+                ]
+            },
+            {
+                "title": "Network Scans",
+                "subtitle": "Detects many failed connection attempts to different ports or hosts",
+                "id": "fab0ddf0-b8a9-4d70-91ce-a20547209afb",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "network-scans",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "6": "network-scans--fab0ddf0-b8a9-4d70-91ce-a20547209afb"
+                        },
+                        "events": {
+                            "45": "Connection on suspicious port",
+                            "255": "Unusual Port Sweep",
+                            "153": "Port Sweep",
+                            "46": "Connection on unusual port",
+                            "254": "Unusual Port Scan",
+                            "152": "Port Scan",
+                            "47": "Connection received on unusual port",
+                            "260": "Unusual connection received on unusual port"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "network-scans",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": 86400,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "6": "network-scans--fab0ddf0-b8a9-4d70-91ce-a20547209afb"
+                        },
+                        "events": {
+                            "45": "Connection on suspicious port",
+                            "255": "Unusual Port Sweep",
+                            "153": "Port Sweep",
+                            "46": "Connection on unusual port",
+                            "254": "Unusual Port Scan",
+                            "152": "Port Scan",
+                            "47": "Connection received on unusual port",
+                            "260": "Unusual connection received on unusual port"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Equation Group C2 Communication",
+                "subtitle": "Detects communication to C2 servers mentioned in the operational notes of the ShadowBroker leak of EquationGroup C2 tools",
+                "id": "881834a4-6659-4773-821e-1c151789d873",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "equation-group-c2-communication",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "7": "equation-group-c2-communication--881834a4-6659-4773-821e-1c151789d873"
+                        },
+                        "events": {}
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "equation-group-c2-communication",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "7": "equation-group-c2-communication--881834a4-6659-4773-821e-1c151789d873"
+                        },
+                        "events": {}
+                    }
+                ]
+            },
+            {
+                "title": "Possible DNS Tunneling",
+                "subtitle": "Normally, DNS logs contain a limited amount of different dns queries for a single domain. This rule detects a high amount of queries for a single domain, which can be an indicator that DNS is used to transfer data.",
+                "id": "1ec4b281-aa65-46a2-bdae-5fd830ed914e",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "possible-dns-tunneling",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "8": "possible-dns-tunneling--1ec4b281-aa65-46a2-bdae-5fd830ed914e"
+                        },
+                        "events": {
+                            "250": "Unusual DNS Tunneling",
+                            "54": "DNS Tunneling"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "possible-dns-tunneling",
+                        "reliability": 10,
+                        "occurence": 1000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "8": "possible-dns-tunneling--1ec4b281-aa65-46a2-bdae-5fd830ed914e"
+                        },
+                        "events": {
+                            "250": "Unusual DNS Tunneling",
+                            "54": "DNS Tunneling"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "High NULL Records Requests Rate",
+                "subtitle": "Extremely high rate of NULL record type DNS requests from host per short period of time. Possible result of iodine tool execution",
+                "id": "44ae5117-9c44-40cf-9c7c-7edad385ca70",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "high-null-records-requests-rate",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "9": "high-null-records-requests-rate--44ae5117-9c44-40cf-9c7c-7edad385ca70"
+                        },
+                        "events": {
+                            "197": "Sinkdns Sinkhole"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "high-null-records-requests-rate",
+                        "reliability": 10,
+                        "occurence": 50,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "9": "high-null-records-requests-rate--44ae5117-9c44-40cf-9c7c-7edad385ca70"
+                        },
+                        "events": {
+                            "197": "Sinkdns Sinkhole"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "DNS TXT Answer with Possible Execution Strings",
+                "subtitle": "Detects strings used in command execution in DNS TXT Answer",
+                "id": "8ae51330-899c-4641-8125-e39f2e07da72",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "dns-txt-answer-with-possible-execution-strings",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "10": "dns-txt-answer-with-possible-execution-strings--8ae51330-899c-4641-8125-e39f2e07da72"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "dns-txt-answer-with-possible-execution-strings",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "10": "dns-txt-answer-with-possible-execution-strings--8ae51330-899c-4641-8125-e39f2e07da72"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Suspicious DNS Query with B64 Encoded String",
+                "subtitle": "Detects suspicious DNS queries using base64 encoding",
+                "id": "4153a907-2451-4e4f-a578-c52bb6881432",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "suspicious-dns-query-with-b64-encoded-string",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "11": "suspicious-dns-query-with-b64-encoded-string--4153a907-2451-4e4f-a578-c52bb6881432"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "suspicious-dns-query-with-b64-encoded-string",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "11": "suspicious-dns-query-with-b64-encoded-string--4153a907-2451-4e4f-a578-c52bb6881432"
+                        },
+                        "events": {
+                            "203": "Suspicious DNS Resolution",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "High TXT Records Requests Rate",
+                "subtitle": "Extremely high rate of TXT record type DNS requests from host per short period of time. Possible result of Do-exfiltration tool execution",
+                "id": "f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "high-txt-records-requests-rate",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "12": "high-txt-records-requests-rate--f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35"
+                        },
+                        "events": {
+                            "56": "DNS-over-HTTPS",
+                            "203": "Suspicious DNS Resolution",
+                            "55": "DNS Zone Transfer Query",
+                            "250": "Unusual DNS Tunneling",
+                            "204": "Suspicious DNS Zone Transfer",
+                            "205": "Suspicious Dynamic DNS Public IP Check",
+                            "54": "DNS Tunneling",
+                            "224": "Suspicious Use of DNS-Over-HTTPS",
+                            "197": "Sinkdns Sinkhole",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "high-txt-records-requests-rate",
+                        "reliability": 10,
+                        "occurence": 50,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "12": "high-txt-records-requests-rate--f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35"
+                        },
+                        "events": {
+                            "56": "DNS-over-HTTPS",
+                            "203": "Suspicious DNS Resolution",
+                            "55": "DNS Zone Transfer Query",
+                            "250": "Unusual DNS Tunneling",
+                            "204": "Suspicious DNS Zone Transfer",
+                            "205": "Suspicious Dynamic DNS Public IP Check",
+                            "54": "DNS Tunneling",
+                            "224": "Suspicious Use of DNS-Over-HTTPS",
+                            "197": "Sinkdns Sinkhole",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    },
+                    {
+                        "depth": 2.0,
+                        "name": "high-txt-records-requests-rate",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "12": "high-txt-records-requests-rate--f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35"
+                        },
+                        "events": {
+                            "56": "DNS-over-HTTPS",
+                            "203": "Suspicious DNS Resolution",
+                            "55": "DNS Zone Transfer Query",
+                            "250": "Unusual DNS Tunneling",
+                            "204": "Suspicious DNS Zone Transfer",
+                            "205": "Suspicious Dynamic DNS Public IP Check",
+                            "54": "DNS Tunneling",
+                            "224": "Suspicious Use of DNS-Over-HTTPS",
+                            "197": "Sinkdns Sinkhole",
+                            "249": "Unusual DNS Resolution"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Executable from Webdav",
+                "subtitle": "Detects executable access via webdav6. Can be seen in APT 29 such as from the emulated APT 29 hackathon https://github.com/OTRF/detection-hackathon-apt29/",
+                "id": "aac2fd97-bcba-491b-ad66-a6edf89c71bf",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "executable-from-webdav",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "13": "executable-from-webdav--aac2fd97-bcba-491b-ad66-a6edf89c71bf"
+                        },
+                        "events": {
+                            "70": "EXE Embedded in page",
+                            "92": "HTTP 414 URI Too Long",
+                            "167": "Potential Web Shell Command",
+                            "273": "Web Shell Command"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "executable-from-webdav",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "13": "executable-from-webdav--aac2fd97-bcba-491b-ad66-a6edf89c71bf"
+                        },
+                        "events": {
+                            "70": "EXE Embedded in page",
+                            "92": "HTTP 414 URI Too Long",
+                            "167": "Potential Web Shell Command",
+                            "273": "Web Shell Command"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Suspicious Access to Sensitive File Extensions - Zeek",
+                "subtitle": "Detects known sensitive file extensions via Zeek",
+                "id": "286b47ed-f6fe-40b3-b3a8-35129acd43bc",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "suspicious-access-to-sensitive-file-extensions---zeek",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "14": "suspicious-access-to-sensitive-file-extensions---zeek--286b47ed-f6fe-40b3-b3a8-35129acd43bc"
+                        },
+                        "events": {
+                            "65": "Download Of File With Malicious PowerShell",
+                            "123": "Malicious java app download",
+                            "228": "Suspicious data download",
+                            "58": "Data download on suspicious port",
+                            "121": "Malicious android app download",
+                            "261": "Unusual data download",
+                            "120": "Malicious Script Download",
+                            "117": "Malicious Binary Download",
+                            "67": "Dropper attempt to download payload",
+                            "118": "Malicious Document Download",
+                            "119": "Malicious File Download",
+                            "122": "Malicious archive download"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "suspicious-access-to-sensitive-file-extensions---zeek",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "14": "suspicious-access-to-sensitive-file-extensions---zeek--286b47ed-f6fe-40b3-b3a8-35129acd43bc"
+                        },
+                        "events": {
+                            "65": "Download Of File With Malicious PowerShell",
+                            "123": "Malicious java app download",
+                            "228": "Suspicious data download",
+                            "58": "Data download on suspicious port",
+                            "121": "Malicious android app download",
+                            "261": "Unusual data download",
+                            "120": "Malicious Script Download",
+                            "117": "Malicious Binary Download",
+                            "67": "Dropper attempt to download payload",
+                            "118": "Malicious Document Download",
+                            "119": "Malicious File Download",
+                            "122": "Malicious archive download"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "First Time Seen Remote Named Pipe - Zeek",
+                "subtitle": "This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes",
+                "id": "021310d9-30a6-480a-84b7-eaa69aeb92bb",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "first-time-seen-remote-named-pipe---zeek",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "15": "first-time-seen-remote-named-pipe---zeek--021310d9-30a6-480a-84b7-eaa69aeb92bb"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "188": "SMBv1",
+                            "162": "Potential Nyetya Lateral Movement",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "214": "Suspicious Remote Shell Command",
+                            "231": "Suspicious use of SMBv1",
+                            "156": "Possible Nyetya Lateral Movement",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling",
+                            "168": "PsExec interaction"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "first-time-seen-remote-named-pipe---zeek",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "15": "first-time-seen-remote-named-pipe---zeek--021310d9-30a6-480a-84b7-eaa69aeb92bb"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "188": "SMBv1",
+                            "162": "Potential Nyetya Lateral Movement",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "214": "Suspicious Remote Shell Command",
+                            "231": "Suspicious use of SMBv1",
+                            "156": "Possible Nyetya Lateral Movement",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling",
+                            "168": "PsExec interaction"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "First Time Seen Remote Named Pipe - Zeek",
+                "subtitle": "Detects the use of the spoolss named pipe over SMB. This can be used to trigger the authentication via NTLM of any machine that has the spoolservice enabled.",
+                "id": "bae2865c-5565-470d-b505-9496c87d0c30",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "first-time-seen-remote-named-pipe---zeek",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "16": "first-time-seen-remote-named-pipe---zeek--bae2865c-5565-470d-b505-9496c87d0c30"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "231": "Suspicious use of SMBv1",
+                            "188": "SMBv1",
+                            "43": "Command Execution Over SMB"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "first-time-seen-remote-named-pipe---zeek",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "16": "first-time-seen-remote-named-pipe---zeek--bae2865c-5565-470d-b505-9496c87d0c30"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "231": "Suspicious use of SMBv1",
+                            "188": "SMBv1",
+                            "43": "Command Execution Over SMB"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Possible Impacket SecretDump Remote Activity - Zeek",
+                "subtitle": "Detect AD credential dumping using impacket secretdump HKTL. Based on the SIGMA rules/windows/builtin/win_impacket_secretdump.yml",
+                "id": "92dae1ed-1c9d-4eff-a567-33acbd95b00e",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "possible-impacket-secretdump-remote-activity---zeek",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "17": "possible-impacket-secretdump-remote-activity---zeek--92dae1ed-1c9d-4eff-a567-33acbd95b00e"
+                        },
+                        "events": {
+                            "157": "Potential AD Account Enumeration",
+                            "1": "Active Directory Password Policy Query",
+                            "0": "Active Directory Account Enumeration",
+                            "202": "Suspicious Account Enumeration",
+                            "2": "Active Directory Trust Enumeration"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "possible-impacket-secretdump-remote-activity---zeek",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "17": "possible-impacket-secretdump-remote-activity---zeek--92dae1ed-1c9d-4eff-a567-33acbd95b00e"
+                        },
+                        "events": {
+                            "157": "Potential AD Account Enumeration",
+                            "1": "Active Directory Password Policy Query",
+                            "0": "Active Directory Account Enumeration",
+                            "202": "Suspicious Account Enumeration",
+                            "2": "Active Directory Trust Enumeration"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Publicly Accessible RDP Service",
+                "subtitle": "Detects connections from routable IPs to an RDP listener - which is indicative of a publicly-accessible RDP service.",
+                "id": "1fc0809e-06bf-4de3-ad52-25e5263b7623",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "publicly-accessible-rdp-service",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "18": "publicly-accessible-rdp-service--1fc0809e-06bf-4de3-ad52-25e5263b7623"
+                        },
+                        "events": {
+                            "211": "Suspicious RDP Jump Box",
+                            "3": "Administrator RDP Connection",
+                            "176": "RDP Jump Box",
+                            "174": "RDP Connection with nmap Cookie",
+                            "175": "RDP Connection with rapid Cookie",
+                            "173": "RDP Connection with Nessus Cookie",
+                            "212": "Suspicious RDP connection"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "publicly-accessible-rdp-service",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "18": "publicly-accessible-rdp-service--1fc0809e-06bf-4de3-ad52-25e5263b7623"
+                        },
+                        "events": {
+                            "211": "Suspicious RDP Jump Box",
+                            "3": "Administrator RDP Connection",
+                            "176": "RDP Jump Box",
+                            "174": "RDP Connection with nmap Cookie",
+                            "175": "RDP Connection with rapid Cookie",
+                            "173": "RDP Connection with Nessus Cookie",
+                            "212": "Suspicious RDP connection"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Kerberos Network Traffic RC4 Ticket Encryption",
+                "subtitle": "Detects kerberos TGS request using RC4 encryption which may be indicative of kerberoasting",
+                "id": "503fe26e-b5f2-4944-a126-eab405cc06e5",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "kerberos-network-traffic-rc4-ticket-encryption",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "19": "kerberos-network-traffic-rc4-ticket-encryption--503fe26e-b5f2-4944-a126-eab405cc06e5"
+                        },
+                        "events": {
+                            "100": "Kerberos AS-REQ with RC4 Encryption",
+                            "207": "Suspicious Kerberos AS_REQ RC4 Encryption"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "kerberos-network-traffic-rc4-ticket-encryption",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "19": "kerberos-network-traffic-rc4-ticket-encryption--503fe26e-b5f2-4944-a126-eab405cc06e5"
+                        },
+                        "events": {
+                            "100": "Kerberos AS-REQ with RC4 Encryption",
+                            "207": "Suspicious Kerberos AS_REQ RC4 Encryption"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Potential Exfiltration of Compressed Files",
+                "subtitle": "This rule detects potential exfiltration by looking for a few compression extensions in the uri and signs of compression in the mime type, file type, and http body",
+                "id": "0d47e3f6-357f-4534-928c-202631d065fa",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "potential-exfiltration-of-compressed-files",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "20": "potential-exfiltration-of-compressed-files--0d47e3f6-357f-4534-928c-202631d065fa"
+                        },
+                        "events": {
+                            "59": "Data upload on suspicious port",
+                            "75": "FTP File Upload to a Public Server",
+                            "206": "Suspicious FTP Upload to an External Server",
+                            "262": "Unusual data upload",
+                            "229": "Suspicious data upload"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "potential-exfiltration-of-compressed-files",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "20": "potential-exfiltration-of-compressed-files--0d47e3f6-357f-4534-928c-202631d065fa"
+                        },
+                        "events": {
+                            "59": "Data upload on suspicious port",
+                            "75": "FTP File Upload to a Public Server",
+                            "206": "Suspicious FTP Upload to an External Server",
+                            "262": "Unusual data upload",
+                            "229": "Suspicious data upload"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "MITRE BZAR Indicators for Execution",
+                "subtitle": "Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE",
+                "id": "b640c0b8-87f8-4daa-aef8-95a24261dd1d",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "mitre-bzar-indicators-for-execution",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "21": "mitre-bzar-indicators-for-execution--b640c0b8-87f8-4daa-aef8-95a24261dd1d"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "273": "Web Shell Command",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "214": "Suspicious Remote Shell Command",
+                            "167": "Potential Web Shell Command",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "mitre-bzar-indicators-for-execution",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "21": "mitre-bzar-indicators-for-execution--b640c0b8-87f8-4daa-aef8-95a24261dd1d"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "273": "Web Shell Command",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "214": "Suspicious Remote Shell Command",
+                            "167": "Potential Web Shell Command",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "MITRE BZAR Indicators for Persistence",
+                "subtitle": "Windows DCE-RPC functions which indicate a persistence techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE.",
+                "id": "53389db6-ba46-48e3-a94c-e0f2cefe1583",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "mitre-bzar-indicators-for-persistence",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "22": "mitre-bzar-indicators-for-persistence--53389db6-ba46-48e3-a94c-e0f2cefe1583"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "188": "SMBv1",
+                            "162": "Potential Nyetya Lateral Movement",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "214": "Suspicious Remote Shell Command",
+                            "231": "Suspicious use of SMBv1",
+                            "156": "Possible Nyetya Lateral Movement",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling",
+                            "168": "PsExec interaction"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "mitre-bzar-indicators-for-persistence",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "22": "mitre-bzar-indicators-for-persistence--53389db6-ba46-48e3-a94c-e0f2cefe1583"
+                        },
+                        "events": {
+                            "9": "Anomalous Command Execution Over SMB",
+                            "163": "Potential Remote Shell Command",
+                            "188": "SMBv1",
+                            "162": "Potential Nyetya Lateral Movement",
+                            "215": "Suspicious Remote Task Scheduling",
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "214": "Suspicious Remote Shell Command",
+                            "231": "Suspicious use of SMBv1",
+                            "156": "Possible Nyetya Lateral Movement",
+                            "43": "Command Execution Over SMB",
+                            "185": "Remote Task Scheduling",
+                            "168": "PsExec interaction"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "WebDav Put Request",
+                "subtitle": "A General detection for WebDav user-agent being used to PUT files on a WebDav network share. This could be an indicator of exfiltration.",
+                "id": "705072a5-bb6f-4ced-95b6-ecfa6602090b",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "webdav-put-request",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "23": "webdav-put-request--705072a5-bb6f-4ced-95b6-ecfa6602090b"
+                        },
+                        "events": {}
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "webdav-put-request",
+                        "reliability": 0,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "23": "webdav-put-request--705072a5-bb6f-4ced-95b6-ecfa6602090b"
+                        },
+                        "events": {}
+                    }
+                ]
+            },
+            {
+                "title": "Domain User Enumeration Network Recon 01",
+                "subtitle": "Domain user and group enumeration via network reconnaissance. Seen in APT 29 and other common tactics and actors. Detects a set of RPC (remote procedure calls) used to enumerate a domain controller. The rule was created based off the datasets and hackathon from https://github.com/OTRF/detection-hackathon-apt29",
+                "id": "66a0bdc6-ee04-441a-9125-99d2eb547942",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "domain-user-enumeration-network-recon-01",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "24": "domain-user-enumeration-network-recon-01--66a0bdc6-ee04-441a-9125-99d2eb547942"
+                        },
+                        "events": {
+                            "157": "Potential AD Account Enumeration",
+                            "1": "Active Directory Password Policy Query",
+                            "222": "Suspicious Trusted Domain Enumeration",
+                            "0": "Active Directory Account Enumeration",
+                            "202": "Suspicious Account Enumeration",
+                            "2": "Active Directory Trust Enumeration"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "domain-user-enumeration-network-recon-01",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "24": "domain-user-enumeration-network-recon-01--66a0bdc6-ee04-441a-9125-99d2eb547942"
+                        },
+                        "events": {
+                            "157": "Potential AD Account Enumeration",
+                            "1": "Active Directory Password Policy Query",
+                            "222": "Suspicious Trusted Domain Enumeration",
+                            "0": "Active Directory Account Enumeration",
+                            "202": "Suspicious Account Enumeration",
+                            "2": "Active Directory Trust Enumeration"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Suspicious PsExec Execution - Zeek",
+                "subtitle": "detects execution of psexec or paexec with renamed service name, this rule helps to filter out the noise if psexec is used for legit purposes or if attacker uses a different psexec client other than sysinternal one",
+                "id": "f1b3a22a-45e6-4004-afb5-4291f9c21166",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "suspicious-psexec-execution---zeek",
+                        "reliability": 10,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "25": "suspicious-psexec-execution---zeek--f1b3a22a-45e6-4004-afb5-4291f9c21166"
+                        },
+                        "events": {
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "168": "PsExec interaction"
+                        }
+                    },
+                    {
+                        "depth": 0.0,
+                        "name": "suspicious-psexec-execution---zeek",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "25": "suspicious-psexec-execution---zeek--f1b3a22a-45e6-4004-afb5-4291f9c21166"
+                        },
+                        "events": {
+                            "161": "Potential Lateral Movement: Psexec SMB Create",
+                            "168": "PsExec interaction"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Remote Task Creation via ATSVC Named Pipe - Zeek",
+                "subtitle": "Detects remote task creation via at.exe or API interacting with ATSVC namedpipe",
+                "id": "dde85b37-40cd-4a94-b00c-0b8794f956b5",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "remote-task-creation-via-atsvc-named-pipe---zeek",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "26": "remote-task-creation-via-atsvc-named-pipe---zeek--dde85b37-40cd-4a94-b00c-0b8794f956b5"
+                        },
+                        "events": {
+                            "258": "Unusual SMB2 Create for an .exe file",
+                            "187": "SMB2 Create for an .exe file"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "remote-task-creation-via-atsvc-named-pipe---zeek",
+                        "reliability": 0,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "26": "remote-task-creation-via-atsvc-named-pipe---zeek--dde85b37-40cd-4a94-b00c-0b8794f956b5"
+                        },
+                        "events": {
+                            "258": "Unusual SMB2 Create for an .exe file",
+                            "187": "SMB2 Create for an .exe file"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Transferring Files with Credential Data via Network Shares - Zeek",
+                "subtitle": "Transferring files with well-known filenames (sensitive files with credential data) using network shares",
+                "id": "2e69f167-47b5-4ae7-a390-47764529eff5",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "transferring-files-with-credential-data-via-network-shares---zeek",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "27": "transferring-files-with-credential-data-via-network-shares---zeek--2e69f167-47b5-4ae7-a390-47764529eff5"
+                        },
+                        "events": {
+                            "59": "Data upload on suspicious port",
+                            "75": "FTP File Upload to a Public Server",
+                            "206": "Suspicious FTP Upload to an External Server",
+                            "262": "Unusual data upload",
+                            "229": "Suspicious data upload"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "transferring-files-with-credential-data-via-network-shares---zeek",
+                        "reliability": 0,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "27": "transferring-files-with-credential-data-via-network-shares---zeek--2e69f167-47b5-4ae7-a390-47764529eff5"
+                        },
+                        "events": {
+                            "59": "Data upload on suspicious port",
+                            "75": "FTP File Upload to a Public Server",
+                            "206": "Suspicious FTP Upload to an External Server",
+                            "262": "Unusual data upload",
+                            "229": "Suspicious data upload"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "generic",
+        "directives": [
+            {
+                "title": "Brute Force",
+                "subtitle": "Detects many authentication failures from one source to one destination which is may indicate Brute Force activity",
+                "id": "53c7cca0-2901-493a-95db-d00d6fcf0a37",
+                "rules": [
+                    {
+                        "depth": 0.0,
+                        "name": "brute-force",
+                        "reliability": 0,
+                        "occurence": 1,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "28": "brute-force--53c7cca0-2901-493a-95db-d00d6fcf0a37"
+                        },
+                        "events": {
+                            "49": "Consecutive failed Telnet logins",
+                            "48": "Consecutive failed SMB login attempts",
+                            "101": "Kerberos Authentication Failure",
+                            "128": "Mirai Login Attempt",
+                            "208": "Suspicious Kerberos Authentication Failure",
+                            "104": "LDAP Authentication Failure",
+                            "209": "Suspicious LDAP Authentication Failure",
+                            "164": "Potential SMB Brute Force Attack"
+                        }
+                    },
+                    {
+                        "depth": 1.0,
+                        "name": "brute-force",
+                        "reliability": 10,
+                        "occurence": 100000,
+                        "timeout": -1,
+                        "from": "ANY",
+                        "to": "ANY",
+                        "event type": {
+                            "28": "brute-force--53c7cca0-2901-493a-95db-d00d6fcf0a37"
+                        },
+                        "events": {
+                            "49": "Consecutive failed Telnet logins",
+                            "48": "Consecutive failed SMB login attempts",
+                            "101": "Kerberos Authentication Failure",
+                            "128": "Mirai Login Attempt",
+                            "208": "Suspicious Kerberos Authentication Failure",
+                            "104": "LDAP Authentication Failure",
+                            "209": "Suspicious LDAP Authentication Failure",
+                            "164": "Potential SMB Brute Force Attack"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
