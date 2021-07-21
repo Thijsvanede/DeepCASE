@@ -89,16 +89,25 @@ if __name__ == "__main__":
         raise ValueError("Please specify EITHER --csv OR --txt.")
     if args.csv:
         # Load csv file
-        events, context, label, mapping = preprocessor.csv(
+        context, events, label, mapping = preprocessor.csv(
             args.csv,
             verbose = not args.silent,
         )
 
     elif args.txt:
         # Load txt file
-        events, context, label, mapping = preprocessor.txt(
+        context, events, label, mapping = preprocessor.txt(
             args.txt,
             verbose = not args.silent,
+        )
+
+    elif args.save_sequences:
+        raise ValueError("Cannot save sequences without --csv or --txt input")
+
+    elif not args.load_sequences:
+        raise ValueError(
+            "No input given, please provide either raw input using --csv or "
+            "--txt or load preprocessed sequences using --load-sequences."
         )
 
     # Save sequences if necessary
