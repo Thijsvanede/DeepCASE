@@ -379,7 +379,7 @@ class ContextBuilder(nn.Module):
             epochs        = epochs,
             batch_size    = batch_size,
             learning_rate = learning_rate,
-            optimizer     = optimizer
+            optimizer     = optimizer,
             teach_ratio   = teach_ratio,
             verbose       = verbose,
         ).predict(X)
