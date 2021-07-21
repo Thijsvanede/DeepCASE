@@ -37,7 +37,6 @@ if __name__ == "__main__":
     group_io.add_argument('--csv'   , help="CSV events file to process")
     group_io.add_argument('--txt'   , help="TXT events file to process")
     group_io.add_argument('--events', default='auto', help="number of distinct events to handle")
-    # group_io.add_argument('--save-sequences', help="JSON file to store      sequences")
 
     # Add Sequence arguments
     group_sequences = parser.add_argument_group("Sequencing")
@@ -68,7 +67,8 @@ if __name__ == "__main__":
 
     # Add other arguments
     group_other = parser.add_argument_group("Other")
-    group_other.add_argument('--device', default='auto', help="DEVICE used for computation (cpu|cuda|auto)")
+    group_other.add_argument('--device', default='auto'     , help="DEVICE used for computation (cpu|cuda|auto)")
+    group_other.add_argument('--silent', action='store_true', help="silence mode, do not print progress")
 
     # Parse arguments
     args = parser.parse_args()
@@ -89,11 +89,17 @@ if __name__ == "__main__":
         raise ValueError("Please specify EITHER --csv OR --txt.")
     if args.csv:
         # Load csv file
-        events, context, label, mapping = preprocessor.csv(args.csv, verbose=True)
+        events, context, label, mapping = preprocessor.csv(
+            args.csv,
+            verbose = not args.silent,
+        )
 
     elif args.txt:
         # Load txt file
-        events, context, label, mapping = preprocessor.txt(args.txt, verbose=True)
+        events, context, label, mapping = preprocessor.txt(
+            args.txt,
+            verbose = not args.silent,
+        )
 
     # Save sequences if necessary
     if args.save_sequences:
@@ -128,20 +134,6 @@ if __name__ == "__main__":
             NO_EVENT = preprocessor.NO_EVENT,
         )
         exit()
-
-
-
-    # TODO - remove
-    if args.mode == "train":
-        train = 2_000_000
-        events  = events [:train]
-        context = context[:train]
-        label   = label  [:train]
-    else:
-        train = 2_000_000
-        events  = events [:train]
-        context = context[:train]
-        label   = label  [:train]
 
 
     ########################################################################
@@ -184,18 +176,18 @@ if __name__ == "__main__":
         ).to(args.device)
 
     # Training mode
-    # if args.mode == "train":
-    #
-    #     # Train the ContextBuilder
-    #     context_builder.fit(
-    #         X             = context,
-    #         y             = events.reshape(-1, 1),
-    #         epochs        = args.epochs,
-    #         batch_size    = args.batch,
-    #         learning_rate = 0.01,
-    #         teach_ratio   = 0.5,
-    #         verbose       = True,
-    #     )
+    if args.mode == "train":
+
+        # Train the ContextBuilder
+        context_builder.fit(
+            X             = context,
+            y             = events.reshape(-1, 1),
+            epochs        = args.epochs,
+            batch_size    = args.batch,
+            learning_rate = 0.01,
+            teach_ratio   = 0.5,
+            verbose       = not args.silent,
+        )
 
     # Save the builder, if necessary
     if args.save_builder:
@@ -231,7 +223,7 @@ if __name__ == "__main__":
             y          = events.reshape(-1, 1),
             iterations = 100,
             batch_size = 1024,
-            verbose    = True,
+            verbose    = not args.silent,
         )
 
     # Save the interpreter, if necessary
@@ -247,7 +239,7 @@ if __name__ == "__main__":
         # Use given labels to compute score for each cluster
         scores = interpreter.score_clusters(label, strategy="max")
         # Manually assign computed scores
-        interpreter.score(scores, verbose=True)
+        interpreter.score(scores, verbose=not args.silent)
 
         # Save the interpreter, if necessary
         if args.save_interpreter:
@@ -265,7 +257,7 @@ if __name__ == "__main__":
             y          = events.reshape(-1, 1),
             iterations = 100,
             batch_size = 1024,
-            verbose    = True,
+            verbose    = not args.silent,
         )
 
         # Print classification report
