@@ -376,7 +376,7 @@ class Interpreter(object):
         # Group sequences by individual events
         events = group_by(y[mask].squeeze(1).cpu().numpy())
         # Add verbosity, if necessary
-        if verbose: events = tqdm(events, desc="Predicting")
+        if verbose: events = tqdm(events, desc="Predicting      ")
 
         # Loop over all events
         for event, indices in events:

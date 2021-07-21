@@ -2,7 +2,8 @@
 from sklearn.metrics import classification_report
 import argformat
 import argparse
-import numpy as np
+import numpy  as np
+import pandas as pd
 import torch
 
 # DeepCASE imports
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     parser.add_argument('mode', help="mode in which to run DeepCASE", choices=(
         'sequence',
         'train',
+        'cluster',
         'manual',
         'automatic',
     ))
@@ -59,6 +61,9 @@ if __name__ == "__main__":
     group_interpreter.add_argument('--min_samples', type=int  , default=5  , help="DBSCAN clustering MIN_SAMPLES")
     group_interpreter.add_argument('--save-interpreter', help="path to save Interpreter")
     group_interpreter.add_argument('--load-interpreter', help="path to load Interpreter")
+    group_interpreter.add_argument('--save-clusters'   , help="path to CSV file to save clusters")
+    group_interpreter.add_argument('--load-clusters'   , help="path to CSV file to load clusters")
+    group_interpreter.add_argument('--save-prediction' , help="path to CSV file to save prediction")
 
     # Add Training arguments
     group_train = parser.add_argument_group("Train")
@@ -89,14 +94,14 @@ if __name__ == "__main__":
         raise ValueError("Please specify EITHER --csv OR --txt.")
     if args.csv:
         # Load csv file
-        context, events, label, mapping = preprocessor.csv(
+        context, events, labels, mapping = preprocessor.csv(
             args.csv,
             verbose = not args.silent,
         )
 
     elif args.txt:
         # Load txt file
-        context, events, label, mapping = preprocessor.txt(
+        context, events, labels, mapping = preprocessor.txt(
             args.txt,
             verbose = not args.silent,
         )
@@ -116,7 +121,7 @@ if __name__ == "__main__":
             torch.save({
                 "events" : events,
                 "context": context,
-                "label"  : label,
+                "labels" : labels,
                 "mapping": mapping,
             }, outfile)
 
@@ -128,7 +133,7 @@ if __name__ == "__main__":
             # Extract data
             events  = data["events"]
             context = data["context"]
-            label   = data["label"]
+            labels  = data["labels"]
             mapping = data["mapping"]
 
     # If sequence mode, output result and exit
@@ -138,7 +143,7 @@ if __name__ == "__main__":
         show_sequences(
             context  = context,
             events   = events,
-            labels   = label,
+            labels   = labels,
             mapping  = mapping,
             NO_EVENT = preprocessor.NO_EVENT,
         )
@@ -224,7 +229,7 @@ if __name__ == "__main__":
         )
 
     # Cluster samples with the interpreter
-    if args.mode == "train":
+    if args.mode == "cluster":
 
         # Cluster samples with the interpreter
         clusters = interpreter.cluster(
@@ -234,6 +239,19 @@ if __name__ == "__main__":
             batch_size = 1024,
             verbose    = not args.silent,
         )
+
+        # Save clusters, if necessary
+        if args.save_clusters:
+
+            # Set labels to -1 if no labels were provided
+            if labels is None:
+                labels = np.full(clusters.shape[0], -1, dtype=int)
+
+            # Save to file
+            pd.DataFrame({
+                'clusters': clusters,
+                'labels'  : labels,
+            }).to_csv(args.save_clusters, index=False)
 
     # Save the interpreter, if necessary
     if args.save_interpreter:
@@ -245,8 +263,27 @@ if __name__ == "__main__":
 
     if args.mode == "manual":
 
+        # Load cluster labels from file, if necessary
+        if args.load_clusters:
+
+            # Load labels from csv file
+            labels = pd.read_csv(
+                args.load_clusters,
+                index_col = False,
+            )['labels'].values
+
+        # Otherwise, check if labels are present in sequences
+        elif labels is None:
+            raise ValueError(
+                "Cannot assign clusters because labels were provided. Please "
+                "provide labeles either through the --load-clusters argument or"
+                " by loading sequences with tagged with a label. See "
+                "deepcase.preprocessor.Preprocessor for information on how to "
+                "load input samples with a given label."
+            )
+
         # Use given labels to compute score for each cluster
-        scores = interpreter.score_clusters(label, strategy="max")
+        scores = interpreter.score_clusters(labels, strategy="max")
         # Manually assign computed scores
         interpreter.score(scores, verbose=not args.silent)
 
@@ -260,8 +297,15 @@ if __name__ == "__main__":
 
     if args.mode == "automatic":
 
-        # Compute resulting scores
-        result = interpreter.predict(
+        # Check whether predictions can be saved
+        if args.save_prediction is None:
+            raise ValueError(
+                "Please use --save-prediction CSV_FILE to specify a file to "
+                "save the predictions for each sequence."
+            )
+
+        # Compute predicted scores
+        prediction = interpreter.predict(
             X          = context,
             y          = events.reshape(-1, 1),
             iterations = 100,
@@ -269,23 +313,32 @@ if __name__ == "__main__":
             verbose    = not args.silent,
         )
 
-        # Print classification report
-        print("Classification report")
-        print(classification_report(
-            y_pred        = result,
-            y_true        = label,
-            digits        = 4,
-            zero_division = 0,
-        ))
+        # Save to file
+        pd.DataFrame({
+            'labels': prediction,
+        }).to_csv(args.save_prediction, index=False)
 
-        # Print confusion matrix
-        print("Confusion matrix")
-        all_labels = np.unique(label).tolist()
-        print(confusion_report(
-            y_pred       = result,
-            y_true       = label,
-            labels       = [-3, -2, -1] + all_labels,
-            target_names = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS'] + all_labels,
-            skip_x       = all_labels,
-            skip_y       = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS']
-        ))
+
+        # If labels were provided, print classification report
+        if labels is not None:
+
+            # Print classification report
+            print("Classification report")
+            print(classification_report(
+                y_pred        = prediction,
+                y_true        = labels,
+                digits        = 4,
+                zero_division = 0,
+            ))
+
+            # Print confusion matrix
+            print("Confusion matrix")
+            all_labels = np.unique(labels).tolist()
+            print(confusion_report(
+                y_pred       = prediction,
+                y_true       = labels,
+                labels       = [-3, -2, -1] + all_labels,
+                target_names = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS'] + all_labels,
+                skip_x       = all_labels,
+                skip_y       = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS']
+            ))
