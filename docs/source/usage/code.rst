@@ -21,7 +21,6 @@ For example, the following code imports :ref:`DeepCASE`, the :ref:`Preprocessor`
 
 .. code:: python
 
-   from deepcase                 import DeepCASE
    from deepcase.preprocessing   import Preprocessor
    from deepcase.context_builder import ContextBuilder
    from deepcase.interpreter     import Interpreter
@@ -34,20 +33,21 @@ DeepCASE can load sequences from ``.csv`` and specifically formatted ``.txt`` fi
 
     # Create preprocessor
     preprocessor = Preprocessor(
-        context = 10,    # 10 events in context
+        length  = 10,    # 10 events in context
         timeout = 86400, # Ignore events older than 1 day (60*60*24 = 86400 seconds)
     )
 
     # Load data from file
-    events, context, label, mapping = preprocessor.csv('data/atlas.csv')
+    context, events, labels, mapping = preprocessor.csv('data/example.csv')
 
-In case no labels were explicitly provided as an argument, and no labels could be extracted from the file, we may set the labels manually.
+In case no labels were explicitly provided as an argument, and no labels could be extracted from the file, we may set labels for each sequence manually.
+Note that we assign the labels as a numpy array, which requires importing numpy using ``import numpy as np``.
 
 .. code:: python
 
-    # In case no labels are provided, set labels to 0
+    # In case no labels are provided, set labels to -1
     if label is None:
-        label = torch.zeros(events.shape[0], dtype = torch.long)
+        labels = np.full(events.shape[0], -1, dtype=int)
 
 By default, the Tensors returned by the :ref:`Preprocessor` are set to the ``cpu`` device.
 If you have a system that supports ``cuda`` Tensors you can cast the Tensors to cuda using the following code.
@@ -59,7 +59,6 @@ Note that the check in this code requires you to import PyTorch using ``import t
     if torch.cuda.is_available():
         events  = events .to('cuda')
         context = context.to('cuda')
-        label   = label  .to('cuda')
 
 Splitting data
 --------------
@@ -78,98 +77,49 @@ This step is not necessarily required, depending on the setup you use, but we wi
     label_train   = label  [:events.shape[0]//5 ]
     label_test    = label  [ events.shape[0]//5:]
 
-Using DeepCASE
+ContextBuilder
 ^^^^^^^^^^^^^^
-First we create an instance of DeepCASE using the following code.
+First we create an instance of DeepCASE's :ref:`ContextBuilder` using the following code:
 
 .. code:: python
 
-    # Create DeepCASE object
-    deepcase = DeepCASE(
-        n_features  = 60,                                             # Set maximum number of expected events (60 is enough for the ATLAS dataset)
-        complexity  = 128,                                            # Default complexity used in DeepCASE, dimension of hidden layer
-        context     = 10,                                             # 10 events in context, same as in preprocessor
-        device      = 'cuda' if torch.cuda.is_available() else 'cpu', # Or manually set 'cpu'/'cuda'
-        eps         = 0.1,                                            # Default epsilon     used in DeepCASE, used for DBSCAN clustering
-        min_samples = 5,                                              # Default min_samples used in DeepCASE, used for DBSCAN clustering
-        threshold   = 0.2,                                            # Default threshold   used in DeepCASE, minimum required confidence
+    # Create ContextBuilder
+    context_builder = ContextBuilder(
+        input_size    = 100,   # Number of input features to expect
+        output_size   = 100,   # Same as input size
+        hidden_size   = 128,   # Number of nodes in hidden layer, in paper we set this to 128
+        max_length    = 10,    # Length of the context, should be same as context in Preprocessor
     )
 
-Once the object is created, we can access the :ref:`ContextBuilder` and :ref:`Interpreter` as follows
+    # Cast to cuda if available
+    if torch.cuda.is_available():
+        context_builder = context_builder.to('cuda')
+
+Once the ``context_builder`` is created, we train it using the :py:meth:`fit()` method.
 
 .. code:: python
 
-    deepcase.context_builder # Returns the ContextBuilder object
-    deepcase.interpreter     # Returns the Interpreter    object
+    # Train the ContextBuilder
+    context_builder.fit(
+        X             = context_train,               # Context to train with
+        y             = events_train.reshape(-1, 1), # Events to train with, note that these should be of shape=(n_events, 1)
+        epochs        = 10,                          # Number of epochs to train with
+        batch_size    = 128,                         # Number of samples in each training batch, in paper this was 128
+        learning_rate = 0.01,                        # Learning rate to train with, in paper this was 0.01
+        verbose       = True,                        # If True, prints progress
+    )
 
-Training DeepCASE - Manual Mode
--------------------------------
-We can now feed the training data to DeepCASE.
-To do so, we first train the ContextBuilder on the training data.
-Next we use the Interpreter to create (and possibly label) clusters.
+I/O methods
+-----------
+We can load and save the ContextBuilder to and from a file using the following code:
 
 .. code:: python
 
-    # Fit ContextBuilder
-    deepcase.context_builder.fit(
-        X          = context_train,
-        y          = events_train,
-        batch_size = 128,           # Batch size you want to train with
-        epochs     = 10,            # Number of epochs to train
-        verbose    = True,          # If True, prints training progress
-    )
+    # Save ContextBuilder to file
+    context_builder.save('path/to/file.save')
+    # Load ContextBuilder from file
+    context_builder = ContextBuilder.load('path/to/file.save')
 
-    # Fit Interpreter
-    deepcase.interpreter.fit(
-        X          = context_train,
-        y          = events_train,
-        score      = label_train.unsqueeze(1),
-        verbose    = True,
-    )
-
-Once we fit the :ref:`Interpreter` with the training data, we can inspect the clusters for each input using ``deepcase.interpreter.clusters``.
-
-Running DeepCASE - Semi-automatic mode
---------------------------------------
-Once DeepCASE is trained with the known labels, we can match new sequences against known clusters.
-We do this using the :ref:`Interpreter`'s ``predict()`` function.
-
-.. code:: python
-
-    # Use deepcase to predict labels
-    label_predict = deepcase.interpreter.predict(
-        X       = context_test,
-        y       = events_test,
-        verbose = True,
-    )
-
-This prediction returns an average score of the items in the matching cluster.
-Hence, to get an exact prediction, you will need to manually set a policy to transform the returned scores into a risk level.
-
-Save & Load components
-----------------------
-Training the ContextBuilder and Interpreter can take some time, and you may want use those trained versions later.
-Therefore, DeepCASE provides methods to save and load the :ref:`ContextBuilder` and :ref:`Interpreter` to and from files.
-
-To save the components, simply use the :py:meth:`save()` method:
-
-.. code:: python
-
-    # Save DeepCASE components
-    deepcase.context_builder.save('context.save')     # Or specify a different filename
-    deepcase.interpreter    .save('interpreter.save') # Or specify a different filename
-
-Once you have saved the components, you can load the components from the files at any point:
-
-.. code:: python
-
-    # Load DeepCASE components
-    deepcase.context_builder.load(
-        infile = 'context.save',                                 # File from which to load ContextBuilder
-        device = 'cuda' if torch.cuda.is_available() else 'cpu', # Or manually set 'cpu'/'cuda'
-    )
-
-    deepcase.interpreter.load(
-        infile          = 'interpreter.save',       # File from which to load Interpreter
-        context_builder = deepcase.context_builder, # Used to link Interpreter to ContextBuilder. IMPORTANT: an Interpreter is specific to a ContextBuilder, so using a different ContextBuilder than used for training the Interpreter may yield bad results.
-    )
+Interpreter
+^^^^^^^^^^^
+TODO

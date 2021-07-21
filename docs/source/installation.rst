@@ -2,11 +2,6 @@ Installation
 ============
 The most straightforward way of installing DeepCASE is via pip
 
-.. note::
-
-  Installation via pip is not yet possible.
-  Please see installation `from source`_.
-
 .. code::
 
   pip install deepcase
@@ -34,15 +29,12 @@ Dependencies
 DeepCASE requires the following python packages to be installed:
 
 - Argformat: https://pypi.org/project/argformat/
-- Matplotlib: https://matplotlib.org/
-- NetworkX: https://networkx.github.io/
 - Numpy: https://numpy.org
 - Pandas: https://pandas.pydata.org/
 - PyTorch: https://pytorch.org/
 - Scikit-learn: https://scikit-learn.org/stable/index.html
 - Scipy: https://www.scipy.org/
 - Tqdm: https://tqdm.github.io/
-- Urllib3: https://pypi.org/project/urllib3/
 
 All dependencies should be automatically downloaded if you install FlowPrint via pip. However, should you want to install these libraries manually, you can install the dependencies using the requirements.txt file
 
@@ -54,4 +46,4 @@ Or you can install these libraries yourself
 
 .. code::
 
-  pip install -U argformat matplotlib networkx numpy pandas torch torchvision torchaudio scikit-learn scipy tqdm urllib3
+  pip install -U argformat numpy pandas torch torchvision torchaudio scikit-learn scipy tqdm

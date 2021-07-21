@@ -35,18 +35,32 @@ These ``confidence`` and ``attention`` values can then be passed to the :ref:`In
 
 Interpreter
 ^^^^^^^^^^^
-The :ref:`Interpreter` takes the ``events``, ``context``, ``confidence``, and ``attention`` to cluster similar event contexts.
-To this end, the :ref:`Interpreter` first performs an `attention query` using the :ref:`ContextBuilder`'s  :py:meth:`query()` method.
-Once this query is performed, it uses the ``attention`` values to weigh each ``context`` event.
-This weighed ``context`` is then clustered according to their L1 similarity.
-
-The :ref:`Interpreter` provides a :py:meth:`fit()` method to create the clusters and a :py:meth:`predict()` method to match against known clusters.
-These methods will be used for the Manual Analysis and Semi-automatic Analysis.
+The main task of the :ref:`Interpreter` is to take sequences (consisting of ``context`` and ``events``) and cluster them.
+To this end, the :ref:`Interpreter` invokes the :ref:`ContextBuilder`'s :py:meth:`predict()` method and applies the :py:meth:`attention_query()` to obtain a vector representing each sequence.
+These vectors are then used for clustering.
+Afterwards, clusters can be manually analysed and assigned a score.
+After assigning a score to existing clusters, the :ref:`Interpreter` can compares new ``context`` and ``events`` to existing clusters and assign the scores (semi-)automatically.
+For sequences that cannot be assigned automatically, the :ref:`Interpreter` gives an output indicating why a sequence could not be assigned automatically.
 
 Manual Analysis
 ^^^^^^^^^^^^^^^
-TODO
+In manual mode, we use the :py:meth:`interpreter.Interpreter.cluster()` method to cluster sequences consisting of ``context`` and ``events``.
+This method returns the cluster corresponding to each input, or ``-1`` if no cluster could be found.
+
+Next, we can manually assign scores using the :py:meth:`interpreter.Interpreter.score()` function.
+This function takes a score for each clustered sequence and assigns it to the corresponding clusters such that these scores can be used for predicting new sequences.
+
+.. Note::
+
+   The :py:meth:`interpreter.Interpreter.score()` function requires:
+    1. that all sequences used to create clusters are assigned a score.
+    2. that all sequences in the **same** cluster are assigned the **same** score.
+   If you do not have labels for all clusters or different labels within the same cluster, the :py:meth:`interpreter.Interpreter.score_clusters()` method prepares scores such that both conditions are satisfied.
 
 Semi-automatic Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^
-TODO
+In semi-automatic mode, we use the :py:meth:`interpreter.Interpreter.predict()` method to assign scores to new sequences (``context`` and ``events``) based on known clusters.
+It will either assign the score of the given cluster or a score of:
+ * ``-1``, if the :ref:`ContextBuilder` is not confident enough for a prediction.
+ * ``-2``, if the ``event`` was not in the training dataset.
+ * ``-3``, if the nearest cluster is a larger distance than ``epsilon`` away from the sequence.
