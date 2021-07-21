@@ -82,10 +82,11 @@ def group_by(X, key=lambda x: x, verbose=False):
              - indices: np.array of shape=(n_group_items,)
                 Inidices of items in X belonging to given group.
         """
+    # Cast to numpy array
+    X = np.asarray(X)
+
     # Initialise lookup table
     groups = dict()
-
-    assert isinstance(X, np.ndarray), "Expected numpy array"
 
     # Add progress bar if required
     if verbose: X = tqdm(X, desc="Lookup table")
