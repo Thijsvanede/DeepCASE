@@ -59,42 +59,48 @@ def sp_unique(sp_matrix, axis=0):
 #                                 Lookup Table                                 #
 ################################################################################
 
-def lookup_table(X, hash=lambda x: x.item(), key=lambda x: x, verbose=False):
-    """Create a lookup table for unique items in X
+def group_by(X, key=lambda x: x, verbose=False):
+    """Group items based on their key function and return their indices.
 
         Parameters
         ----------
         X : array-like of shape=(n_samples,)
-            Array for which to create lookup table.
+            Array for which to group elements.
 
         key : func, default=lambda x: x.item()
-            Key function to apply to each label
+            Function used to return as group.
 
         verbose : boolean, default=False
-            If True, print progress
+            If True, print progress.
 
         Returns
         -------
-        result : dict()
-            Dictionary of unique_value -> list of indices
+        result : list of (group, indices)
+            Where:
+             - group  : object
+                Group computed based on key(x).
+             - indices: np.array of shape=(n_group_items,)
+                Inidices of items in X belonging to given group.
         """
     # Initialise lookup table
-    lookup_table = dict()
+    groups = dict()
+
+    assert isinstance(X, np.ndarray), "Expected numpy array"
 
     # Add progress bar if required
     if verbose: X = tqdm(X, desc="Lookup table")
 
     # Loop over items in table
     for index, label in enumerate(X):
-        hashed = hash(label)
+        hashed = key(label)
         # Add label to lookup table if it does not exist
-        if hashed not in lookup_table:
-            lookup_table[hashed] = [key(label), list()]
+        if hashed not in groups:
+            groups[hashed] = [key(label), list()]
         # Append item
-        lookup_table[hashed][1].append(index)
+        groups[hashed][1].append(index)
 
-    # Return result as iterator over numpy array
-    return [(v1, np.asarray(v2)) for v1, v2 in lookup_table.values()]
+    # Return groups and indices
+    return [(v1, np.asarray(v2)) for v1, v2 in groups.values()]
 
 ################################################################################
 #                                  Unique 2D                                   #

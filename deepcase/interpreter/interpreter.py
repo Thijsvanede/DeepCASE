@@ -9,7 +9,7 @@ from sklearn.neighbors import KDTree
 from tqdm              import tqdm
 
 from .cluster import Cluster
-from .utils   import lookup_table, unique_2d
+from .utils   import group_by, unique_2d, sp_unique
 
 # Set logger
 logger = logging.getLogger(__name__)
@@ -35,50 +35,42 @@ class Interpreter(object):
                 Minimum number of required samples per cluster.
 
             threshold : float, default=0.2
-                Minimum required confidence in fingerprint before using it in
-                training clusters.
+                Minimum required confidence of ContextBuilder before using a
+                context in training clusters.
             """
-        logger.info("__init__(context_builder={}, features={}, eps={}, "
-                    "min_samples={}, threshold={})".format(context_builder,
-                    features, eps, min_samples, threshold))
-
         # Initialise ContextBuilder
         self.context_builder = context_builder
 
-        # Initialise features
-        self.features = features
+        # Create cluster algorithm dbscan
+        self.dbscan = Cluster(p=1)
 
         # Set parameters
+        self.features    = features
         self.eps         = eps
         self.min_samples = min_samples
         self.threshold   = threshold
 
-        # Objects
+        # Store entries
+        self.clusters = np.zeros(0)
+        self.vectors  = np.zeros((0, self.features))
+        self.events   = np.zeros(0)
         self.tree     = dict()
         self.labels   = dict()
-        self.clusters = np.zeros(0)
-        self.scores   = np.zeros(0)
 
     ########################################################################
-    #                         Fit/predict methods                          #
+    #                              Clustering                              #
     ########################################################################
 
-    def fit(self, X, y, score, iterations=100, batch_size=1024,
-            func_score=lambda x: torch.mean(x, dim=0), verbose=False):
-        """Fit the interpreter with samples.
+    def cluster(self, X, y, iterations=100, batch_size=1024, verbose=False):
+        """Cluster contexts in X for same output event y.
 
             Parameters
             ----------
             X : torch.Tensor of shape=(n_samples, seq_length)
-                Input context on which to train.
+                Input context to cluster.
 
             y : torch.Tensor of shape=(n_samples, 1)
-                Events on which to train.
-
-            score : torch.Tensor of shape=(n_samples, n_scores?)
-                Maliciousness score associated with each training sample.
-                If the matrix has 2 dimensions, compute a score for each final
-                dimension.
+                Events to cluster.
 
             iterations : int, default=100
                 Number of iterations for query.
@@ -86,91 +78,246 @@ class Interpreter(object):
             batch_size : int, default=1024
                 Size of batch for query.
 
-            func_score : callable, default=lambda x: torch.mean(x, dim=0)
-                Function to compute score per cluster.
-                Default function computes the mean along the 0-axis.
-
             verbose : boolean, default=False
                 If True, prints achieved speedup of clustering algorithm.
 
             Returns
             -------
-            self : self
-                Returns self.
+            clusters : np.array of shape=(n_samples,)
+                Clusters per input sample.
             """
-        logger.info("Fitting {} samples".format(X.shape[0]))
+        ####################################################################
+        #                   Represent context as vector                    #
+        ####################################################################
 
-        # Compute clusters, fingerprints and attention
-        self.clusters, fingerprints, attention = self.cluster(X, y,
-            eps         = self.eps,
-            min_samples = self.min_samples,
-            threshold   = self.threshold,
-            iterations  = iterations,
-            batch_size  = batch_size,
-            verbose     = verbose
+        # Get optimized vectors
+        vectors, mask = self.attended_context(
+            X                = X,
+            y                = y,
+            threshold        = self.threshold,
+            iterations       = iterations,
+            batch_size       = batch_size,
+            verbose          = verbose,
         )
 
-        mask = self.clusters != -1
-        fingerprints = fingerprints[mask]
-        attention    = attention   [mask].cpu()
-        y            = y           [mask].cpu()
-        score        = score       [mask].cpu()
+        ####################################################################
+        #                     Group sequences by event                     #
+        ####################################################################
 
-        # Compute score per sample
-        scores = score.to(torch.float)
-        self.scores = scores.clone().cpu().numpy()
-
-        # Average score per cluster
-        for cluster, indices in lookup_table(self.clusters[mask], verbose=verbose):
-            # Get score for each cluster
-            score = scores[indices]
-
-            # Set score of cluster to mean score
-            scores[indices] = func_score(score)
-
-        # Initialise tree
-        self.tree   = dict()
-        self.labels = dict()
-
-        # Compute lookup table
-        indices_y = lookup_table(y.squeeze(1),
-            key     = lambda x: x.item(),
-            verbose = verbose,
+        # Group sequences for clustering per event type
+        indices_y = group_by(
+            X   = y[mask].squeeze(1).cpu().numpy(),
+            key = lambda x: x.data.tobytes(),
         )
-        if verbose:
-            indices_y = tqdm(indices_y, desc='Fitting interpreter')
 
-        # Loop over events
-        for y, indices in indices_y:
-            logger.debug("KDTree for y={}, samples={}".format(y, indices.shape[0]))
+        # Add verbosity if necessary
+        if verbose: indices_y = tqdm(indices_y, desc="Clustering      ")
 
-            # Get unique fingerprints
-            fps = lookup_table(fingerprints[indices].toarray(), hash=lambda x: x.data.tobytes())
-            fps, fps_indices = zip(*fps)
-            fps = np.asarray(fps)
-            fps_indices = [torch.as_tensor(x) for x in fps_indices]
+        ####################################################################
+        #                          Cluster events                          #
+        ####################################################################
 
-            # Set tree fingerprints
-            self.tree[y] = KDTree(fps, p=1)
+        # Initialise result for confident samples
+        result = np.full(mask.sum(), -1, dtype=int)
 
-            # Set labels
-            data, index, nodes, bounds = self.tree[y].get_arrays()
-            assert np.all(data == fps)
+        # Loop over each event
+        for event, context_mask in indices_y:
 
-            # Compute average score per cluster
-            indices = torch.as_tensor(indices, dtype=torch.long)
+            # Compute clusters per event
+            clusters = self.dbscan.dbscan(
+                X           = vectors[context_mask],
+                eps         = self.eps,
+                min_samples = self.min_samples,
+                verbose     = False,
+            )
+
+            # Add offset to clusters to ensure unique identifiers per event
+            clusters[clusters != -1] += max(0, result.max() + 1)
+
+            # Set resulting clusters
+            result[context_mask] = clusters
+
+        ####################################################################
+        #                    Add non-confident clusters                    #
+        ####################################################################
+
+        # Set clusters to -1 by default, i.e., if not confident
+        clusters = np.full(mask.shape[0], -1, dtype=int)
+        # Add confident clusters
+        clusters[mask.cpu().numpy()] = result
+
+        ####################################################################
+        #                         Store in object                          #
+        ####################################################################
+
+        # Store clusters
+        self.clusters = clusters
+        # Store vectors
+        self.vectors = vectors
+        # Store events
+        self.events = y.reshape(-1).cpu().numpy()
+
+        # Return clusters
+        return clusters
+
+    ########################################################################
+    #                            Manual scoring                            #
+    ########################################################################
+
+    def score(self, scores, verbose=False):
+        """Assigns score to clustered samples.
+
+            Parameters
+            ----------
+            scores : array-like of shape=(n_samples,)
+                Scores of individual samples.
+
+            verbose : boolean, default=False
+                If True, print progress.
+
+            Returns
+            -------
+            self : self
+                Returns self
+            """
+        # Cast scores to numpy array
+        scores = np.asarray(scores)
+
+        ################################################################
+        #                        Perform checks                        #
+        ################################################################
+
+        # Check if scores have same shape as clusters
+        if scores.shape != self.clusters.shape:
+            raise ValueError(
+                "Shape of scores {} did not match shape of clusters {}".format(
+                scores.shape,
+                self.clusters.shape,
+            ))
+
+        # Check if score for each cluster are equal
+        for cluster, indices in group_by(self.clusters):
+            if np.unique(scores[indices]).shape[0] != 1:
+                raise ValueError(
+                    "Cluster {} contains different scores. Please use the "
+                    "Interpreter.score_clusters function to assign the same "
+                    "score to all samples in a cluster.".format(cluster)
+                )
+
+        ################################################################
+        #                        Assign scores                         #
+        ################################################################
+
+        # Retrieve scores for clustered events only
+        scores = scores[self.clusters != -1]
+
+        # Compute clustered events
+        clustered_events = group_by(self.events[self.clusters != -1])
+
+        # If verbose, add printing
+        if verbose: clustered_events = tqdm(clustered_events, desc="Scoring")
+
+        # Loop over all clustered events
+        for event, indices in clustered_events:
+            # Get relevant vectors for given event
+            vectors = self.vectors[indices]
+
+            # Get unique vectors - optimizes computation time
+            vectors, inverse, _ = sp_unique(vectors)
+
+            # Compute KDTree for vectors
+            self.tree[event] = KDTree(vectors.toarray(), p=1)
+
+            # Compute scores for given tree indices
+            self.labels[event] = dict()
             score = scores[indices]
-            # Set score
-            self.labels[y] = {
-                i: score[m].mean(dim=0).cpu().tolist()
-                for i, m in zip(index, fps_indices)
-            }
+            data, index_tree, _, _ = self.tree[event].get_arrays()
+            _, index_vector = zip(*group_by(inverse))
+            assert np.all(data == vectors.toarray())
+
+            for index, mapping in zip(index_tree, index_vector):
+                self.labels[event][index] = score[mapping].max()
 
         # Return self
         return self
 
-    def predict(self, X, y, k=1, iterations=100, batch_size=1024,
-                verbose=False):
+
+    def score_clusters(self, scores, strategy="max", NO_SCORE=-1):
+        """Compute score per cluster based on individual scores and given
+            strategy.
+
+            Parameters
+            ----------
+            scores : array-like of float, shape=(n_samples,)
+                Scores for each sample in cluster.
+
+            strategy : string (max|min|avg), default=max
+                Strategy to use for computing scores per cluster based on scores
+                of individual events. Currently available options are:
+                - max: Use maximum score of any individual event in a cluster.
+                - min: Use minimum score of any individual event in a cluster.
+                - avg: Use average score of any individual event in a cluster.
+
+            NO_SCORE : float, default=-1
+                Score to indicate that no score was given to a sample and that
+                the value should be ignored for computing the cluster score.
+                The NO_SCORE value will also be given to samples that do not
+                belong to a cluster.
+
+            Returns
+            -------
+            scores : np.array of shape=(n_samples)
+                Scores for individual sequences computed using clustering
+                strategy. All datapoints within a cluster are guaranteed to have
+                the same score.
+            """
+        # Cast scores to numpy array
+        scores = np.asarray(scores)
+
+        # Initialise result
+        result = np.full(scores.shape[0], NO_SCORE, dtype=float)
+
+        # Check if scores are same shape as clusters
+        if scores.shape != self.clusters.shape:
+            raise ValueError(
+                "Scores and stored clusters should have the same shape, but "
+                "instead we found '{}' scores and '{}' cluster entries".format(
+                scores  .shape,
+                clusters.shape,
+            ))
+
+        # Group by clusters
+        for cluster, indices in group_by(self.clusters):
+            # Skip "no cluster" cluster
+            if cluster == -1: continue
+
+            # Get relevant scores
+            scores_ = scores[indices]
+            scores_ = scores_[scores_ != NO_SCORE]
+
+            # Apply strategy
+            if strategy == "max":
+                score = scores_.max()
+            elif strategy == "min":
+                score = scores_.min()
+            elif strategy == "avg":
+                score = scores_.mean()
+            else:
+                raise NotImplementedError(
+                    "Unknown strategy: '{}'".format(strategy)
+                )
+
+            # Add score to result
+            result[indices] = score
+
+        # Return result
+        return result
+
+    ########################################################################
+    #                       (Semi-)Automatic scoring                       #
+    ########################################################################
+
+    def predict(self, X, y, iterations=100, batch_size=1024, verbose=False):
         """Predict maliciousness of context samples.
 
             Parameters
@@ -180,9 +327,6 @@ class Interpreter(object):
 
             y : torch.Tensor of shape=(n_samples, 1)
                 Events for which to predict maliciousness.
-
-            k : int, default=1
-                Number of close clusters to consider.
 
             iterations : int, default=100
                 Iterations used for optimization.
@@ -205,187 +349,140 @@ class Interpreter(object):
                 * -2: Label not in training
                 * -3: Closest cluster > epsilon
             """
-        logger.info("predict {} samples".format(X.shape[0]))
-
-        # Check value of k
-        if k != 1:
-            raise NotImplementedError("Prediction only implemented for k=1.")
-
         # Get unique samples
         X, y, inverse_result = unique_2d(X, y)
 
-        # Initialise result
-        result = np.full((X.shape[0], self.scores.shape[-1]), -1, dtype=float)
+        ####################################################################
+        #                         Compute vectors                          #
+        ####################################################################
 
-        # Compute fingerprints
-        fingerprints, mask = self.fingerprints_optimized(X, y,
+        # Compute vectors
+        vectors, mask = self.attended_context(
+            X           = X,
+            y           = y,
             threshold   = self.threshold,
             iterations  = iterations,
             batch_size  = batch_size,
             verbose     = verbose,
         )
 
-        # Create looup table
-        indices_y = lookup_table(y.squeeze(1),
-            key     = lambda x: x.item(),
-            verbose = verbose,
-        )
-        # Add progress if necessary
-        if verbose: indices_y = tqdm(indices_y, desc='Predicting')
+        # Initialise result
+        result = np.full(vectors.shape[0], -4, dtype=float)
 
-        for y, indices in indices_y:
-            logger.debug("predict y={}".format(y))
-            # Check if y is in training set
-            if y not in self.tree:
-                logger.debug("predict y={}: not in training set".format(y))
+        ####################################################################
+        #                   Find closest known sequences                   #
+        ####################################################################
+
+        # Group sequences by individual events
+        events = group_by(y[mask].squeeze(1).cpu().numpy())
+        # Add verbosity, if necessary
+        if verbose: events = tqdm(events, desc="Predicting")
+
+        # Loop over all events
+        for event, indices in events:
+
+            ############################################################
+            #                   Case - unknown event                   #
+            ############################################################
+
+            # If event is not in training set, set to -2
+            if event not in self.tree:
                 result[indices] = -2
                 continue
 
-            # Get corresponding fingerprints
-            fingerprints_ = fingerprints[indices]
-            mask_         = mask        [indices].cpu().numpy()
-            # Continue if there are no confident samples
-            if not mask_.any(): continue
+            ############################################################
+            #                    Case - known event                    #
+            ############################################################
 
-            # Get unique fingerprints
-            fingerprints_, inverse = torch.unique(
-                torch.Tensor(fingerprints_[mask_].toarray()),
-                return_inverse = True,
-                dim            = 0,
-            )
-            # Cast to numpy
-            fingerprints_ = fingerprints_.cpu().numpy()
-            inverse       = inverse      .cpu().numpy()
+            # Get vectors for given event
+            vectors_ = vectors[indices]
 
-            k_ = min(self.tree[y].get_arrays()[1].shape[0], k)
+            # Get unique vectors - optimizes computation time
+            vectors_, inverse, _ = sp_unique(vectors_)
 
             # Get closest cluster
-            distance, neighbours = self.tree[y].query(fingerprints_,
-                k               = k_,
+            distance, neighbours = self.tree[event].query(
+                X               = vectors_.toarray(),
                 return_distance = True,
-                dualtree        = fingerprints_.shape[0] >= 1e3,
+                dualtree        = vectors_.shape[0] >= 1e3, # Optimization
             )
-            # Distances should always be sorted
-            assert (np.sort(distance, axis=1) == distance).all()
             # Get neighbour indices
-            neighbours = self.tree[y].get_arrays()[1][neighbours]
+            neighbours = self.tree[event].get_arrays()[1][neighbours][:, 0]
+            # Compute neighbour scores
+            scores = np.asarray([
+                self.labels[event][neighbour] for neighbour in neighbours
+            ])
 
-            # Initialise result for given y
-            result_ = np.full((fingerprints_.shape[0], self.scores.shape[-1]), -3, dtype=float)
+            ############################################################
+            #               Set result, based on epsilon               #
+            ############################################################
 
-            # Valid results are those closer than epsilon
-            valid = distance[:, 0] <= self.eps
-            logger.debug("predict y={}: {}/{} < epsilon".format(y, valid.sum(), valid.shape[0]))
+            # Set resulting indices
+            result[indices] = np.where(
+                distance[:, 0] <= self.eps, # Check if closest cluster > eps
+                scores,                     # If so, assign actual score
+                -3,                         # Else, closest cluster > eps, -3
+            )[inverse]
 
-            # Get valid neighbours
-            neighbours = neighbours[:, 0][valid]
-            if neighbours.shape[0] > 0:
-                result_[valid] = [self.labels[y][n] for n in neighbours]
+        ####################################################################
+        #                     Add non-confident events                     #
+        ####################################################################
 
-            # Set result
-            result[indices[mask_]] = result_[inverse]
+        result_ = np.full(X.shape[0], -1, dtype=float)
+        result_[mask.cpu().numpy()] = result
+        result = result_
 
         # Return result
         return result[inverse_result.cpu().numpy()]
 
-    def fit_predict(self, X, y, score, k=1, iterations=100, batch_size=1024,
-                    verbose=False):
-        """Call fit and predict method on same data in sequence.
-
-            Parameters
-            ----------
-            X : torch.Tensor of shape=(n_samples, seq_length)
-                Input context on which to train and predict.
-
-            y : torch.Tensor of shape=(n_samples, 1)
-                Events on which to train and predict.
-
-            score : torch.Tensor of shape=(n_samples,)
-                Maliciousness score associated with each training sample.
-
-            k : int, default=1
-                Number of close clusters to consider.
-
-            iterations : int, default=100
-                Number of iterations for query.
-
-            batch_size : int, default=1024
-                Size of batch for query.
-
-            verbose : boolean, default=False
-                If True, prints achieved speedup of clustering algorithm.
-
-            Returns
-            -------
-            result : np.array of shape=(n_samples,)
-                Predicted maliciousness score.
-                Positive scores are maliciousness scores.
-                Special cases:
-
-                * -1: Not confident enough for prediction
-                * -2: Label not in training
-                * -3: Closest cluster > epsilon
-            """
-        logger.info("fit_predict {} samples".format(X.shape[0]))
-
-        # Call fit and predict in sequence
-        return self.fit(X, y,
-            score      = score,
-            iterations = iterations,
-            batch_size = batch_size,
-            verbose    = verbose,
-        ).predict(X, y,
-            k          = 1,
-            iterations = 100,
-            batch_size = 1024,
-            verbose    = False,
-        )
 
     ########################################################################
-    #                        Fingerprint generation                        #
+    #            Computing total attention per contextual event            #
     ########################################################################
 
-    def fingerprint(self, X, attention, n):
-        """Compute contextual fingerprints for each input.
+    def vectorize(self, X, attention, size):
+        """Compute the total attention for each event in the context.
+            The resulting vector can be used to compare sequences.
 
             Parameters
             ----------
             X : torch.Tensor of shape=(n_samples, sequence_length, input_dim)
-                Context items from which to generate fingerprint.
+                Context events to vectorize.
 
             attention : torch.Tensor of shape=(n_samples, sequence_length)
-                Attention for each input.
+                Attention for each event.
 
-            n : int
-                Number of possible events, determines the size of a fingerprint.
+            size : int
+                Total number of possible events, determines the vector size.
 
             Returns
             -------
             result : scipy.sparse.csc_matrix of shape=(n_samples, n)
-                Sparse fingerprints of each context.
+                Sparse vector representing each context.
             """
-        logger.info("fingerprint {} samples".format(X.shape[0]))
+        # Initialise result
+        result = sp.csc_matrix((X.shape[0], size))
+        range  = np.arange(X.shape[0], dtype=int)
 
-        # Initialise fingerprints
-        fingerprints = sp.csc_matrix((X.shape[0], n))
-        range        = np.arange( X.shape[0],     dtype = int  )
-
-        # Set fingerprints
+        # Create vectors
         for i, events in enumerate(torch.unbind(X, dim=1)):
-            logger.debug("fingerprint dimension {}/{}".format(i+1, X.shape[1]))
-            fingerprints += sp.csc_matrix(
+            result += sp.csc_matrix(
                 (attention[:, i].detach().cpu().numpy(),
                 (range, events.cpu().numpy())),
-                shape=(X.shape[0], n)
+                shape=(X.shape[0], size)
             )
 
-        # Return fingerprints
-        return fingerprints
+        # Return result
+        return result
 
-    def fingerprints_optimized(self, X, y, threshold=0.2, iterations=100,
-                               batch_size=1024, return_attention=False,
-                               verbose=False):
-        """Get optimal fingerprints of context after explaining it using query.
+
+    def attended_context(self, X, y,
+            threshold  = 0.2,
+            iterations = 100,
+            batch_size = 1024,
+            verbose    = False,
+        ):
+        """Get vectors representing context after the attention query.
 
             Parameters
             ----------
@@ -396,7 +493,8 @@ class Interpreter(object):
                 Events to cluster.
 
             threshold : float, default=0.2
-                Minimum confidence required for fingerprinting.
+                Minimum confidence required for creating a vector representing
+                the context.
 
             iterations : int, default=100
                 Number of iterations for query.
@@ -404,178 +502,72 @@ class Interpreter(object):
             batch_size : int, default=1024
                 Size of batch for query.
 
-            return_attention : boolean, default=False
-                If True, also returns attention
-
             verbose : boolean, default=False
                 If True, prints achieved speedup of clustering algorithm.
 
             Returns
             -------
-            fingerprints : scipy.sparse.lil_matrix of shape=(n_samples, dim_fingerprint)
-                Sparse fingerprints for each input sample.
-                Where mask == False, fingerprint = [0, 0, ..., 0]
+            vectors : scipy.sparse.csc_matrix of shape=(n_samples, dim_vector)
+                Sparse vectors representing each context with a
+                confidence >= threshold.
 
             mask : np.array of shape=(n_samples,)
-                Boolean array of masked fingerprints. True where input has
+                Boolean array of masked vectors. True where input has
                 confidence >= threshold, False otherwise.
-
-            attention : np.array of shape=(n_samples, seq_length)
-                Only returned if return_attention = True.
-                Attention for each context item.
             """
-        logger.info("fingerprints_optimized {} samples".format(X.shape[0]))
 
         ####################################################################
         #                        Optimize attention                        #
         ####################################################################
 
+        logger.info("attended_context: Optimize attention")
+
         # Get optimal confidence
-        _, confidence, attention = self.explain(X, y,
+        confidence, attention = self.attention_query(
+            X          = X,
+            y          = y,
             iterations = iterations,
             batch_size = batch_size,
             verbose    = verbose,
         )
+
         # Check where confidence is above threshold
-        mask = (confidence >= threshold)
+        mask = confidence >= threshold
 
-        logger.debug("fingerprints_optimized {}/{} > confidence".format(mask.sum(), mask.shape[0]))
+        logger.info("attended_context: Optimize attention finished")
 
         ####################################################################
-        #                       Create fingerprints                        #
+        #         Create vectors (total attention for each event)          #
         ####################################################################
 
-        fingerprints = self.fingerprint(X[mask], attention[mask], self.features)
-        fingerprints = np.round(fingerprints, decimals=4).tolil()
+        logger.info("attended_context: Create vectors")
 
-        # Set fingerprints where mask == False
-        logger.debug("fingerprints_optimized creating lil_matrix of shape=({}, {})".format(mask.shape[0], fingerprints.shape[1]))
-        result = sp.lil_matrix(
-            (mask.shape[0], fingerprints.shape[1]),
-            dtype = float,
-        )
-        logger.debug("fingerprints_optimized inflating lil_matrix {}/{}".format(mask.sum(), fingerprints.shape[0]))
-        result[mask.nonzero(as_tuple=True)[0].cpu().numpy()] = fingerprints
-
-        logger.debug("fingerprints_optimized lil_matrix created")
-
-        # Return result
-        if return_attention:
-            return result, mask, attention
-        else:
-            return result, mask
-
-    ########################################################################
-    #                          Context clustering                          #
-    ########################################################################
-
-    def cluster(self, X, y, eps=0.1, min_samples=5, threshold=0.2,
-                iterations=100, batch_size=1024, verbose=False):
-        """Cluster contexts in X for same output event y.
-
-            Parameters
-            ----------
-            X : torch.Tensor of shape=(n_samples, seq_length)
-                Input context to cluster.
-
-            y : torch.Tensor of shape=(n_samples, 1)
-                Events to cluster.
-
-            eps : float, default=0.1
-                Epsilon to use for clustering.
-
-            min_samples : int, default=5
-                Minimum number of samples per cluster.
-
-            threshold : float, default=0.2
-                Minimum confidence required for clustering.
-
-            iterations : int, default=100
-                Number of iterations for query.
-
-            batch_size : int, default=1024
-                Size of batch for query.
-
-            verbose : boolean, default=False
-                If True, prints achieved speedup of clustering algorithm.
-
-            Returns
-            -------
-            clusters : np.array of shape=(n_samples,)
-                Clusters per input sample.
-
-            fingerprints : np.array of shape=(n_samples, dim_fingerprint)
-                Fingerprints for each input sample.
-
-            attention np.array of shape=(n_samples, seq_length)
-                Attention for each input X.
-            """
-        logger.info("cluster {} samples".format(X.shape[0]))
-
-        # Get fingerprints optimized
-        fingerprints, mask, attention = self.fingerprints_optimized(X, y,
-            threshold        = threshold,
-            iterations       = iterations,
-            batch_size       = batch_size,
-            return_attention = True,
-            verbose          = verbose,
+        # Perform vectorization
+        vectors = self.vectorize(
+            X         = X[mask],
+            attention = attention[mask],
+            size      = self.features,
         )
 
-        # Apply mask
-        X = X[mask]
-        y = y[mask]
+        # Round attention to 4 decimal places (for quicker analysis)
+        vectors = np.round(vectors, decimals=4)
 
-        logger.debug("cluster:initialising result shape={}".format(X.shape[0]))
-
-        # Initialise result
-        result = np.full(X.shape[0], -1, dtype=int)
-
-        logger.debug("cluster:result initialised")
+        logger.info("attended_context: Create vectors finished")
 
         ####################################################################
-        #                       Create lookup table                        #
+        #                          Return result                           #
         ####################################################################
-
-        indices_y = lookup_table(y.squeeze(1), key=lambda x: x.item(), verbose=verbose)
-        if verbose: indices_y = tqdm(indices_y, desc="Clustering")
-
-        ####################################################################
-        #                          Cluster events                          #
-        ####################################################################
-
-        # Initialise clustering algorithm
-        cluster = Cluster(p=1)
-
-        # Loop over each event
-        for event, context_mask in indices_y:
-            logger.debug("cluster: y={} with {} samples".format(event, context_mask.shape[0]))
-
-            # Compute clusters per event
-            clusters = cluster.dbscan(
-                X           = fingerprints[context_mask],
-                eps         = eps,
-                min_samples = min_samples,
-                verbose     = False,
-            )
-
-            # Set clusters with unique identifiers
-            offset = max(0, result.max() + 1)
-            clusters[clusters != -1] += offset
-            result[context_mask] = clusters
-
-        # Set result where mask == -1
-        result_= np.full(mask.shape[0], -1, dtype=int)
-        result_[mask.cpu().numpy()] = result
 
         # Return result
-        return result_, fingerprints, attention
+        return vectors, mask
+
 
     ########################################################################
-    #              Explain events from their security context              #
+    #                           Attention Query                            #
     ########################################################################
 
-    def explain(self, X, y, iterations=100, batch_size=1024, verbose=False):
-        """Explain events y by computing optimal attention for given context X.
+    def attention_query(self, X, y, iterations=100, batch_size=1024, verbose=False):
+        """Compute optimal attention for given context X.
 
             Parameters
             ----------
@@ -585,7 +577,7 @@ class Interpreter(object):
             y : array-like of type=int and shape=(n_samples,)
                 Observed event.
 
-            iterations : int, default=0
+            iterations : int, default=100
                 Number of iterations to perform for optimization of actual
                 event.
 
@@ -597,150 +589,30 @@ class Interpreter(object):
 
             Returns
             -------
-            prediction : torch.Tensor of shape=(n_samples,)
-                Most likely predictions after explanation.
-
             confidence : torch.Tensor of shape=(n_samples,)
                 Resulting confidence levels in y.
 
             attention : torch.Tensor of shape=(n_samples,)
                 Optimal attention for predicting event y.
             """
-        logger.info("explain {} samples".format(X.shape[0]))
-        # Get unique samples
+        # Get unique values
         X, y, inverse = unique_2d(X, y)
-        logger.debug("explain reduced to {} samples".format(X.shape[0]))
 
         # Perform query
-        confidence, attention, _ = self.context_builder.query(X, y,
+        confidence, attention, _ = self.context_builder.query(
+            X          = X,
+            y          = y,
             iterations = iterations,
             batch_size = batch_size,
             verbose    = verbose,
         )
 
-        # Get prediction
-        prediction = confidence.argmax(dim=1)
         # Compute confidence of y
         confidence = confidence[torch.arange(y.shape[0]), y.squeeze(1)]
 
-        # Return prediction, confidence and attention
-        return prediction[inverse], confidence[inverse], attention[inverse]
+        # Return confidence and attention
+        return confidence[inverse], attention[inverse]
 
-    ########################################################################
-    #                          Score computation                           #
-    ########################################################################
-
-    def score(self, X, y, attention, beta=1):
-        """Compute score based on event score and weighted context scores.
-
-            Parameters
-            ----------
-            X : torch.Tensor of shape=(n_samples, len_context)
-                Context scores.
-
-            y : torch.Tensor of shape=(n_samples,)
-                Event score.
-
-            attention : torch.tensor of shape=(n_samples, len_context)
-                Attention vector for score computation.
-
-            beta : float, default=1
-                Relative weight of context.
-
-            Returns
-            -------
-            score : torch.Tensor of shape=(n_samples,)
-                Maliciousness score of event including context.
-            """
-        logger.info("score {} samples".format(X.shape[0]))
-
-        # Special case if beta == 0
-        if beta == 0: return y.to(torch.float)
-
-        # Cast to float
-        X = X.to(torch.float)
-        y = y.to(torch.float)
-
-        for i, axis in enumerate(torch.unbind(X, dim=2)):
-            X[:,:,i] = attention * axis
-
-        # Return contextual maliciousness score
-        return (y + beta*X.sum(dim=1)) / (1+beta)
-
-
-    ########################################################################
-    #                            Drawing method                            #
-    ########################################################################
-
-    def graph(self, clusters, fingerprints, scores, outfile):
-        """Create a plot of fingerprints.
-
-            Parameters
-            ----------
-            clusters : Array-like of shape=(n_samples,)
-                Clusters to plot.
-
-            fingerprints : Array-like of shape=(n_samples, n_features)
-                Fingerprints to plot.
-
-            scores : Array-like of shape=(n_samples,)
-                Scores corresponding to clusters
-
-            outfile : string
-                Output file to write graph to.
-            """
-        from sklearn.metrics import pairwise_distances
-        import networkx as nx
-        from .utils import sp_unique
-        import matplotlib.pyplot as plt
-        from itertools import cycle
-
-        # Initialise graph
-        graph = nx.Graph()
-
-        # Loop over each cluster
-        for cluster, indices in lookup_table(clusters):
-            # Continue if cluster is anomalous
-            if cluster == -1 or indices.shape[0] < 5: continue
-
-            # Get unique fingerprints
-            fingerprints_, _, counts = sp_unique(fingerprints[indices])
-
-            # Compute similarities
-            similarity = np.round(
-                1 - pairwise_distances(fingerprints_, metric='cityblock'),
-                decimals = 4,
-            )
-
-            # Get scores
-            scores_ = np.zeros(indices.shape[0], dtype=int)
-            scores_[scores[indices, 0] >   0] = 1
-            scores_[scores[indices, 0] >= 30] = 2
-            scores_[scores[indices, 0] >= 70] = 3
-            scores_[scores[indices, 1] >   0] = 4
-            scores_ = dict(zip(*np.unique(scores_, return_counts=True)))
-            scores_ = str(scores_) + ' MIXED' if len(scores_) > 1 else ''
-
-            # Get initial size
-            start = len(graph)
-
-            # Add nodes to graph
-            for i, (node, weight) in enumerate(zip(fingerprints_, counts)):
-                graph.add_node(start+i, size=weight, label=scores_)
-                # graph.nodes[start+i]["viz"] = {"size": int((weight**0.2) + 20)}
-
-            # Add edges to graph
-            for i in range(similarity.shape[0]):
-                for j in range(i+1, similarity.shape[1]):
-                    if similarity[i, j] >= 0.1:
-                        graph.add_edge(start+i, start+j, weight=similarity[i, j])
-
-        # Write file to output
-        nx.write_gexf(graph, "{}.gexf".format(outfile))
-        # nx.write_gml (graph, "{}.gml" .format(outfile))
-
-
-        exit()
 
     ########################################################################
     #                             I/O methods                              #
@@ -760,15 +632,19 @@ class Interpreter(object):
 
         return {
             # Object parameters
-            'features'       : self.features,
-            'eps'            : self.eps,
-            'min_samples'    : self.min_samples,
-            'threshold'      : self.threshold,
+            'features'   : self.features,
+            'eps'        : self.eps,
+            'min_samples': self.min_samples,
+            'threshold'  : self.threshold,
+
+            # Stored entries
+            'clusters': self.clusters,
+            'vectors' : self.vectors,
+            'events'  : self.events,
+
             # Trained features
-            'tree'           : self.tree,
-            'labels'         : self.labels,
-            'clusters'       : self.clusters,
-            'scores'         : self.scores,
+            'tree'       : self.tree,
+            'labels'     : self.labels,
         }
 
     @classmethod
@@ -798,24 +674,36 @@ class Interpreter(object):
 
         # List of required features
         features = {
+            # ContextBuilder
             'context_builder': None,
+
+            # Interpreter parameters
             'features'       : 100,
             'eps'            : 0.1,
             'min_samples'    : 5,
             'threshold'      : 0.2,
+
+            # Stored entries
+            'clusters': np.zeros(0),
+            'vectors' : np.zeros((0, 100)),
+            'events'  : np.zeros(0),
             'tree'           : dict(),
             'labels'         : dict(),
-            'clusters'       : list(),
-            'scores'         : list(),
         }
 
         # Throw warning if dictionary does not contain values
         for feature, default in features.items():
+
             # Throw warning if feature not available
             if feature not in dictionary:
-                warnings.warn("Loading interpreter from dictionary, required "
-                              "feature '{}' not in dictionary. Defaulting to "
-                              "default '{}'".format(feature, default))
+                # Throw warning
+                warnings.warn(
+                    "Loading interpreter from dictionary, required feature '{}'"
+                    " not in dictionary. Defaulting to default '{}'".format(
+                    feature,
+                    default
+                ))
+                # Set default value
                 dictionary[feature] = default
 
         # Create new instance with given features
@@ -827,11 +715,11 @@ class Interpreter(object):
             threshold      = dictionary.get('threshold'),
         )
 
-        # Set tree and labels
+        result.clusters = dictionary.get('clusters')
+        result.vectors  = dictionary.get('vectors')
+        result.events   = dictionary.get('events')
         result.tree     = dictionary.get('tree')
         result.labels   = dictionary.get('labels')
-        result.clusters = dictionary.get('clusters')
-        result.scores   = dictionary.get('scores')
 
         # Return result
         return result
@@ -849,6 +737,7 @@ class Interpreter(object):
         # Save to output file
         with open(outfile, 'wb') as outfile:
             pickle.dump(self.to_dict(), outfile)
+
 
     @classmethod
     def load(cls, infile, context_builder=None):
