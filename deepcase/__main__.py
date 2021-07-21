@@ -1,13 +1,15 @@
 # Imports
+from sklearn.metrics import classification_report
 import argformat
 import argparse
+import numpy as np
 import torch
 
 # DeepCASE imports
 from deepcase.preprocessing   import Preprocessor
 from deepcase.context_builder import ContextBuilder
 from deepcase.interpreter     import Interpreter
-from deepcase.utils           import show_sequences
+from deepcase.utils           import confusion_report, show_sequences
 
 if __name__ == "__main__":
 
@@ -87,10 +89,11 @@ if __name__ == "__main__":
         raise ValueError("Please specify EITHER --csv OR --txt.")
     if args.csv:
         # Load csv file
-        events, context, label, mapping = preprocessor.csv(args.csv)
+        events, context, label, mapping = preprocessor.csv(args.csv, verbose=True)
+
     elif args.txt:
         # Load txt file
-        events, context, label, mapping = preprocessor.txt(args.txt)
+        events, context, label, mapping = preprocessor.txt(args.txt, verbose=True)
 
     # Save sequences if necessary
     if args.save_sequences:
@@ -115,9 +118,31 @@ if __name__ == "__main__":
 
     # If sequence mode, output result and exit
     if args.mode == "sequence":
+        mapping = None
         # Show sequences
-        show_sequences(context, events, label, mapping, NO_EVENT=preprocessor.NO_EVENT)
+        show_sequences(
+            context  = context,
+            events   = events,
+            labels   = label,
+            mapping  = mapping,
+            NO_EVENT = preprocessor.NO_EVENT,
+        )
         exit()
+
+
+
+    # TODO - remove
+    if args.mode == "train":
+        train = 2_000_000
+        events  = events [:train]
+        context = context[:train]
+        label   = label  [:train]
+    else:
+        train = 2_000_000
+        events  = events [:train]
+        context = context[:train]
+        label   = label  [:train]
+
 
     ########################################################################
     #                         Set "auto" arguments                         #
@@ -141,60 +166,69 @@ if __name__ == "__main__":
     #                          B. Context Builder                          #
     ########################################################################
 
-    # Create ContextBuilder
-    context_builder = ContextBuilder(
-        input_size    = args.events,
-        output_size   = args.events,
-        hidden_size   = args.hidden,
-        num_layers    = 1,
-        max_length    = args.length,
-        bidirectional = False,
-        LSTM          = False,
-    ).to(args.device)
+    # Load the builder, if necessary
+    if args.load_builder:
+        context_builder = ContextBuilder.load(args.load_builder, args.device)
+
+    # Otherwise create a new ContextBuilder
+    else:
+        # Create ContextBuilder
+        context_builder = ContextBuilder(
+            input_size    = args.events,
+            output_size   = args.events,
+            hidden_size   = args.hidden,
+            num_layers    = 1,
+            max_length    = args.length,
+            bidirectional = False,
+            LSTM          = False,
+        ).to(args.device)
 
     # Training mode
-    if args.mode == "train":
-
-        # Train the ContextBuilder
-        context_builder.fit(
-            X             = context,
-            y             = events.reshape(-1, 1),
-            epochs        = args.epochs,
-            batch_size    = args.batch,
-            learning_rate = 0.01,
-            teach_ratio   = 0.5,
-            verbose       = True,
-        )
+    # if args.mode == "train":
+    #
+    #     # Train the ContextBuilder
+    #     context_builder.fit(
+    #         X             = context,
+    #         y             = events.reshape(-1, 1),
+    #         epochs        = args.epochs,
+    #         batch_size    = args.batch,
+    #         learning_rate = 0.01,
+    #         teach_ratio   = 0.5,
+    #         verbose       = True,
+    #     )
 
     # Save the builder, if necessary
     if args.save_builder:
         context_builder.save(args.save_builder)
 
-    # Load the builder, if necessary
-    if args.load_builder:
-        context_builder = ContextBuilder.load(args.load_builder, args.device)
-
     ########################################################################
     #                            C. Interpreter                            #
     ########################################################################
 
-    # Create Interpreter
-    interpreter = Interpreter(
-        context_builder = context_builder,
-        features        = args.events,
-        eps             = args.epsilon,
-        min_samples     = args.min_samples,
-        threshold       = args.confidence,
-    )
+    # Load the interpreter, if necessary
+    if args.load_interpreter:
+        interpreter = Interpreter.load(
+            args.load_interpreter,
+            context_builder = context_builder,
+        )
+    # Otherwise create a new Interpreter
+    else:
+        # Create Interpreter
+        interpreter = Interpreter(
+            context_builder = context_builder,
+            features        = args.events,
+            eps             = args.epsilon,
+            min_samples     = args.min_samples,
+            threshold       = args.confidence,
+        )
 
-    # Fit the interpreter using given data
+    # Cluster samples with the interpreter
     if args.mode == "train":
 
-        # Fit the interpreter
-        interpreter.fit(
+        # Cluster samples with the interpreter
+        clusters = interpreter.cluster(
             X          = context,
             y          = events.reshape(-1, 1),
-            score      = torch.zeros((events.shape[0], 1), device=args.device) - 4,
             iterations = 100,
             batch_size = 1024,
             verbose    = True,
@@ -204,25 +238,53 @@ if __name__ == "__main__":
     if args.save_interpreter:
         interpreter.save(args.save_interpreter)
 
-    # Load the interpreter, if necessary
-    if args.load_interpreter:
-        interpreter = Interpreter.load(
-            args.load_interpreter,
-            context_builder = context_builder
-        )
-
     ########################################################################
     #                          D. Manual analysis                          #
     ########################################################################
 
     if args.mode == "manual":
 
-        # Predict clusters using the interpreter
-        pass
+        # Use given labels to compute score for each cluster
+        scores = interpreter.score_clusters(label, strategy="max")
+        # Manually assign computed scores
+        interpreter.score(scores, verbose=True)
+
+        # Save the interpreter, if necessary
+        if args.save_interpreter:
+            interpreter.save(args.save_interpreter)
 
     ########################################################################
     #                      E. Semi-automatic analysis                      #
     ########################################################################
 
     if args.mode == "automatic":
-        print("SEMI-AUTOMATIC mode")
+
+        # Compute resulting scores
+        result = interpreter.predict(
+            X          = context,
+            y          = events.reshape(-1, 1),
+            iterations = 100,
+            batch_size = 1024,
+            verbose    = True,
+        )
+
+        # Print classification report
+        print("Classification report")
+        print(classification_report(
+            y_pred        = result,
+            y_true        = label,
+            digits        = 4,
+            zero_division = 0,
+        ))
+
+        # Print confusion matrix
+        print("Confusion matrix")
+        all_labels = np.unique(label).tolist()
+        print(confusion_report(
+            y_pred       = result,
+            y_true       = label,
+            labels       = [-3, -2, -1] + all_labels,
+            target_names = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS'] + all_labels,
+            skip_x       = all_labels,
+            skip_y       = ['LOW CONFIDENCE', 'NOT IN TRAIN', 'LOW EPS']
+        ))
