@@ -100,6 +100,9 @@ if __name__ == "__main__":
     scores = interpreter.score_clusters(
         scores   = labels_train, # Labels used to compute score (either as loaded by Preprocessor, or put your own labels here)
         strategy = "max",        # Strategy to use for scoring (one of "max", "min", "avg")
+        NO_SCORE = -1,           # Any sequence with this score will be ignored in the strategy.
+                                 # If assigned a cluster, the sequence will inherit the cluster score.
+                                 # If the sequence is not present in a cluster, it will receive a score of NO_SCORE.
     )
 
     # Assign scores to clusters in interpreter

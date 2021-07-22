@@ -122,4 +122,91 @@ We can load and save the ContextBuilder to and from a file using the following c
 
 Interpreter
 ^^^^^^^^^^^
-TODO
+Once we fitted the ``context_builder``, we create in :ref:`Interpreter` instance using the following code:
+
+.. code:: python
+
+    # Create Interpreter
+    interpreter = Interpreter(
+        context_builder = context_builder, # ContextBuilder used to fit data
+        features        = 100,             # Number of input features to expect, should be same as ContextBuilder
+        eps             = 0.1,             # Epsilon value to use for DBSCAN clustering, in paper this was 0.1
+        min_samples     = 5,               # Minimum number of samples to use for DBSCAN clustering, in paper this was 5
+        threshold       = 0.2,             # Confidence threshold used for determining if attention from the ContextBuilder can be used, in paper this was 0.2
+    )
+
+Once the ``interpreter`` is created, we can use it to cluster samples using the :py:meth:`cluster()` method.
+
+.. code:: python
+
+    # Cluster samples with the interpreter
+    clusters = interpreter.cluster(
+        X          = context_train,               # Context to train with
+        y          = events_train.reshape(-1, 1), # Events to train with, note that these should be of shape=(n_events, 1)
+        iterations = 100,                         # Number of iterations to use for attention query, in paper this was 100
+        batch_size = 1024,                        # Batch size to use for attention query, used to limit CUDA memory usage
+        verbose    = True,                        # If True, prints progress
+    )
+
+I/O methods
+-----------
+We can load and save the Interpreter to and from a file using the following code:
+
+.. code:: python
+
+    # Save Interpreter to file
+    interpreter.save('path/to/file.save')
+    # Load Interpreter from file
+    interpreter = Interpreter.load(
+        'path/to/file.save',
+        context_builder = context_builder, # When loading the Interpreter, make sure it is linked to the same ContextBuilder used for training.
+    )
+
+Manual Mode
+^^^^^^^^^^^
+When we have used the Interpreter to cluster samples, we can assign a score to the individual clusters.
+Assigning a score is done through the :py:meth:`score()` method, however, this method has two requirements for assigning a score:
+
+1. that all sequences used to create clusters are assigned a score.
+2. that all sequences in the **same** cluster are assigned the **same** score.
+
+Therefore, to make sure these two conditions hold, we first call the :py:meth:`score_clusters()` method and use the result for the :py:meth:`score()` method.
+
+.. code:: python
+
+    # Compute scores for each cluster based on individual labels per sequence
+    scores = interpreter.score_clusters(
+        scores   = labels_train, # Labels used to compute score (either as loaded by Preprocessor, or put your own labels here)
+        strategy = "max",        # Strategy to use for scoring (one of "max", "min", "avg")
+        NO_SCORE = -1,           # Any sequence with this score will be ignored in the strategy.
+                                 # If assigned a cluster, the sequence will inherit the cluster score.
+                                 # If the sequence is not present in a cluster, it will receive a score of NO_SCORE.
+    )
+
+    # Assign scores to clusters in interpreter
+    # Note that all sequences should be given a score and each sequence in the
+    # same cluster should have the same score.
+    interpreter.score(
+        scores  = scores, # Scores to assign to sequences
+        verbose = True,   # If True, prints progress
+    )
+
+Semi-automatic Mode
+^^^^^^^^^^^^^^^^^^^
+Once we used the :ref:`Interpreter` for clustering and assigned a score to each cluster, we can use the :py:meth`predict()` method to predict labels of new sequences.
+When no cluster could be matched, the :py:meth`predict()` method gives one of three scores for a cluster:
+
+ * ``-1``, if the :ref:`ContextBuilder` is not confident enough for a prediction.
+ * ``-2``, if the ``event`` was not in the training dataset.
+ * ``-3``, if the nearest cluster is a larger distance than ``epsilon`` away from the nearest sequence.
+
+.. code:: python
+
+    # Compute predicted scores
+    prediction = interpreter.predict(
+        X          = context_test,               # Context to predict
+        y          = events_test.reshape(-1, 1), # Events to predict, note that these should be of shape=(n_events, 1)
+        iterations = 100,                        # Number of iterations to use for attention query, in paper this was 100
+        batch_size = 1024,                       # Batch size to use for attention query, used to limit CUDA memory usage
+        verbose    = True,                       # If True, prints progress
+    )

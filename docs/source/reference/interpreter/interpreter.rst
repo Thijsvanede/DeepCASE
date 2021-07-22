@@ -73,3 +73,20 @@ If no sequence could be matched, one of the following scores will be given:
     To use the :py:meth:`predict()` method, make sure that **both** the :py:meth:`cluster()` and :py:meth:`score()` methods have been called to cluster samples and assign a score to those samples.
 
 .. automethod:: interpreter.Interpreter.predict
+
+I/O methods
+^^^^^^^^^^^
+The Interpreter can be saved and loaded from files using the following methods.
+Please note that the :py:meth:`interpreter.Interpreter.load()` method is a ``classmethod`` and must be called statically.
+
+.. automethod:: interpreter.Interpreter.save
+
+.. automethod:: interpreter.Interpreter.load
+
+**Example:**
+
+.. code:: python
+
+   from deepcase.interpreter import Interpreter
+   interpreter = Interpreter.load('<path_to_saved_interpreter>')
+   interpreter.save('<path_to_save_interpreter>')

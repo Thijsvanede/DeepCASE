@@ -78,13 +78,14 @@ I/O methods
 The ContextBuilder can be saved and loaded from files using the following methods.
 Please note that the :py:meth:`context_builder.ContextBuilder.load` method is a ``classmethod`` and must be called statically.
 
+.. automethod:: context_builder.ContextBuilder.save
+
 .. automethod:: context_builder.ContextBuilder.load
 
 **Example:**
 
 .. code:: python
 
-   from context_builder import ContextBuilder
+   from deepcase.context_builder import ContextBuilder
    builder = ContextBuilder.load('<path_to_saved_builder>')
-
-.. automethod:: context_builder.ContextBuilder.save
+   builder.save('<path_to_save_builder>')
