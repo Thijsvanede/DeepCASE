@@ -17,7 +17,6 @@ The full reference guide can be found here:
 .. toctree::
    :maxdepth: 2
 
-   deepcase
-   sequencing
+   preprocessor
    context_builder/context_builder
    interpreter/interpreter

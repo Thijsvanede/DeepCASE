@@ -55,12 +55,14 @@ This function takes a score for each clustered sequence and assigns it to the co
    The :py:meth:`interpreter.Interpreter.score()` function requires:
     1. that all sequences used to create clusters are assigned a score.
     2. that all sequences in the **same** cluster are assigned the **same** score.
+
    If you do not have labels for all clusters or different labels within the same cluster, the :py:meth:`interpreter.Interpreter.score_clusters()` method prepares scores such that both conditions are satisfied.
 
 Semi-automatic Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^
 In semi-automatic mode, we use the :py:meth:`interpreter.Interpreter.predict()` method to assign scores to new sequences (``context`` and ``events``) based on known clusters.
 It will either assign the score of the given cluster or a score of:
+
  * ``-1``, if the :ref:`ContextBuilder` is not confident enough for a prediction.
  * ``-2``, if the ``event`` was not in the training dataset.
  * ``-3``, if the nearest cluster is a larger distance than ``epsilon`` away from the sequence.

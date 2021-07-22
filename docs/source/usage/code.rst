@@ -17,7 +17,7 @@ To import components from DeepCASE simply use the following format
 
    from deepcase(.<module>) import <Object>
 
-For example, the following code imports :ref:`DeepCASE`, the :ref:`Preprocessor`, :ref:`ContextBuilder`, and :ref:`Interpreter`.
+For example, the following code imports the :ref:`Preprocessor`, :ref:`ContextBuilder`, and :ref:`Interpreter`.
 
 .. code:: python
 
