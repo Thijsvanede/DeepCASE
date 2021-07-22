@@ -128,6 +128,26 @@ class ContextBuilder(nn.Module):
             """
         logger.info("forward {} samples".format(X.shape[0]))
 
+        ####################################################################
+        #                   Perform check on events in X                   #
+        ####################################################################
+
+        if X.max() >= self.embedding_one_hot.input_size:
+            raise ValueError(
+                "Expected {} different input events, but received input event "
+                "'{}' not in expected range 0-{}. Please ensure that the "
+                "ContextBuilder is configured with the correct input_size and "
+                "output_size".format(
+                self.embedding_one_hot.input_size,
+                X.max(),
+                self.embedding_one_hot.input_size-1,
+            ))
+
+        ####################################################################
+        #                           Forward data                           #
+        ####################################################################
+
+
         # Initialise results
         confidence = list()
         attention  = list()
@@ -279,7 +299,7 @@ class ContextBuilder(nn.Module):
                             .format(epoch, epochs, total_loss/total_items,
                             width=len(str(epochs))))
 
-            except Exception as e:
+            except KeyboardInterrupt as e:
                 print("\nTraining interrupted, performing clean stop")
                 break
 
