@@ -636,9 +636,6 @@ class ContextBuilder(nn.Module):
             # Return result
             return confidence, attention, inverse, confidence_orig, confidence_optim
 
-        print(attention)
-        exit()
-
         # Return result
         return confidence, attention, inverse
 

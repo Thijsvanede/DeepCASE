@@ -225,9 +225,6 @@ class Interpreter(object):
             verbose     = verbose,
         )
 
-        print(fingerprints)
-        exit()
-
         # Create looup table
         indices_y = lookup_table(y.squeeze(1),
             key     = lambda x: x.item(),
@@ -741,9 +738,6 @@ class Interpreter(object):
         # Write file to output
         nx.write_gexf(graph, "{}.gexf".format(outfile))
         # nx.write_gml (graph, "{}.gml" .format(outfile))
-
-
-        exit()
 
     ########################################################################
     #                             I/O methods                              #

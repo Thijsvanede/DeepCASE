@@ -154,5 +154,3 @@ class DeepCASE(object):
         if interpreter is not None:
             interpreter = Interpreter.load(interpreter, context_builder)
             print(interpreter)
-
-        exit()
