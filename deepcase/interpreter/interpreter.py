@@ -58,6 +58,287 @@ class Interpreter(object):
         self.labels   = dict()
 
     ########################################################################
+    #                         Fit/Predict methods                          #
+    ########################################################################
+
+    def fit(self,
+            X,
+            y,
+            scores,
+            iterations = 100,
+            batch_size = 1024,
+            strategy   = "max",
+            NO_SCORE   = -1,
+            verbose    = False,
+        ):
+        """Fit the Interpreter by performing clustering and assigning scores.
+
+            Fit function is a wrapper that calls the following methods:
+              1. Interpreter.cluster
+              2. Interpreter.score_clusters
+              3. Interpreter.score
+
+            Parameters
+            ----------
+            X : torch.Tensor of shape=(n_samples, seq_length)
+                Input context to cluster.
+
+            y : torch.Tensor of shape=(n_samples, 1)
+                Events to cluster.
+
+            scores : array-like of float, shape=(n_samples,)
+                Scores for each sample in cluster.
+
+            iterations : int, default=100
+                Number of iterations for query.
+
+            batch_size : int, default=1024
+                Size of batch for query.
+
+            strategy : string (max|min|avg), default=max
+                Strategy to use for computing scores per cluster based on scores
+                of individual events. Currently available options are:
+                - max: Use maximum score of any individual event in a cluster.
+                - min: Use minimum score of any individual event in a cluster.
+                - avg: Use average score of any individual event in a cluster.
+
+            NO_SCORE : float, default=-1
+                Score to indicate that no score was given to a sample and that
+                the value should be ignored for computing the cluster score.
+                The NO_SCORE value will also be given to samples that do not
+                belong to a cluster.
+
+            verbose : boolean, default=False
+                If True, prints achieved speedup of clustering algorithm.
+
+            Returns
+            -------
+            self : self
+                Returns self
+            """
+        # Call cluster method
+        clusters = self.cluster(
+            X          = X,
+            y          = y,
+            iterations = iterations,
+            batch_size = batch_size,
+            verbose    = verbose,
+        )
+
+        # Call score_clusters method to distribute individual scores over
+        # clusters according to chosen strategy
+        scores = self.score_clusters(
+            scores   = scores,
+            strategy = strategy,
+            NO_SCORE = NO_SCORE,
+        )
+
+        # Set scores
+        self.score(
+            scores  = scores,
+            verbose = verbose,
+        )
+
+        # Return self
+        return self
+
+
+    def predict(self, X, y, iterations=100, batch_size=1024, verbose=False):
+        """Predict maliciousness of context samples.
+
+            Parameters
+            ----------
+            X : torch.Tensor of shape=(n_samples, seq_length)
+                Input context for which to predict maliciousness.
+
+            y : torch.Tensor of shape=(n_samples, 1)
+                Events for which to predict maliciousness.
+
+            iterations : int, default=100
+                Iterations used for optimization.
+
+            batch_size : int, default=1024
+                Batch size used for optimization.
+
+            verbose : boolean, default=False
+                If True, print progress.
+
+            Returns
+            -------
+            result : np.array of shape=(n_samples,)
+                Predicted maliciousness score.
+                Positive scores are maliciousness scores.
+                A score of 0 means we found a match that was not malicious.
+                Special cases:
+
+                * -1: Not confident enough for prediction
+                * -2: Label not in training
+                * -3: Closest cluster > epsilon
+            """
+        # Get unique samples
+        X, y, inverse_result = unique_2d(X, y)
+
+        ####################################################################
+        #                         Compute vectors                          #
+        ####################################################################
+
+        # Compute vectors
+        vectors, mask = self.attended_context(
+            X           = X,
+            y           = y,
+            threshold   = self.threshold,
+            iterations  = iterations,
+            batch_size  = batch_size,
+            verbose     = verbose,
+        )
+
+        # Initialise result
+        result = np.full(vectors.shape[0], -4, dtype=float)
+
+        ####################################################################
+        #                   Find closest known sequences                   #
+        ####################################################################
+
+        # Group sequences by individual events
+        events = group_by(y[mask].squeeze(1).cpu().numpy())
+        # Add verbosity, if necessary
+        if verbose: events = tqdm(events, desc="Predicting      ")
+
+        # Loop over all events
+        for event, indices in events:
+
+            ############################################################
+            #                   Case - unknown event                   #
+            ############################################################
+
+            # If event is not in training set, set to -2
+            if event not in self.tree:
+                result[indices] = -2
+                continue
+
+            ############################################################
+            #                    Case - known event                    #
+            ############################################################
+
+            # Get vectors for given event
+            vectors_ = vectors[indices]
+
+            # Get unique vectors - optimizes computation time
+            vectors_, inverse, _ = sp_unique(vectors_)
+
+            # Get closest cluster
+            distance, neighbours = self.tree[event].query(
+                X               = vectors_.toarray(),
+                return_distance = True,
+                dualtree        = vectors_.shape[0] >= 1e3, # Optimization
+            )
+            # Get neighbour indices
+            neighbours = self.tree[event].get_arrays()[1][neighbours][:, 0]
+            # Compute neighbour scores
+            scores = np.asarray([
+                self.labels[event][neighbour] for neighbour in neighbours
+            ])
+
+            ############################################################
+            #               Set result, based on epsilon               #
+            ############################################################
+
+            # Set resulting indices
+            result[indices] = np.where(
+                distance[:, 0] <= self.eps, # Check if closest cluster > eps
+                scores,                     # If so, assign actual score
+                -3,                         # Else, closest cluster > eps, -3
+            )[inverse]
+
+        ####################################################################
+        #                     Add non-confident events                     #
+        ####################################################################
+
+        result_ = np.full(X.shape[0], -1, dtype=float)
+        result_[mask.cpu().numpy()] = result
+        result = result_
+
+        # Return result
+        return result[inverse_result.cpu().numpy()]
+
+
+    def fit_predict(self,
+            X,
+            y,
+            scores,
+            iterations = 100,
+            batch_size = 1024,
+            strategy   = "max",
+            NO_SCORE   = -1,
+            verbose    = False,
+        ):
+        """Fit Interpreter with samples and labels and return the predictions of
+            the same samples after running them through the Interpreter.
+
+            Parameters
+            ----------
+            X : torch.Tensor of shape=(n_samples, seq_length)
+                Input context to cluster.
+
+            y : torch.Tensor of shape=(n_samples, 1)
+                Events to cluster.
+
+            scores : array-like of float, shape=(n_samples,)
+                Scores for each sample in cluster.
+
+            iterations : int, default=100
+                Number of iterations for query.
+
+            batch_size : int, default=1024
+                Size of batch for query.
+
+            strategy : string (max|min|avg), default=max
+                Strategy to use for computing scores per cluster based on scores
+                of individual events. Currently available options are:
+                - max: Use maximum score of any individual event in a cluster.
+                - min: Use minimum score of any individual event in a cluster.
+                - avg: Use average score of any individual event in a cluster.
+
+            NO_SCORE : float, default=-1
+                Score to indicate that no score was given to a sample and that
+                the value should be ignored for computing the cluster score.
+                The NO_SCORE value will also be given to samples that do not
+                belong to a cluster.
+
+            verbose : boolean, default=False
+                If True, prints achieved speedup of clustering algorithm.
+
+            Returns
+            -------
+            result : np.array of shape=(n_samples,)
+                Predicted maliciousness score.
+                Positive scores are maliciousness scores.
+                A score of 0 means we found a match that was not malicious.
+                Special cases:
+
+                * -1: Not confident enough for prediction
+                * -2: Label not in training
+                * -3: Closest cluster > epsilon
+        """
+        # Run fit and predict sequentially
+        return self.fit(
+            X          = X,
+            y          = y,
+            scores     = scores,
+            iterations = iterations,
+            batch_size = batch_size,
+            strategy   = strategy,
+            NO_SCORE   = NO_SCORE,
+            verbose    = verbose,
+        ).predict(
+            X          = X,
+            y          = y,
+            iterations = 100,
+            batch_size = 1024,
+            verbose    = False,
+        )
+
+    ########################################################################
     #                              Clustering                              #
     ########################################################################
 
@@ -312,128 +593,6 @@ class Interpreter(object):
 
         # Return result
         return result
-
-    ########################################################################
-    #                       (Semi-)Automatic scoring                       #
-    ########################################################################
-
-    def predict(self, X, y, iterations=100, batch_size=1024, verbose=False):
-        """Predict maliciousness of context samples.
-
-            Parameters
-            ----------
-            X : torch.Tensor of shape=(n_samples, seq_length)
-                Input context for which to predict maliciousness.
-
-            y : torch.Tensor of shape=(n_samples, 1)
-                Events for which to predict maliciousness.
-
-            iterations : int, default=100
-                Iterations used for optimization.
-
-            batch_size : int, default=1024
-                Batch size used for optimization.
-
-            verbose : boolean, default=False
-                If True, print progress.
-
-            Returns
-            -------
-            result : np.array of shape=(n_samples,)
-                Predicted maliciousness score.
-                Positive scores are maliciousness scores.
-                A score of 0 means we found a match that was not malicious.
-                Special cases:
-
-                * -1: Not confident enough for prediction
-                * -2: Label not in training
-                * -3: Closest cluster > epsilon
-            """
-        # Get unique samples
-        X, y, inverse_result = unique_2d(X, y)
-
-        ####################################################################
-        #                         Compute vectors                          #
-        ####################################################################
-
-        # Compute vectors
-        vectors, mask = self.attended_context(
-            X           = X,
-            y           = y,
-            threshold   = self.threshold,
-            iterations  = iterations,
-            batch_size  = batch_size,
-            verbose     = verbose,
-        )
-
-        # Initialise result
-        result = np.full(vectors.shape[0], -4, dtype=float)
-
-        ####################################################################
-        #                   Find closest known sequences                   #
-        ####################################################################
-
-        # Group sequences by individual events
-        events = group_by(y[mask].squeeze(1).cpu().numpy())
-        # Add verbosity, if necessary
-        if verbose: events = tqdm(events, desc="Predicting      ")
-
-        # Loop over all events
-        for event, indices in events:
-
-            ############################################################
-            #                   Case - unknown event                   #
-            ############################################################
-
-            # If event is not in training set, set to -2
-            if event not in self.tree:
-                result[indices] = -2
-                continue
-
-            ############################################################
-            #                    Case - known event                    #
-            ############################################################
-
-            # Get vectors for given event
-            vectors_ = vectors[indices]
-
-            # Get unique vectors - optimizes computation time
-            vectors_, inverse, _ = sp_unique(vectors_)
-
-            # Get closest cluster
-            distance, neighbours = self.tree[event].query(
-                X               = vectors_.toarray(),
-                return_distance = True,
-                dualtree        = vectors_.shape[0] >= 1e3, # Optimization
-            )
-            # Get neighbour indices
-            neighbours = self.tree[event].get_arrays()[1][neighbours][:, 0]
-            # Compute neighbour scores
-            scores = np.asarray([
-                self.labels[event][neighbour] for neighbour in neighbours
-            ])
-
-            ############################################################
-            #               Set result, based on epsilon               #
-            ############################################################
-
-            # Set resulting indices
-            result[indices] = np.where(
-                distance[:, 0] <= self.eps, # Check if closest cluster > eps
-                scores,                     # If so, assign actual score
-                -3,                         # Else, closest cluster > eps, -3
-            )[inverse]
-
-        ####################################################################
-        #                     Add non-confident events                     #
-        ####################################################################
-
-        result_ = np.full(X.shape[0], -1, dtype=float)
-        result_[mask.cpu().numpy()] = result
-        result = result_
-
-        # Return result
-        return result[inverse_result.cpu().numpy()]
 
 
     ########################################################################
