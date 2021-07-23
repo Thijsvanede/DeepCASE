@@ -10,6 +10,48 @@ Besides clustering, the Interpreter also offers methods to assign scores for Man
 
 .. automethod:: interpreter.Interpreter.__init__
 
+Fit/Predict methods
+^^^^^^^^^^^^^^^^^^^
+We provide a ``scikit-learn``-like API for the Interpreter as a classifier to labels for sequences in the form of clusters and predict the labels of new sequences.
+To this end, we implement scikit-learn like fit and predict methods for training and predicting with the network.
+
+Fit
+~~~
+The :py:meth:`fit()` method provides an API for directly learning .
+This method combines Interpreter's Clustering and Manual Mode for sequences where the labels are known a priori.
+To this end, it calls the :py:meth:`cluster()`, :py:meth:`score_clusters()`, and :py:meth:`score()` methods in sequence.
+When the labels for sequences are not known in advance, the Interpreter offers the functionality to first cluster sequences, and then manually inspect clusters for labelling as described in the paper.
+For this functionality, we refer to the methods:
+
+ * :py:meth:`interpreter.Interpreter.cluster()`
+ * :py:meth:`interpreter.Interpreter.score_clusters()`
+ * :py:meth:`interpreter.Interpreter.score()`
+
+.. automethod:: interpreter.Interpreter.fit
+
+Predict
+~~~~~~~
+When the Interpreter is trained using either the :py:meth:`fit()` method, or by using the individual :py:meth:`cluster()` and :py:meth:`score()` methods, we can use the Interpreter in (semi-)automatic mode.
+To this end, we provide the :py:meth:`predict()` function which takes ``context`` and ``events`` as input and outputs the labels of corresponding predicted clusters.
+If no sequence could be matched, one of the following scores will be given:
+
+ * ``-1``: Not confident enough for prediction
+ * ``-2``: Label not in training
+ * ``-3``: Closest cluster > epsilon
+
+.. Note::
+
+    To use the :py:meth:`predict()` method, make sure that **both** the :py:meth:`cluster()` and :py:meth:`score()` methods have been called to cluster samples and assign a score to those samples.
+
+.. automethod:: interpreter.Interpreter.predict
+
+Fit_predict
+~~~~~~~~~~~
+Similar to the ``scikit-learn`` API, the :py:meth:`fit_predict()` method performs the :py:meth:`fit()` and :py:meth:`predict()` functions in sequence on the same data.
+
+.. automethod:: interpreter.Interpreter.fit_predict
+
+
 Clustering
 ^^^^^^^^^^
 The main task of the Interpreter is to cluster events.
@@ -60,19 +102,7 @@ Additionally, unlabelled clusters will all be labeled using a given ``NO_SCORE``
 
 Semi-automatic mode
 ^^^^^^^^^^^^^^^^^^^
-When the Interpreter is trained using the :py:meth:`cluster()` and :py:meth:`score()` methods, we can use the Interpreter in (semi-)automatic mode.
-To this end, we provide the :py:meth:`predict()` function which takse ``context`` and ``events`` as input and outputs the labels of corresponding predicted clusters.
-If no sequence could be matched, one of the following scores will be given:
-
- * ``-1``: Not confident enough for prediction
- * ``-2``: Label not in training
- * ``-3``: Closest cluster > epsilon
-
-.. Note::
-
-    To use the :py:meth:`predict()` method, make sure that **both** the :py:meth:`cluster()` and :py:meth:`score()` methods have been called to cluster samples and assign a score to those samples.
-
-.. automethod:: interpreter.Interpreter.predict
+See :py:meth:`interpreter.Interpreter.predict()`.
 
 I/O methods
 ^^^^^^^^^^^
