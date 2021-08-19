@@ -1,3 +1,3 @@
-from .deepcase2 import DeepCASE
+from .module import DeepCASE
 
 __all__ = ['DeepCASE']
