@@ -5,7 +5,7 @@ DeepCASE
 We provide the DeepCASE class as a wrapper around the :ref:`ContextBuilder` and :ref:`Interpreter`.
 The DeepCASE class only implements the ``fit()/predict()`` methods which requires a priori knowledge of the sequence maliciousness score.
 If you require a more fine-grained tuning of DeepCASE, e.g., when using the manual labelling mode, we recommend using the individual :ref:`ContextBuilder` and :ref:`Interpreter` objects as shown in the :ref:`Usage`.
-These individual methods provide a richer API.
+These individual classes provide a richer API.
 
 .. autoclass:: module.DeepCASE
 
