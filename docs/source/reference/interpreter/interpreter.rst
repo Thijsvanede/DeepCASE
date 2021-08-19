@@ -17,7 +17,7 @@ To this end, we implement scikit-learn like fit and predict methods for training
 
 Fit
 ~~~
-The :py:meth:`fit()` method provides an API for directly learning .
+The :py:meth:`fit()` method provides an API for directly learning the maliciousness score of sequences.
 This method combines Interpreter's Clustering and Manual Mode for sequences where the labels are known a priori.
 To this end, it calls the :py:meth:`cluster()`, :py:meth:`score_clusters()`, and :py:meth:`score()` methods in sequence.
 When the labels for sequences are not known in advance, the Interpreter offers the functionality to first cluster sequences, and then manually inspect clusters for labelling as described in the paper.

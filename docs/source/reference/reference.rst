@@ -18,5 +18,6 @@ The full reference guide can be found here:
    :maxdepth: 2
 
    preprocessor
+   deepcase/deepcase
    context_builder/context_builder
    interpreter/interpreter
