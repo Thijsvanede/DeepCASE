@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 class DeepCASE(object):
 
     def __init__(self,
-            n_features,
+            features,
             max_length  = 10,
             hidden_size = 128,
             eps         = 0.1,
@@ -34,7 +34,7 @@ class DeepCASE(object):
 
             Parameters
             ----------
-            n_features : int
+            features : int
                 Number of different possible security events.
 
             max_length : int, default=10
@@ -59,8 +59,8 @@ class DeepCASE(object):
 
         # Initialise Context Builder from parameters
         self.context_builder = ContextBuilder(
-            input_size    = n_features,
-            output_size   = n_features,
+            input_size    = features,
+            output_size   = features,
             max_length    = max_length,
             hidden_size   = hidden_size,
         )
@@ -68,7 +68,7 @@ class DeepCASE(object):
         # Initialise Interpreter from parameters
         self.interpreter = Interpreter(
             context_builder = self.context_builder,
-            features        = n_features,
+            features        = features,
             eps             = eps,
             min_samples     = min_samples,
             threshold       = threshold,
@@ -376,36 +376,76 @@ class DeepCASE(object):
     #                             I/O methods                              #
     ########################################################################
 
-    # def save(self, context_builder=None, interpreter=None):
-    #     """Save the DeepCASE object to output files.
-    #
-    #         Parameters
-    #         ----------
-    #         context_builder : string, optional
-    #             If given, output ContextBuilder to given file.
-    #
-    #         interpreter : string, optional
-    #             If given, output Interpreter to given file.
-    #         """
-    #     logger.info("DeepCASE.save(context_builder={}, interpreter={})".format(
-    #         context_builder, interpreter))
-    #
-    #     # Save individual objects
-    #     if context_builder is not None:
-    #         self.context_builder.save(context_builder)
-    #     if interpreter is not None:
-    #         self.interpreter.save(interpreter)
-    #
-    # @classmethod
-    # def load(cls, context_builder=None, interpreter=None):
-    #     logger.info("DeepCASE.load(context_builder={}, interpreter={})".format(
-    #         context_builder, interpreter))
-    #
-    #     # Load ContextBuilder
-    #     if context_builder is not None:
-    #         context_builder = ContextBuilder.load(context_builder)
-    #         print(context_builder)
-    #     # Load Interpreter
-    #     if interpreter is not None:
-    #         interpreter = Interpreter.load(interpreter, context_builder)
-    #         print(interpreter)
+    def save(self, outfile):
+        """Save DeepCASE model to output file.
+
+            Parameters
+            ----------
+            outfile : string
+                Path to output file in which to store DeepCASE model.
+            """
+        # Save to output file
+        torch.save({
+            "context_builder": self.context_builder.state_dict(),
+            "interpreter"    : self.interpreter    .to_dict(),
+        }, outfile)
+
+    @classmethod
+    def load(cls, infile, device=None):
+        """Load DeepCASE model from input file.
+
+            Parameters
+            ----------
+            infile : string
+                Path to input file from which to load DeepCASE model.
+
+            device : string, optional
+                If given, cast DeepCASE automatically to device.
+            """
+        # Load model
+        model = torch.load(infile, map_location=device)
+
+        # Extract ContextBuilder and Interpreter from loaded model
+        state_dict  = model['context_builder']
+        interpreter = model['interpreter']
+
+        # Recreate ContextBuilder
+        input_size    = state_dict.get('embedding.weight').shape[0]
+        output_size   = state_dict.get('decoder_event.out.weight').shape[0]
+        hidden_size   = state_dict.get('embedding.weight').shape[1]
+        num_layers    = 1 # TODO
+        max_length    = state_dict.get('decoder_attention.attn.weight').shape[0]
+        bidirectional = state_dict.get('decoder_attention.attn.weight').shape[1] // hidden_size != num_layers
+        LSTM          = False # TODO
+
+        # Create ContextBuilder
+        context_builder = ContextBuilder(
+            input_size    = input_size,
+            output_size   = output_size,
+            hidden_size   = hidden_size,
+            num_layers    = num_layers,
+            max_length    = max_length,
+            bidirectional = bidirectional,
+            LSTM          = LSTM,
+        )
+
+        # Set trained parameters
+        context_builder.load_state_dict(state_dict)
+
+        # Recreate interpreter
+        interpreter = Interpreter.from_dict(
+            dictionary      = interpreter,
+            context_builder = context_builder,
+        )
+
+        # Rebuild DeepCASE
+        result = cls(features = interpreter.features)
+        # Set loaded ContextBuilder and Interpreter
+        result.context_builder = context_builder
+        result.interpreter     = interpreter
+
+        # Cast to device if necessary
+        if device is not None: result = result.to(device)
+
+        # Return loaded DeepCASE model
+        return result

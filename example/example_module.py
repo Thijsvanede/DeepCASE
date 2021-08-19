@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     deepcase = DeepCASE(
         # ContextBuilder parameters
-        n_features  = 300, # Number of input features to expect
+        features    = 300, # Number of input features to expect
         max_length  = 10,  # Length of the context, should be same as context in Preprocessor
         hidden_size = 128, # Number of nodes in hidden layer, in paper we set this to 128
 
