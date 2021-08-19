@@ -102,8 +102,8 @@ class DeepCASE(object):
         ):
         """Fit DeepCASE with given data.
             This method is provided as a wrapper and is equivalent to calling:
-             - context_builder.fit() and
-             - interpreter.fit()
+            - context_builder.fit() and
+            - interpreter.fit()
             in the given order.
 
             Parameters
@@ -261,8 +261,8 @@ class DeepCASE(object):
         ):
         """Fit DeepCASE with given data and predict that same data.
             This method is provided as a wrapper and is equivalent to calling:
-             - self.fit() and
-             - self.predict()
+            - self.fit() and
+            - self.predict()
             in the given order.
 
             Parameters
