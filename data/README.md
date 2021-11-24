@@ -6,7 +6,7 @@ This research uses two datasets for its evaluation:
 
 ## Lastline dataset
 The real-world Lastline dataset consists of 20 international organizations that use 395 detectors to monitor 388K devices*.
-This resulted in 10.5M *security events* for 291 unique types of security [events](https://github.com/Thijsvanede/DeepCASE) collected over a 5-month period.
+This resulted in 10.5M *security events* for 291 unique types of security [events](https://github.com/Thijsvanede/DeepCASE/tree/main/mapping#Events) collected over a 5-month period.
 Events include policy violations (e.g., use of deprecated samba versions, remote desktop protocols, and the Tor browser), signature hits (e.g., `Mirai`, `Ursnif`, and `Zeus`) as well as heuristics on suspicious and malicious activity (e.g., beaconing activity, SQL injection, Shellshock Exploit Attempts and various CVEs).
 Of the 10.5M security events, a triaging system selected 2.7M events that were likely to be part of an attack.
 Of these 2.7M likely malicious events, 45.1K security events were confirmed to be part of an attack by security operators, and labeled as `ATTACKS`.
