@@ -20,7 +20,7 @@ This research uses two datasets for its evaluation:
 
 ---
 
-For more details, please see the [`data`](tree/main/data) directory of this repository.
+For more details, please see the [`data`](/data) directory of this repository.
 
 ## References
 [1] `van Ede, T., Aghakhani, H., Spahn, N., Bortolameotti, R., Cova, M., Continella, A., van Steen, M., Peter, A., Kruegel, C. & Vigna, G. (2022, May). DeepCASE: Semi-Supervised Contextual Analysis of Security Events. In 2022 Proceedings of the IEEE Symposium on Security and Privacy (S&P). IEEE.`
