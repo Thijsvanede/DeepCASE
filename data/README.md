@@ -1,8 +1,8 @@
 # Datasets
 
 This research uses two datasets for its evaluation:
- 1. [Lastline dataset](#Lastline dataset).
- 2. [HDFS dataset](#HDFS dataset).
+ 1. [Lastline dataset](#Lastline-dataset).
+ 2. [HDFS dataset](#HDFS-dataset).
 
 ## Lastline dataset
 The real-world Lastline dataset consists of 20 international organizations that use 395 detectors to monitor 388K devices*.
