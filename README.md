@@ -8,6 +8,20 @@ DeepCASE introduces a semi-supervised approach for the contextual analysis of se
 ## Documentation
 We provide an extensive documentation including installation instructions and reference at [deepcase.readthedocs.io](https://deepcase.readthedocs.io/en/latest/).
 
+## Dataset
+This research uses two datasets for its evaluation:
+ 1. Lastline dataset.
+ 2. HDFS dataset.
+
+---
+**NOTE**
+
+**The Lastline dataset was obtained under an NDA and therefore, unfortunately, we cannot share the dataset.**
+
+---
+
+For more details, please see the [`data`](tree/main/data) directory of this repository.
+
 ## References
 [1] `van Ede, T., Aghakhani, H., Spahn, N., Bortolameotti, R., Cova, M., Continella, A., van Steen, M., Peter, A., Kruegel, C. & Vigna, G. (2022, May). DeepCASE: Semi-Supervised Contextual Analysis of Security Events. In 2022 Proceedings of the IEEE Symposium on Security and Privacy (S&P). IEEE.`
 
