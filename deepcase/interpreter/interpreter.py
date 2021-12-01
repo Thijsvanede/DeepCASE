@@ -563,8 +563,8 @@ class Interpreter(object):
             raise ValueError(
                 "Scores and stored clusters should have the same shape, but "
                 "instead we found '{}' scores and '{}' cluster entries".format(
-                scores  .shape,
-                clusters.shape,
+                scores       .shape,
+                self.clusters.shape,
             ))
 
         # Group by clusters
@@ -575,6 +575,14 @@ class Interpreter(object):
             # Get relevant scores
             scores_ = scores[indices]
             scores_ = scores_[scores_ != NO_SCORE]
+
+            # Raise error in case scores cannot be computed because of NO_SCORE
+            if scores_.shape[0] == 0:
+                raise ValueError(
+                    "Cannot compute cluster score for cluster '{}'. All "
+                    "sequences in this cluster have been assigned score "
+                    "NO_SCORE == {}.".format(cluster, NO_SCORE)
+                )
 
             # Apply strategy
             if strategy == "max":
