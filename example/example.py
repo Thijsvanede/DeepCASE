@@ -22,6 +22,9 @@ if __name__ == "__main__":
     context, events, labels, mapping = preprocessor.csv('data/example.csv')
 
     # In case no labels are provided, set labels to -1
+    # IMPORTANT: If no labels are provided, make sure to manually set the labels
+    # before calling the interpreter.score_clusters method. Otherwise, this will
+    # raise an exception, because scores == NO_SCORE cannot be computed.
     if labels is None:
         labels = np.full(events.shape[0], -1, dtype=int)
 
