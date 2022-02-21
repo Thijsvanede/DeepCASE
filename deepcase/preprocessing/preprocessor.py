@@ -239,6 +239,14 @@ class Preprocessor(object):
             labels : torch.Tensor of shape=(n_samples,)
                 Labels will be None if no labels parameter is given, and if data
                 does not contain any 'labels' column.
+
+            mapping : dict()
+                Mapping from new event_id to original event_id.
+                Sequencing will map all events to a range from 0 to n_events.
+                This is because event IDs may have large values, which is
+                difficult for a one-hot encoding to deal with. Therefore, we map
+                all Event ID values to a new value in that range and provide
+                this mapping to translate back.
             """
         # Read data from csv file into pandas dataframe
         data = pd.read_csv(path, nrows=nrows)
@@ -278,6 +286,14 @@ class Preprocessor(object):
             labels : torch.Tensor of shape=(n_samples,)
                 Labels will be None if no labels parameter is given, and if data
                 does not contain any 'labels' column.
+
+            mapping : dict()
+                Mapping from new event_id to original event_id.
+                Sequencing will map all events to a range from 0 to n_events.
+                This is because event IDs may have large values, which is
+                difficult for a one-hot encoding to deal with. Therefore, we map
+                all Event ID values to a new value in that range and provide
+                this mapping to translate back.
             """
         raise NotImplementedError("Parsing '.json' not yet implemented.")
 
@@ -313,6 +329,14 @@ class Preprocessor(object):
             labels : torch.Tensor of shape=(n_samples,)
                 Labels will be None if no labels parameter is given, and if data
                 does not contain any 'labels' column.
+
+            mapping : dict()
+                Mapping from new event_id to original event_id.
+                Sequencing will map all events to a range from 0 to n_events.
+                This is because event IDs may have large values, which is
+                difficult for a one-hot encoding to deal with. Therefore, we map
+                all Event ID values to a new value in that range and provide
+                this mapping to translate back.
             """
         raise NotImplementedError("Parsing '.ndjson' not yet implemented.")
 
@@ -353,6 +377,14 @@ class Preprocessor(object):
             labels : torch.Tensor of shape=(n_samples,)
                 Labels will be None if no labels parameter is given, and if data
                 does not contain any 'labels' column.
+
+            mapping : dict()
+                Mapping from new event_id to original event_id.
+                Sequencing will map all events to a range from 0 to n_events.
+                This is because event IDs may have large values, which is
+                difficult for a one-hot encoding to deal with. Therefore, we map
+                all Event ID values to a new value in that range and provide
+                this mapping to translate back.
             """
         # Initialise data
         events     = list()
