@@ -9,6 +9,12 @@ To start sequencing, first create the Preprocessor object.
 
 .. automethod:: preprocessing.Preprocessor.__init__
 
+Sequencing
+^^^^^^^^^^
+All supported formats are wrappers around the sequence method which will produce context and event sequences from given events.
+
+.. automethod:: preprocessing.Preprocessor.sequence
+
 Formats
 ^^^^^^^
 We currently support the following formats:
