@@ -36,7 +36,7 @@ DeepCASE requires the following python packages to be installed:
 - Scipy: https://www.scipy.org/
 - Tqdm: https://tqdm.github.io/
 
-All dependencies should be automatically downloaded if you install FlowPrint via pip. However, should you want to install these libraries manually, you can install the dependencies using the requirements.txt file
+All dependencies should be automatically downloaded if you install DeepCASE via pip. However, should you want to install these libraries manually, you can install the dependencies using the requirements.txt file
 
 .. code::
 
