@@ -7,6 +7,11 @@ If you want to be involved in maintaining code or adding new features, please em
 Code
 ^^^^
  - Thijs van Ede
+ 
+Special Thanks
+^^^^^^^^^^^^^^
+**We want to give our special thanks for people reporting bugs and fixes.**
+ - Ammar-Amjad
 
 Academic Contributors
 ^^^^^^^^^^^^^^^^^^^^^
@@ -20,3 +25,4 @@ Academic Contributors
  - Andreas Peter
  - Christopher Kruegel
  - Giovanni Vigna
+
