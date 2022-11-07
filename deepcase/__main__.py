@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
     elif args.txt:
         # Load txt file
-        context, events, labels, mapping = preprocessor.txt(
+        context, events, labels, mapping = preprocessor.text(
             args.txt,
             verbose = not args.silent,
         )
