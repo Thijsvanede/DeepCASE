@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="deepcase",
-    version="1.0.2",
+    version="1.0.3",
     author="Thijs van Ede",
     author_email="t.s.vanede@utwente.nl",
     description="DeepCASE: Semi-Supervised Contextual Analysis of Security "

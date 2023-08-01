@@ -36,7 +36,7 @@ class LabelSmoothing(nn.Module):
 
         # Create true distribution
         true_dist = x.data.clone()
-        true_dist.fill_(self.smoothing / (self.size - 2))
+        true_dist.fill_(self.smoothing / (self.size - 1))
         true_dist.scatter_(1, target, self.confidence)
         # Apply criterion
         result = self.criterion(x, Variable(true_dist, requires_grad=False))
